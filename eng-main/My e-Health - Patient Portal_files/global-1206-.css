@@ -1,0 +1,235 @@
+/* @group over 1024 view styles  = 4 columns
+---------------------------------------------------------*/
+@media all and (min-width: 1206px) {
+
+    #privacy-access-toggle {
+        margin-left: 14px;
+    }
+
+    #menu-mobile {
+        display: none;
+    }
+
+    #certificateFrame {
+        height: 76em;
+    }
+
+    #epicrises-list-start {
+        margin-top: 6.1em;
+    }
+
+    #access-table > li:nth-child(1),
+    #health-declarations-table > li:nth-child(1),
+    #dental-view-table > li:nth-child(1),
+    #hospital-table > li:nth-child(1) {
+        -ms-grid-column: 1;
+        -ms-grid-row: 1;
+    }
+
+    #access-table > li:nth-child(2),
+    #health-declarations-table > li:nth-child(2),
+    #dental-view-table > li:nth-child(2),
+    #hospital-table > li:nth-child(2) {
+        -ms-grid-column: 3;
+        -ms-grid-row: 1;
+    }
+
+    #access-table > li:nth-child(3),
+    #hospital-table-row2 > li:nth-child(3),
+    #health-declarations-table > li:nth-child(3),
+    #hospital-table > li:nth-child(3) {
+        -ms-grid-column: 5;
+        -ms-grid-row: 1;
+    }
+
+    .sec-100-percent .sec-row li:nth-child(5) {
+        margin: 0 1.65% 1.65% 0;
+    }
+
+    .sec-100-percent .sec-row li:nth-child(7) {
+        margin: 0 0 1.65% 0;
+    }
+
+    /* #list-with-header > li:nth-child(-n+3) {margin-bottom:4.37%;} */
+    .login-page .sec-row > li {
+        height: 100%;
+    }
+
+    .login-page .sec-row > li:nth-child(4n) {
+        margin-right: 0;
+    }
+
+    .sec-border {
+        border-bottom: 2px groove white;
+        padding-bottom: 18%;
+    }
+
+    #vaccine-certificates-table > li:nth-child(1) {
+        -ms-grid-column: 1;
+        -ms-grid-row: 1;
+        /*margin-right: 2.79%;*/
+    }
+
+    #vaccine-certificates-table > li:nth-child(2) {
+        -ms-grid-column: 3;
+        -ms-grid-row: 1;
+        /*margin-right: 2.79%;*/
+    }
+
+    #vaccine-certificates-table > li:nth-child(3) {
+        -ms-grid-column: 5;
+        -ms-grid-row: 1;
+    }
+
+    #vaccine-certificates-table > li:nth-child(4) {
+        -ms-grid-column: 1;
+        -ms-grid-row: 3;
+    }
+
+    #vaccine-certificates-table > li:nth-child(5) {
+        -ms-grid-column: 3;
+        -ms-grid-row: 3;
+    }
+
+    #vaccine-certificates-table > li:nth-child(6) {
+        -ms-grid-column: 5;
+        -ms-grid-row: 3;
+    }
+
+    #documents-table > li:nth-child(1) {
+        -ms-grid-column: 1;
+        -ms-grid-row: 1;
+    }
+
+    #documents-table > li:nth-child(2) {
+        -ms-grid-column: 3;
+        -ms-grid-row: 1;
+    }
+
+    #my-desktop > li:nth-child(1) {
+        -ms-grid-column-span: 3;
+        -ms-grid-column: 1;
+        grid-column: span 2;
+        -ms-grid-row-span: 3;
+        -ms-grid-row: 1;
+        grid-row: span 2;
+
+    }
+
+    #my-desktop > li:nth-child(2),
+    #documents-table > li:nth-child(3) {
+        -ms-grid-column: 5;
+        -ms-grid-row: 1;
+    }
+
+    #documents-table > li:nth-child(4) {
+        -ms-grid-column: 1;
+        -ms-grid-row: 3;
+    }
+
+    #documents-table > li:nth-child(5) {
+        -ms-grid-column: 3;
+        -ms-grid-row: 3;
+    }
+
+    #my-desktop > li:nth-child(3),
+    #documents-table > li:nth-child(6) {
+        -ms-grid-column: 5;
+        -ms-grid-row: 3;
+    }
+
+    #my-desktop > li:nth-child(4),
+    #documents-table > li:nth-child(7) {
+        -ms-grid-column: 1;
+        -ms-grid-row: 5;
+    }
+
+    #my-desktop > li:nth-child(5),
+    #documents-table > li:nth-child(8) {
+        -ms-grid-column: 3;
+        -ms-grid-row: 5;
+    }
+
+    #my-desktop > li:nth-child(6),
+    #documents-table > li:nth-child(9) {
+        -ms-grid-column: 5;
+        -ms-grid-row: 5;
+    }
+
+    #my-desktop > li:nth-child(7),
+    #documents-table > li:nth-child(10) {
+        -ms-grid-column: 1;
+        -ms-grid-row: 7;
+    }
+
+    #my-desktop > li:nth-child(8),
+    #documents-table > li:nth-child(11) {
+        -ms-grid-column: 3;
+        -ms-grid-row: 7;
+    }
+
+    #my-desktop > li:nth-child(9),
+    #documents-table > li:nth-child(12) {
+        -ms-grid-column: 5;
+        -ms-grid-row: 7;
+    }
+
+    #mobile-menu-button {
+        display: none;
+    }
+
+    #logout-mobile {
+        display: none;
+    }
+
+    #logout-desktop {
+        display: inline-block;
+    }
+
+
+    #login-table > li:nth-child(1),
+    #personal-data-table > li:nth-child(1) {
+        -ms-grid-column: 1;
+        -ms-grid-row: 1;
+    }
+
+    #login-table > li:nth-child(2),
+    #personal-data-table > li:nth-child(2) {
+        -ms-grid-column: 3;
+        -ms-grid-row: 1;
+    }
+
+    #login-table > li:nth-child(3),
+    #personal-data-table > li:nth-child(3) {
+        -ms-grid-column: 5;
+        -ms-grid-row: 1;
+    }
+
+    #login-table > li:nth-child(4),
+    #personal-data-table > li:nth-child(4) {
+        -ms-grid-column: 7;
+        -ms-grid-row: 1;
+    }
+
+    #login-table > li:nth-child(5),
+    #personal-data-table > li:nth-child(5) {
+        -ms-grid-column: 1;
+        -ms-grid-row: 3;
+    }
+
+    #login-table > li:nth-child(6),
+    #personal-data-table > li:nth-child(6) {
+        -ms-grid-column: 3;
+        -ms-grid-row: 3;
+    }
+
+    #login-table > li:nth-child(7) {
+        -ms-grid-column: 5;
+        -ms-grid-row: 3;
+    }
+
+    #login-table > li:nth-child(8) {
+        -ms-grid-column: 7;
+        -ms-grid-row: 3;
+    }
+}

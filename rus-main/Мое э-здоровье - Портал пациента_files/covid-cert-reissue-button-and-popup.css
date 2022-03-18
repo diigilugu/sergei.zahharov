@@ -1,0 +1,83 @@
+.sec-row li div#vaccineCertificatesUpdate {
+    min-height: 100px;
+}
+
+.sec-row li div#vaccineCertificatesUpdate .visible-content.text-height-limited.no-contrast-change {
+    padding: 0.6rem 0.6rem 3rem;
+}
+
+.sec-row li div#vaccineCertificatesUpdate .visible-content.text-height-limited.no-contrast-change h2 {
+    padding: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sec-row li div#vaccineCertificatesUpdate p {
+    line-height: 16px;
+    text-transform: none;
+    font-weight: normal;
+    padding-top: 12px;
+}
+
+.vaccine-certificates-update-back-title {
+    display: flex;
+    align-items: center;
+    color: #009eb0;
+}
+
+h1.vaccine-certificates-update-back-title.has-icon::before {
+    content: url(../images/logo-tehik-RGB-150.png);
+    display: flex;
+    padding-right: 30px;
+}
+
+.vaccine-certificates-update-back.has-icon p {
+    display: flex;
+}
+
+.vaccine-certificates-update-back p {
+    padding-left: 10px;
+    font-size: 24px !important;
+    align-items: center;
+}
+
+.vaccine-certificates-update-back p.text1::before {
+    content: url(../images/icon-lennuk-50.png);
+    padding: 0 36px 0 16px;
+}
+
+.vaccine-certificates-update-back p.text2::before {
+    content: url(../images/icon-arvutitelefon-50.png);
+    padding: 5px 20px 0 0;
+}
+
+.vaccine-certificates-update-back.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.vaccine-certificates-update-back button.rect-button.ok-button {
+    margin: 70px 0 0;
+    padding: 0 30px;
+}
+
+@media all and (max-width: 480px) {
+    .vaccine-certificates-update-back p::before,
+    h1.vaccine-certificates-update-back-title::before {
+        display: none;
+    }
+
+    .vaccine-certificates-update-back .ok-button {
+        margin-top: 30px;
+    }
+
+    .vaccine-certificates-update-back p {
+        padding-left: 0;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 779px) {
+    h1.vaccine-certificates-update-back-title::before {
+        display: none;
+    }
+}

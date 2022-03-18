@@ -1,0 +1,2959 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://www.digilugu.ee/ -->
+<html lang="et" translate="no" style="" class=" js flexbox flexboxlegacy canvas canvastext postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Minu e-tervis - Patsiendiportaal</title>
+
+    
+
+
+
+
+
+
+<link href="https://www.digilugu.ee/resources/images/favicon.ico?1.9.114.5c9cc2a" rel="shortcut icon" type="image/vnd.microsoft.icon">
+
+
+<link href="file-est/css" rel="stylesheet" type="text/css">
+<!--for PP new font -->
+<link href="file-est/css(1)" rel="stylesheet" type="text/css">
+
+
+<link href="file-est/global.css" rel="stylesheet" media="screen">
+<link href="file-est/global-1206-.css" rel="stylesheet" media="screen">
+<link href="file-est/global-961-1205.css" rel="stylesheet" media="screen">
+<link href="file-est/global-780-960.css" rel="stylesheet" media="screen">
+<link href="file-est/global-481-779.css" rel="stylesheet" media="screen">
+<link href="file-est/global-0-480.css" rel="stylesheet" media="screen">
+
+<link href="file-est/print.css" rel="stylesheet" media="print">
+<link href="file-est/global(1).css" rel="stylesheet" media="screen">
+<link href="file-est/fonts.css" rel="stylesheet" media="screen">
+<link href="file-est/style.css" rel="stylesheet" media="screen">
+<link href="file-est/covid-cert-reissue-button-and-popup.css" rel="stylesheet" media="screen">
+<link href="file-est/jquery-ui-1.12.1.min.css" rel="stylesheet">
+<link href="file-est/jquery.ui.combobox.css" rel="stylesheet">
+<link href="file-est/chosen.min.css" rel="stylesheet">
+<link href="file-est/jquery-eu-cookie-law-popup.css" rel="stylesheet">
+<!--[if lt IE 8]>
+<link href="/resources/css/ie7.css?1.9.114.5c9cc2a" rel="stylesheet" media="screen" />
+<![endif]-->
+<!--[if IE 8]>
+<link href="/resources/css/ie8.css?1.9.114.5c9cc2a" rel="stylesheet" media="screen" />
+<![endif]-->
+
+
+
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/resources/js/libs/selectivizr-min.js?1.9.114.5c9cc2a"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/resources/js/libs/css3-mediaqueries.js?1.9.114.5c9cc2a"></script>
+<![endif]-->
+
+
+<script type="text/javascript" defer="" async="" src="file-est/piwik.js"></script><script type="text/javascript" src="file-est/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="file-est/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="file-est/chosen-1.8.7.jquery.min.js"></script>
+<script type="text/javascript" src="file-est/jquery.ajaxsetup.js"></script>
+<script type="text/javascript" src="file-est/jquery.easing.1.2.js"></script>
+<script type="text/javascript" src="file-est/jquery.cookie-1.4.1.js"></script>
+<script type="text/javascript" src="file-est/jquery-eu-cookie-law-popup.js"></script>
+<script type="text/javascript" src="file-est/jquery.detectmobilebrowser.js"></script>
+
+    
+    
+        <script type="text/javascript" src="file-est/jquery.ui.datepicker-et.js"></script>
+    
+    
+
+<script type="text/javascript" src="file-est/jquery.ui.combobox.js"></script>
+<script type="text/javascript" src="file-est/jquery.doubleScroll.js"></script>
+<script type="text/javascript" src="file-est/accessibility.js"></script>
+
+<script type="text/javascript" src="file-est/modernizr.custom.71153.js"></script>
+<script type="text/javascript" src="file-est/ICanHaz.min.js"></script>
+<script type="text/javascript" src="file-est/iscroll.js"></script>
+<script type="text/javascript" src="file-est/rotate3di.js"></script>
+
+
+<script type="text/javascript" src="file-est/jquery.checkbox.js"></script>
+<link rel="stylesheet" media="screen" href="file-est/jquery.checkbox.css">
+
+
+
+<script type="text/javascript" src="file-est/pp.js"></script>
+<script type="text/javascript" src="file-est/pp-dr.js"></script>
+
+
+
+
+<script type="text/javascript">
+    PP.CONTEXT_ROOT = '';
+    PP.LOGOUT_URL = PP.CONTEXT_ROOT + "/logout";
+    PP.AFTER_LOGOUT_URL = "https://sso.sm.ee/auth/realms/som/protocol/openid-connect/logout?redirect_uri=https://www.digilugu.ee/logoutmessage";
+    PP.AFTER_FORCED_LOGOUT_URL = PP.AFTER_LOGOUT_URL + '&forcedLogout=true';
+    PP.TARA_AUTH = PP.CONTEXT_ROOT + "/tara/authenticate";
+    PP.RELOGIN_URL = PP.AFTER_FORCED_LOGOUT_URL != undefined ?
+        (PP.AFTER_FORCED_LOGOUT_URL).replace("/logoutmessage", "/tara/authenticate") : PP.TARA_AUTH;
+</script>
+
+
+
+<script type="text/javascript" src="file-est/header-bar-help.js"></script>
+<script type="text/javascript" src="file-est/extend-std-api.js"></script>
+<script type="text/javascript" src="file-est/alert-box.js"></script>
+<script type="text/javascript" src="file-est/horizontal-scrolling.js"></script>
+<script type="text/javascript" src="file-est/rotatable-box.js"></script>
+<script type="text/javascript" src="file-est/read-more-dialog.js"></script>
+<script type="text/javascript" src="file-est/tooltip-dialog.js"></script>
+<script type="text/javascript" src="file-est/fading-overlay.js"></script>
+<script type="text/javascript" src="file-est/mobile-menu.js"></script>
+<script type="text/javascript" src="file-est/personal-details.js"></script>
+<script type="text/javascript" src="file-est/address-input.js"></script>
+<script type="text/javascript" src="file-est/role-dropdown.js"></script>
+<script type="text/javascript" src="file-est/notification-popup.js"></script>
+<script type="text/javascript" src="file-est/vaccineCertificate.js"></script>
+
+
+    <script type="text/javascript" src="file-est/privacy-access-restriction.js"></script>
+    <script type="text/javascript" src="file-est/id-card-event-listener.js"></script>
+    <script type="text/javascript" src="file-est/session-timeout-dialog.js"></script>
+
+
+
+<!--[if lt IE 10]>
+<script type="text/javascript" src="/resources/js/libs/PIE.js?1.9.114.5c9cc2a"></script>
+<script type="text/javascript" src="/resources/js/common/ie-rounded-corners.js?1.9.114.5c9cc2a"></script>
+<![endif]-->
+
+
+
+
+<script>
+    $(document).ready(function () {
+
+        PP.applyAccessibility('');
+        PP.applyAccessibility('');
+
+        $(PP.BACK_BUTTON_SELECTOR).on("keydown", function (event) {
+            if (event.keyCode === $.ui.keyCode.ENTER) {
+                $(PP.BACK_BUTTON_SELECTOR).trigger("click");
+            }
+        });
+
+        $('#additional-info-modal').on("keydown", function (event) {
+            if (event.keyCode === $.ui.keyCode.TAB) {
+                $('#dialog-message').removeAttr("role");
+            }
+        });
+
+        $("input").keydown(function (event) {
+            if (event.keyCode == $.ui.keyCode.ENTER || event.keyCode == 13) {
+                event.preventDefault();
+            }
+        });
+
+        $(".clickable").on("keydown", function (event) {
+            let target = $(event.target);
+            if (event.keyCode === $.ui.keyCode.ENTER) {
+                if (!target.is("button") && !target.hasClass("tooltip")) {
+                    $(event.target).trigger('click');
+                }
+            }
+        });
+
+        $('[role="button"]').on("keydown", function (event) {
+            let value = $(event.target);
+            if (event.keyCode === $.ui.keyCode.ENTER) {
+                if (!value.hasClass("tooltip") && !value.hasClass("tooltipButton")) {
+                    value.trigger('click');
+                }
+            }
+        });
+
+        $('.btn').on("keydown", function (event) {
+            if (event.keyCode === $.ui.keyCode.SPACE) {
+                $(event.target).trigger('click');
+            }
+        });
+
+        // on modal open lock tab selections within modal screen
+        document.addEventListener('keydown', function (e) {
+            let isTabPressed = e.key === 'Tab' || e.keyCode === 9;
+            let isEnterPressed = e.key === 'Enter' || $.ui.keyCode.ENTER;
+            if (!isTabPressed) {
+                return;
+            }
+            {
+                const modal = PP.filterVisible($(PP.FULL_SCREEN_BACK_FLIP_SELECTOR + ',' + PP.DIALOG_OVERLAY_SELECTOR));
+                if (modal.length !== 1) {
+                    return;
+                }
+
+                //modal window focus logic
+                const focusableElements = "[role='button'], button, [href], input, select, textarea, [tabindex]:not([tabindex='-1'])";
+                const firstFocusableElement = PP.filterVisible(modal[0].querySelectorAll(focusableElements))[0]; // get first element to be focused inside modal
+                const focusableContent = PP.filterVisible(modal[0].querySelectorAll(focusableElements));
+                const lastFocusableElement = focusableContent[focusableContent.length - 1]; // get last element to be focused inside modal
+
+                // add all the elements inside modal which you want to make focusable
+                if (e.shiftKey) { // if shift key pressed for shift + tab combination
+                    if (document.activeElement === firstFocusableElement) {
+                        lastFocusableElement.focus(); // add focus for the last focusable element
+                        e.preventDefault();
+                    }
+                } else { // if tab key is pressed
+                    if (document.activeElement === lastFocusableElement) {
+                        // if focused has reached to last focusable element then focus first focusable element after pressing tab
+                        firstFocusableElement.focus(); // add focus for the first focusable element
+                        e.preventDefault();
+                    }
+                }
+                // firstFocusableElement.focus();
+                // e.preventDefault();
+            }
+        });
+    });
+
+</script>
+<script>
+    $(function () {
+        $(document).tooltip({
+            items: "[data-toggle]",
+            position: {
+                at: 'right top-25%'
+            },
+            content: function () {
+                return "<img height='15' src='/resources/images/external.jpg' alt='external-link'/>";
+            }
+        });
+    });
+</script>
+
+
+    
+
+
+
+
+
+    
+
+
+
+
+    <script type="text/javascript">
+
+        PP.CSRF_TOKEN = '3942dda4-7a7b-446d-8175-ab744ab715ea';
+
+        $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
+            if (originalOptions.type.toLowerCase() === "post") {
+                options.data += '&csrfToken=' + PP.CSRF_TOKEN;
+            }
+        });
+
+    </script>
+
+
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            if (PpToDr.getUrlVars()["redirectTo"] === 'DR_PORTAL') {
+                document.getElementsByTagName('body')[0].innerHTML = '';
+                document.getElementsByTagName('body')[0].innerHTML =
+                    PpToDr.redirectLoadingBody('Teid ühendatakse Üleriigilise Digiregistratuuri portaaliga, palun oodake ...', 'Ühendus ebaõnnestus, proovige palun mõne aja pärast uuesti!');
+                document.getElementById("drErrorMsg").style.visibility = "hidden";
+                PpToDr.connect();
+            }
+
+            // $('#DRButton').each(function () {
+            //     document.getElementById("drErrorMsg").style.visibility = "hidden";
+            //     drErrorMsg.classList.remove("drError");
+            // });
+
+            $('#DRButton').click(function () {
+
+                document.getElementById("drErrorMsg").style.visibility = "hidden";
+                let drDiv = document.getElementById("drDivId");
+                let drButton = document.getElementById("DRButton");
+
+                drButton.classList.remove("drButtonPassive");
+                drButton.classList.add("drButtonActive");
+                drDiv.classList.add("DRBoxSpinner");
+
+                PpToDr.connectFromBooking(drDiv, drButton, drErrorMsg);
+            });
+        });
+    </script>
+    
+
+<script type="text/javascript" data-name="TokenSigning">(function() {
+    // Promises
+    var _eid_promises = {};
+    // Turn the incoming message from extension
+    // into pending Promise resolving
+    window.addEventListener("message", function(event) {
+        if (event.source !== window) return;
+        if (event.data.src && (event.data.src === "background.js")) {
+            console.log("Page received: ");
+            console.log(event.data);
+            // Get the promise
+            if (event.data.nonce) {
+                var p = _eid_promises[event.data.nonce];
+                // resolve
+                if (event.data.result === "ok") {
+                    if (event.data.signature !== undefined) {
+                        p.resolve({hex: event.data.signature});
+                    } else if (event.data.version !== undefined) {
+                        p.resolve(event.data.extension + "/" + event.data.version);
+                    } else if (event.data.cert !== undefined) {
+                        p.resolve({hex: event.data.cert});
+                    } else {
+                        console.log("No idea how to handle message");
+                        console.log(event.data);
+                    }
+                } else {
+                    // reject
+                    p.reject(new Error(event.data.result));
+                }
+                delete _eid_promises[event.data.nonce];
+            } else {
+                console.log("No nonce in event msg");
+            }
+        }
+    }, false);
+
+    window.TokenSigning = function() {
+        function nonce() {
+            var val = "";
+            var hex = "abcdefghijklmnopqrstuvwxyz0123456789";
+            for (var i = 0; i < 16; i++) val += hex.charAt(Math.floor(Math.random() * hex.length));
+            return val;
+        }
+
+        function messagePromise(msg) {
+            return new Promise(function(resolve, reject) {
+                // amend with necessary metadata
+                msg["nonce"] = nonce();
+                msg["src"] = "page.js";
+                // send message
+                window.postMessage(msg, "*");
+                // and store promise callbacks
+                _eid_promises[msg.nonce] = {
+                    resolve: resolve,
+                    reject: reject
+                };
+            });
+        }
+        this.getCertificate = function(options) {
+            var msg = {type: "CERT", lang: options.lang, filter: options.filter};
+            console.log("getCertificate()");
+            return messagePromise(msg);
+        };
+        this.sign = function(cert, hash, options) {
+            var msg = {type: "SIGN", cert: cert.hex, hash: hash.hex, hashtype: hash.type, lang: options.lang, info: options.info};
+            console.log("sign()");
+            return messagePromise(msg);
+        };
+        this.getVersion = function() {
+            console.log("getVersion()");
+            return messagePromise({
+                type: "VERSION"
+            });
+        };
+    };
+})();</script></head>
+
+<body class="loggedin-page ">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    headerBarHelp.setup();
+    lastNoteBar.setup();
+    accessibility.setup();
+    mobileMenu.setup();
+
+    openAccessibilityWindow = function () {
+        let x = document.getElementById("accessibility-dropdown-content");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+    moveToMain = function () {
+        let mainArea = $('[role="main"]');
+        let region = $('[role="region"]');
+        if (mainArea.length) {
+            mainArea.find(':focusable').first().focus();
+            mainArea[0].scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        } else if (region.length) {
+            region.find(':focusable').first().focus();
+            region[0].scrollIntoView({
+                behavior: "smooth",
+                block: "nearest"
+            });
+        }
+        $('.hidden-header').hide();
+    }
+
+    $(window).bind('keydown.esc', function (evt) {
+        let x = document.getElementById("accessibility-dropdown-content");
+        let menu = $('.header').find('.role-dropdown-container ul');
+        let helpMenu = $('#help-dropdown');
+        if (evt.keyCode === $.ui.keyCode.ESCAPE && x.style.display === "block") {
+            x.style.display = "none";
+        } else if (evt.keyCode === $.ui.keyCode.ESCAPE) {
+            menu.hide();
+            helpMenu.hide();
+        }
+    });
+
+    $(window).bind('click', function (e) {
+        let header = $('.header');
+        let accMenu = header.find('#accessibility-dropdown-content');
+        let helpMenu = header.find('.help-dropdown-container ul');
+        let mobileMenu = header.find('#mobile-menu-content');
+        if (!$(e.target).hasClass('accessibility') && accMenu.is(':visible')) {
+            accMenu.hide();
+        } else if (!$(e.target).hasClass('help-button') && helpMenu.is(':visible')) {
+            helpMenu.hide();
+        } else if (e.target.id !== 'mobile-menu-logo' && mobileMenu.is(':visible')) {
+            mobileMenu.hide();
+        }
+    });
+
+    $(document).ready(function () {
+        let x = document.getElementById("accessibility-dropdown-content");
+        let menu = $('.header').find('.role-dropdown-container ul');
+        let helpMenu = $('#help-dropdown');
+        let FAQ = $('a#faq');
+
+        let width = window.devicePixelRatio || window.screen.availWidth / document.documentElement.clientWidth;
+        $(window).on('resize', function () {
+            if ($(this).width() !== width) {
+                width = $(this).width();
+                if (width < 751) {
+                    $('.role-dropdown-container').css('width', width / 2.4);
+                    $('#representation').css('max-width', width / 3.6);
+                } else if (width > 751) {
+                    $('.role-dropdown-container').css('width', 'auto');
+                    $('#representation').css('max-width', '70ch')
+                }
+            }
+        });
+
+        $('.accessibility-option').on("keydown", function (event) {
+            if (event.keyCode === $.ui.keyCode.ENTER) {
+                document.getElementById(event.target.id).click();
+            }
+        });
+
+        $('#accessibility-ordinary-line-height').on("keydown", function (event) {
+            if (event.keyCode === $.ui.keyCode.TAB) {
+                x.style.display = "none";
+            }
+        });
+
+        $('.submenu > li').on('keydown', function (event) {
+            if (event.keyCode === $.ui.keyCode.ENTER) {
+                $(event.target).trigger('click');
+            }
+        });
+
+        $(document).on("keyup", function (event) {
+            if (event.keyCode === $.ui.keyCode.TAB) {
+                if (event.target.id === 'logoutButton') {
+                    helpMenu.hide();
+                } else if ($('a.messages.no-contrast-change').is(':focus')) {
+                    menu.hide();
+                }
+            }
+        });
+
+        $('button.goToMain').focusout(function () {
+            $('.hidden-header').height(0);
+        });
+        $('button.goToMain').focusin(function () {
+            $('.hidden-header').height('50%');
+        });
+    });
+
+    handleActiveClass = function (element1, element2) {
+        element1.removeClass('is-active');
+        element2.addClass('is-active');
+    }
+
+    chooseAccessibilityOption = function (option, element) {
+        const accOrdinary = $('#accessibility-ordinary');
+        const accContrast = $('#accessibility-contrast');
+        const accLineHeight = $('#accessibility-line-height');
+        const accLineHeightOrdinary = $('#accessibility-ordinary-line-height');
+        $('.accessibility-option').remove('accessibility-high-contrast-button');
+        if (!$(element).hasClass('is-active')) {
+            if (option === PP.CONFIG.ACCESSIBILITY.CONTRAST.HIGH) {
+                handleActiveClass(accOrdinary, accContrast);
+            } else if (option === PP.CONFIG.ACCESSIBILITY.CONTRAST.NORMAL) {
+                handleActiveClass(accContrast, accOrdinary);
+            } else if (option === PP.CONFIG.ACCESSIBILITY.LINE_HEIGHT.ONE_FIVE) {
+                handleActiveClass(accLineHeightOrdinary, accLineHeight);
+            } else {
+                handleActiveClass(accLineHeight, accLineHeightOrdinary);
+            }
+        }
+        PP.setAccessibility(option);
+    }
+</script>
+
+
+    <!-- Piwik -->
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(["trackPageView"]);
+        _paq.push(["enableLinkTracking"]);
+
+        (function () {
+            var u = (("https:" === document.location.protocol) ? "https"
+                : "http")
+                + "://lugeja.e-tervis.ee/piwik/";
+            _paq.push(["setTrackerUrl", u + "piwik.php"]);
+            _paq.push(["setSiteId", "4"]);
+            var d = document, g = d.createElement("script"), s = d
+                .getElementsByTagName("script")[0];
+            g.type = "text/javascript";
+            g.defer = true;
+            g.async = true;
+            g.src = u + "piwik.js";
+            s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <!-- End Piwik Code -->
+
+
+
+
+
+
+
+
+
+
+<div class="header-bg " role="banner" aria-label="Päis">
+    <div class="header hidden-header " style="height: 0">
+        <button class="goToMain left-col" onclick="         moveToMain()">
+            <span>Liigu edasi põhisisu juurde</span>
+        </button>
+    </div>
+    <div class="header ">
+        <div class="left-col dropdown-container mobile-menu-dropdown-container" id="mobile-menu-button">
+            <svg id="mobile-menu-logo" tabindex="0" viewBox="0 0 100 60" width="40" height="40">
+                <rect width="100" height="8"></rect>
+                <rect y="30" width="100" height="8"></rect>
+                <rect y="60" width="100" height="8"></rect>
+            </svg>
+            <div id="mobile-menu-content" style="display:none;">
+                <div style="display:block; width:44vh;" class="mobileMenuItem">
+                    <button aria-labelledby="acc-label" class="accMain">Juurdepääsetavus</button>
+                    <div id="accessibility-mobile-submenu">
+                        <div class="mobileMenuItem">
+                            <button id="contrast-button">
+                                Kontrastsus
+                            </button>
+                            <div id="submenu-contrast" class="submenu">
+                                <li tabindex="0" onclick="chooseAccessibilityOption(PP.CONFIG.ACCESSIBILITY.CONTRAST.HIGH, this)">
+                                    Kõrge kontrastiga
+                                </li>
+                                <li tabindex="0" onclick="chooseAccessibilityOption(PP.CONFIG.ACCESSIBILITY.CONTRAST.NORMAL, this)">
+                                    Tavaline vaade
+                                </li>
+                            </div>
+                        </div>
+                        <div class="mobileMenuItem">
+                            <button id="line-height-button">
+                                Reavahe
+                            </button>
+                            <div id="submenu-line-height" class="submenu">
+                                <li tabindex="0" onclick="chooseAccessibilityOption(PP.CONFIG.ACCESSIBILITY.LINE_HEIGHT.ONE_FIVE, this)">
+                                    Reavahe 1.5
+                                </li>
+                                <li tabindex="0" onclick="chooseAccessibilityOption(PP.CONFIG.ACCESSIBILITY.LINE_HEIGHT.NORMAL, this)">
+                                    Tavaline vaade
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                    <div class="mobileMenuItem">
+                        <button>
+                            <a style="text-decoration: none;" href="https://www.digilugu.ee/notifications" title="Teavitused">
+                                Teavitused
+                            </a>
+                        </button>
+                    </div>
+                    <div class="mobileMenuItem">
+                        <div class="buttonTitle">
+                            Abi
+                        </div>
+                        <li class="helpLongText" tabindex="0">
+                            Kõikide tekkivate küsimuste või tehniliste probleemide korral pöördu <strong>Tervise ja Heaolu Infosüsteemide Keskuse kasutajatoe poole telefonil +372&nbsp;794&nbsp;3943 (7.00-22.00) või elektronposti aadressil <a href="mailto:abi@tehik.ee">abi@tehik.ee</a></strong>.<br><br> Samal elektronposti aadressil ootame Sinu ettepanekuid edasiste arenduste osas, mis aitaks muuta portaali Sulle ja Sinu sõpradele mugavamaks ning kasulikumaks. <br><br>Vaata ka <a data-toggle="tooltip" title="" id="faq" href="https://www.tehik.ee/info-patsiendile" target="_blank"><u>korduma kippuvaid küsimusi</u></a>.
+                        </li>
+                            
+                            
+                            
+                            
+                    </div>
+                
+            </div>
+        </div>
+        <div class="left-col dropdown-container accessibility-dropdown">
+            <button class="accessibility">Juurdepääsetavus</button>
+            <div id="accessibility-dropdown-content" style="display:none;">
+                <div style="margin-bottom: 3.0em;">
+                    <h4 style="display:inline-block;float:left;">Kontrastsus:</h4>
+                    <div class="acc-buttons-container">
+                        <div tabindex="0" style="display:inline-block" role="button" id="accessibility-contrast" class="accessibility-option no-contrast-change" onclick="chooseAccessibilityOption(PP.CONFIG.ACCESSIBILITY.CONTRAST.HIGH, this)">
+                            Kõrge kontrastiga
+                        </div>
+                        <div tabindex="0" style="display:inline-block; margin-left: -0.4em;" role="button" id="accessibility-ordinary" class="accessibility-option is-active no-contrast-change" onclick="chooseAccessibilityOption(PP.CONFIG.ACCESSIBILITY.CONTRAST.NORMAL, this)">
+                            Tavaline vaade
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 style="display:inline-block;float:left;">Reavahe:</h4>
+                    <div class="acc-buttons-container">
+                        <div tabindex="0" style="display:inline-block" role="button" id="accessibility-line-height" class="accessibility-option no-contrast-change" onclick="chooseAccessibilityOption(PP.CONFIG.ACCESSIBILITY.LINE_HEIGHT.ONE_FIVE, this)">
+                            Reavahe 1.5
+                        </div>
+                        <div tabindex="0" role="button" id="accessibility-ordinary-line-height" class="accessibility-option is-active no-contrast-change" onclick="chooseAccessibilityOption(PP.CONFIG.ACCESSIBILITY.LINE_HEIGHT.NORMAL, this)">
+                            Tavaline vaade
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            <div class="left-col dropdown-container role-dropdown-container" style="width: auto;">
+                
+                    <div class="l">
+                        <a role="button" tabindex="0" class="roles-button toggle-button">
+                            Vaheta rolli
+                        </a>
+                        
+                        
+                        
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    function showSomWorkerDialog() {
+        $("#som-worker-form").get(0).reset();
+        $("#som-dialog #somError").html("&nbsp");
+        $("#som-dialog").show();
+    }
+
+    function hideSomWorkerDialog() {
+        $("#som-dialog").hide();
+    }
+
+    function showHbWorkerDialog() {
+
+        $("#hb-worker-form").get(0).reset();
+        $("#hb-dialog #hbError").html("&nbsp");
+        $("#hb-dialog").show();
+
+    }
+
+    function hideHbWorkerDialog() {
+        $("#hb-dialog").hide();
+    }
+</script>
+
+
+
+
+<script type="text/javascript">
+    roleDropdown.setup({
+        myId: '39009222216',
+        myFullName: 'Dmitri  Antipov',
+        onBehalfOfId: '39009222216',
+        onBehalfOfFullName: 'Dmitri  Antipov',
+        isSomWorker: "false" === "true",
+        isHbWorker: "false" === "true",
+        isRepresentativeWorkerActive: "false" === "true"
+    }, {
+        SELF: 'Mina ise',
+        TRUSTEE1: 'Vaatamisõiguslik',
+        TRUSTEE2: 'Täieõiguslik',
+        TRUSTEE3: 'Retseptiõiguslik',
+        TRUSTEE1_TRUSTEE3: 'Vaatamisõiguslik ja retseptiõiguslik',
+        TRUSTEE4: 'Surma andmete vaatamisõiguslik usaldusisik',
+        MOTHER1: 'Ema',
+        MOTHER2: 'Ema',
+        MOTHER3: 'Ema',
+        MOTHER4: 'Ema',
+        MOTHER5: 'Ema',
+        FATHER1: 'Isa',
+        FATHER2: 'Isa',
+        FATHER3: 'Isa',
+        FATHER4: 'Isa',
+        FATHER5: 'Isa',
+        BROTHER5: 'Vend',
+        STEPBROTHER5: 'Poolvend',
+        SISTER5: 'Õde',
+        STEPSISTER5: 'Poolõde',
+        SPS: 'Abikaasa',
+        GUARDIAN: 'Eestkostja',
+        GUARDIAN1: 'Eestkostja',
+        GUARDIAN2: 'Eestkostja',
+        GUARDIAN3: 'Eestkostja',
+        GUARDIAN4: 'Eestkostja',
+        TRUST1: 'Vaatamisõiguslik',
+        TRUST2: 'Täieõiguslik',
+        TRUST3: 'Retseptiõiguslik',
+        TRUST1_TRUST3: 'Vaatamisõiguslik ja retseptiõiguslik',
+        TRUST4: 'Surma andmete vaatamisõiguslik',
+        CHILD1: 'Laps',
+        CHILD2: 'Laps',
+        CHILD3: 'Laps',
+        CHILD4: 'Laps',
+        CHILD5: 'Laps',
+        GRD: 'Eestkostealune',
+        GRD1: 'Eestkostealune',
+        GRD2: 'Eestkostealune',
+        GRD3: 'Eestkostealune',
+        GRD4: 'Eestkostealune',
+        DEATH_REPRESENTATIVE: 'Vaatamisõiguslik peale surma',
+        DEATH_REPRESENTATIVE_NULLIFIED: 'Õigused puuduvad peale surma',
+        DEATH_REPRESENTED: 'Vaatamisõiguslik peale surma',
+        DEATH_REPRESENTED_DISCARDED: 'Õigustest on loobutud peale surma'
+    });
+</script>
+
+                        
+                        
+                        <ul class="roleDropdownConteinerClass">
+                            <li><li tabindex="0" class="selected" onclick="window.location.href=&#39;/onBehalfOf/choose?chosenPersonId=39009222216&#39;;">
+        <div>
+            <span class="name">Dmitri  Antipov</span>, 39009222216
+            <span class="relation">Mina ise</span>
+        </div>
+    </li><span class="has-spinner loading high-contrast-link-style">&nbsp;</span></li>
+                        </ul>
+                    </div>
+                
+
+                <div class="r ellipsis representation" id="representation" style="max-width: 70ch;">
+                    
+                        
+                        
+                            <div>
+                                <span class="represents">
+                                    
+                                    
+                                        
+                                    
+                                    Sisselogitud ja esindad:
+                                </span>
+                                
+                                    <br>
+                                
+                                <span class="name">Dmitri  Antipov</span>
+                            </div>
+                            <br>
+                            <div>
+                                <span class="representer">
+                                    
+                                </span>
+                            </div>
+                        
+                    
+                </div>
+            </div>
+        
+        <div class="right-col">
+            <ul>
+                <li style="display: none"><a href="javascript: void(0)">
+                    <img src="file-est/icon-sitemap.png" width="44" height="43" alt="Sitemap">
+                </a></li>
+                
+                    <li>
+                        <div class="dropdown-lastnote">
+                            <a role="button" class="messages no-contrast-change" href="https://www.digilugu.ee/notifications" title="Teavitused"></a>
+                            <ul style="display: none;">
+                                <li>
+                                    
+                                    
+                                        <span>Teavitused puuduvad</span>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="clickable" id="help-element" role="button" onclick="readmoreDialog.openFullScreenDialogMessage(&#39;#help-element&#39;, &#39;#fullScreenDialogHelp&#39;)" tabindex="0">
+                        <div class="dropdown-container help-dropdown-container">
+                            <div class="l help-button">
+                                Abi
+                            </div>
+                        </div>
+                        <div role="dialog" tabindex="0" aria-modal="true" id="fullScreenDialogHelp" class="full-screen-back-flip" style="display:none;">
+                            <div class="wrapper fs-content" aria-labelledby="usageModel" style="display:none;">
+                                <div class="heading" role="heading">
+                                    
+
+
+
+
+<button class="back-button" role="button" tabindex="0" style="float: right; display: flex; margin: 8px;">
+    <img class="clickable" alt="Close" aria-label="Sulge" width="73" height="73" src="file-est/close-gray.png">
+</button>
+
+                                    <h1 id="usageModel">Abi</h1>
+                                </div>
+                                <div role="document" class="sec-additional">
+                                    Kõikide tekkivate küsimuste või tehniliste probleemide korral pöördu <strong>Tervise ja Heaolu Infosüsteemide Keskuse kasutajatoe poole telefonil +372&nbsp;794&nbsp;3943 (7.00-22.00) või elektronposti aadressil <a href="mailto:abi@tehik.ee">abi@tehik.ee</a></strong>.<br><br> Samal elektronposti aadressil ootame Sinu ettepanekuid edasiste arenduste osas, mis aitaks muuta portaali Sulle ja Sinu sõpradele mugavamaks ning kasulikumaks. <br><br>Vaata ka <a data-toggle="tooltip" title="" id="faq" href="https://www.tehik.ee/info-patsiendile" target="_blank"><u>korduma kippuvaid küsimusi</u></a>.
+                                            
+                                            
+                                            
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                
+                    <li id="logout-desktop">
+                        <div id="logoutButton" role="button" tabindex="0" class="rect-button logout-button" onclick="PP.logout(); return false;">
+                            Logi välja
+                        </div>
+                    </li>
+                    <li id="logout-mobile">
+                        <div role="button" tabindex="0" onclick="PP.logout(); return false;">
+                            <img width="43" src="file-est/logut.svg">
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+    <!--Mantis 4020  -->
+    <div class="right-col">
+        <style type="text/css">
+            #nav {
+                max-width: 980px;
+                margin: 1em auto;
+                padding-right: 20px;
+            }
+
+            #nav ul {
+                margin: 10px auto;
+                padding: 0;
+                font: 1em "Arial Black", sans-serif;
+            }
+
+            #nav ul li {
+                display: flex;
+                float: left;
+                min-width: 140px;
+                text-align: center;
+            }
+
+            #nav ul li a {
+                text-decoration: none;
+                margin-left: 5px;
+                padding: 10px 25px;
+                width: 100%;
+                background: #0f6dad;
+                color: #ffffff;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 120%;
+            }
+        </style>
+        <style type="text/css" media="print">
+            #nav {
+                display: none;
+            }
+        </style>
+        <span>
+			<div id="nav">
+                
+
+
+
+
+
+
+
+<script type="text/javascript">
+    let currentLocation = window.location.href;
+    new AlertBox('healthRecordClosed', currentLocation, 'privacy/get', 'isClosed').setup();
+</script>
+
+<div id="healthRecordClosed" class="alert-box " style="display: none" tabindex="0">
+    <div class="wrap">
+        <div class="l">
+            <div>
+                Digilugu on arstile suletud!
+            </div>
+        </div>
+    </div>
+</div>
+
+
+				<ul style="float: right;" role="complementary" aria-label="Keelevalik">
+
+                    
+
+                    
+                        <li>
+                            <a href="../rus-main/Мое%20э-здоровье%20-%20Портал%20пациента.html" role="button">Русский</a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="../eng-main/My%20e-Health%20-%20Patient%20Portal.html" role="button">English</a>
+                        </li>
+                    
+
+				</ul>
+
+			</div>
+
+		</span>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- WRAPPER STARTS -->
+<div class="wrapper">
+    <div class="heading">
+        <table id="heading-table">
+            <tbody><tr>
+                <td>
+                    
+                    
+                        <h1 class="logo no-contrast-change">
+                            <span>Minu e-tervis</span>
+                        </h1>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    
+                    
+                    
+                    
+                </td>
+            </tr>
+        </tbody></table>
+        
+        
+
+
+
+
+
+    </div>
+
+
+<main id="main" aria-label="Põhisisu">
+    <div class="sec-wrapper">
+        
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    var calendarStart = 'Kuupäev alates';
+    var calendarEnd = 'Kuupäev kuni';
+</script>
+
+    
+    
+    
+    
+    
+    
+    
+    <div class="sidebar" role="region" aria-labelledby="Minu andmed">
+        <ul class="sec-row">
+
+            
+
+
+<script type="text/javascript" src="file-est/my-data-box.js"></script>
+<script type="text/javascript">
+
+    myData.setup({}, {
+        insuranceUnknown: 'Kindlustusinfo pole hetkel kättesaadav',
+        insured: 'Kindlustatud',
+        unInsured: 'Kindlustamata',
+        phone: 'Tel:'
+    });
+</script>
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li aria-labelledby="box-title-Minu andmed" id="myData_box" class="box clickable" data-boxhref="/person" role="link">
+    <div id="myData" class="sec-txt sec-first has-spinner" tabindex="0" role="link">
+
+        
+            
+        
+        <div role="heading" class="visible-content
+            text-height-limited
+            no-contrast-change 
+            ">
+
+            
+                <h2 id="box-title-Minu andmed">
+                    Minu andmed
+                </h2>
+            
+            
+        <p>
+        
+          <span>Dmitri  Antipov</span>
+          <br>
+        
+            <span>39009222216</span>
+            <br>
+        </p>
+    
+        <span class="status active">Kindlustatud</span>
+    <br><span id="family-doctor">
+        <span class="label">Perearst</span>:
+        <br>
+        <span class="name">Irina Tšern</span>
+        <span class="phone"> </span>
+    </span></div>
+
+        
+        
+            
+            
+                
+        
+            
+                <div class="btn btn-update" style="">
+                    <a class="choose" role="link" href="https://www.digilugu.ee/person/details" title="Andmete uuendamiseks vajuta kastile">
+                        Uuenda
+                    </a>
+                </div>
+            
+        
+        <div class="btn">
+            <a role="button" aria-describedby="read-more-description" aria-label="Loe enda andmeid" class="animate orange no-contrast-change" href="javascript:void(0)" title="Loe enda andmeid">
+                Loe lisa
+            </a>
+            <div id="read-more-description" style="display: none;">
+                Lisainfo kuvamiseks/sulgemiseks vajutada klahvi Space'i
+            </div>
+        </div>
+        <div class="hidden-content  " style="padding:4% 4% 7.5% 4%;">
+            <span class="box" role="alert">Kastile vajutamise järel tekib võimalus muuta enda üldandmeid, vaadata ravikindlustuse infot ning isikuid, keda esindad või kes Sind esindavad. 2017 aasta jooksul täienevad portaalis olevad andmed perearsti kohta.</span>
+        </div>
+            
+        
+
+    </div>
+</li>
+
+
+
+            
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li aria-labelledby="box-title-dashboard.toExaminationsCovid" id="toExaminationsCovid_box" class="box clickable small-wide bigger strong noprint" data-boxhref="/documents/examinations/covid" role="link">
+    <div id="toExaminationsCovid" class="sec-txt redBoxButton noprint no-contrast-change" tabindex="0" role="link">
+
+        
+            
+        
+        <div role="heading" class="visible-content
+            text-height-limited
+            no-contrast-change 
+            small-box">
+
+            
+                <h2 id="box-title-dashboard.toExaminationsCovid">
+                    <a style="color: white; text-decoration: none;" href="../est-tests-page/covids-est.html">Koroonaviiruse analüüsitulemus</a>
+                </h2>
+            
+            
+    
+        </div>
+
+        
+        
+            
+            
+        
+
+    </div>
+</li>
+
+
+
+
+            
+                
+
+
+
+
+
+    
+
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li aria-labelledby="box-title-dashboard.certificates.title" id="vaccineCertificates_box" class="box clickable small-wide bigger strong no-brightness noprint" data-boxhref="/documents/vaccineCertificates" role="link">
+    <div id="vaccineCertificates" class="sec-txt noprint no-contrast-change has-spinner big-heading greenBoxButton" tabindex="0" role="link">
+
+        
+            
+        
+        <div role="heading" class="visible-content
+            text-height-limited
+            no-contrast-change 
+            small-box">
+
+            
+                <h2 id="box-title-dashboard.certificates.title">
+                    ELi digitaalsed COVIDi tõendid
+                </h2>
+            
+            
+        </div>
+
+        
+        
+            
+            
+        
+
+    </div>
+</li>
+
+    
+
+
+            
+
+            
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li aria-labelledby="box-title-personalData.addRepresentative.title" id="trusteeAdd_box" class="box clickable small-wide bigger strong no-brightness noprint" data-boxhref="/person/trustee/add" role="link">
+    <div id="trusteeAdd" class="sec-txt noprint no-contrast-change has-spinner big-heading blueBoxButton" tabindex="0" role="link">
+
+        
+            
+        
+        <div role="heading" class="visible-content
+            text-height-limited
+            no-contrast-change 
+            small-box">
+
+            
+                <h2 id="box-title-personalData.addRepresentative.title">
+                    Uue esindaja volitamine
+                </h2>
+            
+            
+                
+        </div>
+
+        
+        
+            
+            
+        
+
+    </div>
+</li>
+
+            
+
+            
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function showRecentDocuments() {
+
+            let url = PP.CONTEXT_ROOT + "/recentDocuments";
+            $.get(url, function (data) {
+                let allDocs = data["allDocuments"];
+                if (allDocs.length > 0) {
+                    let recentDocTable = $('#recentDocTable');
+                    recentDocTable.empty();
+                    allDocs.forEach(function (doc) {
+                            let documentPath = PP.CONTEXT_ROOT + "/documents";
+                            let creationDateShort = $.datepicker.formatDate("dd.mm.yy", new Date(doc.creationDate));
+                            let validUntil = $.datepicker.formatDate("dd.mm.yy", new Date(doc.validUntil));
+                            if (doc.typeCode.indexOf('63') !== -1) {
+                                documentPath = documentPath + '/appointments/' + doc.id.root + "_" + doc.id.extension;
+                            } else {
+                                switch (doc.typeCode) {
+                                    case "1":
+                                        documentPath = documentPath + '/epicrises/stationary/' + doc.id.root + "_" + doc.id.extension;
+                                        break;
+                                    case "2":
+                                        documentPath = documentPath + '/epicrises/ambulance/' + doc.id.root + "_" + doc.id.extension;
+                                        break;
+                                    case "3":
+                                        documentPath = documentPath + '/epicrises/daycare/' + doc.id.root + "_" + doc.id.extension;
+                                        break;
+                                    case "64":
+                                        documentPath = documentPath + '/examinations/reports/' + doc.id.root + "_" + doc.id.extension;
+                                        break;
+                                    case "34":
+                                        documentPath = documentPath + '/dental/dentalcarecards/' + doc.id.root + "_" + doc.id.extension;
+                                        break;
+                                    case "56":
+                                        documentPath = documentPath + '/ambulanceCardList/' + doc.id.root + "_" + doc.id.extension;
+                                        break;
+                                    case "84":
+                                        documentPath = documentPath + '/infantile/immunizations/' + doc.id.root + "_" + doc.id.extension;
+                                        break;
+                                    case "1100":
+                                        documentPath = documentPath + '/prescriptions/' + doc.secretId;
+                                        break;
+                                    default:
+                                        documentPath = documentPath + "/" + doc.id.root + "_" + doc.id.extension;
+                                        break;
+                                }
+                                if (!doc.id.extension && doc.typeCode !== "1100") {
+                                    documentPath = documentPath.substring(0, documentPath.indexOf("_"));
+                                }
+                            }
+                            recentDocTable
+                                .append('<li onclick="window.location.href=' + "'" + documentPath + "'" + ';">' +
+                                    '<div id="document_' + doc.id.root + '_' + doc.id.extension +
+                                    '" role="link" style="height:auto; text-align:left;" class="box clickable sec-first sec-txt" data-boxhref="' +
+                                    documentPath + '" tabindex="0"><div class="sec-txt-appointment">');
+                            let sec_txt_appointment = recentDocTable.find('.sec-txt-appointment');
+                            if (doc.typeCode.indexOf('63') !== -1) {
+                                if (doc.typeName) {
+                                    sec_txt_appointment
+                                        .last()
+                                        .append('<div><span>' +
+                                            doc.typeName.charAt(0).toUpperCase() + doc.typeName.slice(1) + '</span></div>');
+                                } else {
+                                    sec_txt_appointment
+                                        .last()
+                                        .append('<div><span>' + doc.typeNameFromExtension + '</span></div>');
+                                }
+                                if (doc.procedureType) {
+                                    sec_txt_appointment
+                                        .last()
+                                        .append('<div class="procedureType"><span>Suunatud teenusele:</span>' +
+                                            '<span>' + doc.procedureType + '</span></div>');
+                                }
+                                sec_txt_appointment
+                                    .last()
+                                    .append('<p style="margin-top:10px;"><span>' +
+                                        'Kehtib alates</span> <b>' + creationDateShort + '</b> ' +
+                                        '<span>kuni</span> <b>' + validUntil + '</b> ' +
+                                        '</p>');
+                            } else {
+                                sec_txt_appointment
+                                    .last()
+                                    .append('<h3>' + creationDateShort + '<span class="dashboardDocumentName">' + doc.typeName + '</span></h3>');
+                            }
+                            sec_txt_appointment.last().append('<p style="margin-top:2px;">');
+                            let author = doc.author ? doc.author : {firstName: '', lastName: ''};
+                            let referrer = doc.referrer ? doc.referrer : {speciality: ''};
+                            let healthCareOrg = doc.healthcareOrganization ? doc.healthcareOrganization : {name: ''};
+                            if (doc.typeCode.indexOf('63') !== -1) {
+                                sec_txt_appointment
+                                    .last()
+                                    .append('<span><b>Koostaja:</b></span>' +
+                                        author.firstName + " " + author.lastName + " " + referrer.speciality);
+                            } else {
+                                sec_txt_appointment
+                                    .last()
+                                    .append('<div class="trunacte as-high-contrast-text"><i>Koostaja:</i> <br>' +
+                                        '<b>' + author.firstName + " " + author.lastName + '</b><br>' +
+                                        healthCareOrg.name + '</div>');
+                            }
+                            recentDocTable.append('</div></div></li>');
+                        }
+                    );
+
+                    rotatableBox.closeSpinner('#recentDocuments');
+                    readmoreDialog.openFullScreenDialogMessage('#recentDocuments', '#full-screen-recent-documents');
+
+                } else {
+                    alert('Hiljutisi dokumente (mitte vanemad, kui 14 päeva) ei leitud!');
+                    rotatableBox.closeSpinner('#recentDocuments');
+                }
+            });
+        }
+    </script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li aria-labelledby="box-title-dashboard.recentDocuments" id="recentDocuments_box" class="box clickable small-wide biggest no-brightness noprint" role="button" onclick="showRecentDocuments()">
+    <div id="recentDocuments" class="sec-txt noprint has-spinner big-heading" tabindex="0" role="button">
+
+        
+            
+        
+        <div role="heading" class="visible-content
+            text-height-limited
+            no-contrast-change 
+            small-box">
+
+            
+                <h2 id="box-title-dashboard.recentDocuments">
+                    Hiljutised dokumendid
+                </h2>
+            
+            
+    
+        </div>
+
+        
+        
+            
+            
+        
+
+    </div>
+</li>
+
+
+    <div role="dialog" tabindex="0" aria-modal="true" id="full-screen-recent-documents" class="full-screen-back-flip" style="display:none;">
+        <div class="wrapper fs-content" aria-labelledby="recent_documents_modal_id" style="display:none;">
+            <div class="heading" role="heading">
+                
+
+
+
+
+<button class="back-button" role="button" tabindex="0" style="float: right; display: flex; margin: 8px;">
+    <img class="clickable" alt="Close" aria-label="Sulge" width="73" height="73" src="file-est/close-gray.png">
+</button>
+
+                <h1 id="recent_documents_modal_id">Hiljutised dokumendid</h1>
+            </div>
+            <div id="docsArea">
+                <ul class="sec-row clearfix ieDynamicTable tableByCategory" id="recentDocTable">
+                    <div>
+                </div></ul>
+            </div>
+        </div>
+    </div>
+
+
+
+            
+                <li class="clickable additional-information" aria-labelledby="box-title-hoia" id="downloadHoia" onclick="readmoreDialog.openFullScreenDialogMessage(&#39;#downloadHoia&#39;, &#39;#full-screen-dialog-message&#39;)">
+                    <div class="sec-txt" role="button" tabindex="0">
+                        <img src="file-est/HOIA_EST.jpg" alt="Download HOIA">
+                    </div>
+                </li>
+            
+            <div id="additional-information-description" style="display: none;">Avaneb modaal lisainfoga</div>
+            <div role="dialog" tabindex="0" aria-modal="true" id="full-screen-dialog-message" class="full-screen-back-flip" style="display:none;">
+                <div class="wrapper fs-content" aria-labelledby="hoia_modal_id" style="display:none;">
+                    <div class="heading" role="heading">
+                        
+
+
+
+
+<button class="back-button" role="button" tabindex="0" style="float: right; display: flex; margin: 8px;">
+    <img class="clickable" alt="Close" aria-label="Sulge" width="73" height="73" src="file-est/close-gray.png">
+</button>
+
+                        <h1 id="hoia_modal_id">Laadi alla mobiilirakendus HOIA</h1>
+                    </div>
+                    <div role="document" class="sec-additional">
+                        HOIA mobiilirakenduse abil saad kiiresti teada võimalikust lähikontaktist COVID-19 nakatunuga.Kui oled end rakenduses haigeks märkinud, on sul võimalik anonüümselt teavitada endaga kokku puutunud inimesi ja tõkestada viiruse levikut.Rakendus ei pääse ligi sinu telefonis olevatele andmete ega tea sinu asukohta. Riiki ega keegi teine ei näe sinu mobiilirakenduses toimuvat.<br><br>Kui asud oma nakkust kinnitama, siis suunab rakendus sind edasi Patsiendiportaali.Patsiendiportaal ei saada rakendusesse tagasi sinu terviseinfot, vaid ainult kinnitab nakatumise fakti serverile mitteisikustatud kujul. Seejärel saavadki võimalikud lähikontaktsed läbi HOIA rakenduse oma telefoni teavitused.<br>Loe rohkem: <b><a target="_blank" href="https://www.hoia.me/">www.hoia.me</a></b>
+                    </div>
+                </div>
+            </div>
+            
+        </ul>
+    </div>
+
+
+
+        <div class="sec-content" role="region" aria-label="Alamsisu">
+            
+<ul class="sec-row clearfix" id="my-desktop">
+    <!-- FIRST ROW STARTS -->
+    <li id="healthRecordBigBox" aria-labelledby="health-data-title" class="box sec-first sec-double blue-bg no-brightness clickable" data-boxhref="documents" role="region">
+        <div class="sec-txt nofilter" tabindex="0" role="alert">
+            <div class="visible-content">
+                <h2 id="health-data-title">Tervise­andmed</h2>
+                <ul>
+                    
+                        <li><a href="https://www.digilugu.ee/documents/timecritical">Aegkriitilised andmed</a></li>
+                    
+                    <li><a href="https://www.digilugu.ee/documents/dental">Hambaravi dokumendid</a></li>
+                    <li style="padding-top:0px">
+                        <ol style="list-style-type: none">
+                            <li><a href="https://www.digilugu.ee/documents/dental/dentalcarecards">Hambaravikaardid</a></li>
+                            <li><a href="https://www.digilugu.ee/documents/dental/dentalcarestatus">Hamba staatuse kaart</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="https://www.digilugu.ee/documents/immunisation">Immuniseerimispass</a></li>
+                    <li><a href="https://www.digilugu.ee/documents/ambulanceCardList">Kiirabi­kaardid</a>
+                    </li>
+                    <li><a href="https://www.digilugu.ee/documents/prescriptions">Retseptid</a></li>
+                    <li><a href="https://www.digilugu.ee/documents/appointments">Saatekirjad</a></li>
+                    <li style="padding-top:0px">
+                        <ol style="list-style-type:none">
+                            <li><a href="https://www.digilugu.ee/documents/appointments/invalid">Kehtetud saatekirjad</a></li>
+                            <li><a href="https://www.digilugu.ee/documents/appointments/valid">Kehtivad saatekirjad</a></li>
+                            <li><a href="https://www.digilugu.ee/documents/appointments/used">Vastuvõtu­ajaga seotud saate­kirjad</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="https://www.digilugu.ee/documents/healthDeclarations">Tervisedeklaratsioonid</a>
+                    </li>
+                    <li><a href="https://www.digilugu.ee/documents/healthCertificates">Tervisetõendid</a></li>
+                    <li><a href="https://www.digilugu.ee/documents/vaccineCertificates">ELi digitaalsed COVIDi tõendid</a></li>
+                    <li id="epicrises-list-start"><a href="https://www.digilugu.ee/documents/epicrises">Epikriisid</a></li>
+                    <li style="padding-top:0">
+                        <ol style="list-style-type: none">
+                            <li><a href="https://www.digilugu.ee/documents/epicrises/ambulance">Ambula­toor­sed epikriisid</a>
+                            </li>
+                            <li><a href="https://www.digilugu.ee/documents/epicrises/daycare">Päevaravi epikriisid</a>
+                            </li>
+                            <li><a href="https://www.digilugu.ee/documents/epicrises/stationary">Statsionaar­sed epikriisid</a>
+                            </li>
+                            <li><a href="https://www.digilugu.ee/documents/epicrises/birth">Sünniepikriis</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="https://www.digilugu.ee/documents/infantile">Teatised</a></li>
+                    <li style="padding-top:0px">
+                        <ol style="list-style-type: none">
+                            <li><a href="https://www.digilugu.ee/documents/infantile/development">Arengu hindamise teatised</a></li>
+                            <li><a href="https://www.digilugu.ee/documents/infantile/immunizations">Immuniseeri­mise teatised</a></li>
+                            <li><a href="https://www.digilugu.ee/documents/infantile/growth">Kasvamise teatised</a>
+                            </li>
+                            <li><a href="https://www.digilugu.ee/documents/infantile/examinations">Läbivaatuse teatised</a></li>
+                            <li><a href="https://www.digilugu.ee/documents/infantile/consultations">Nõustamise teatised</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="https://www.digilugu.ee/documents/examinations">Uuringute vastused</a>
+                    </li>
+                    <li style="padding-top:0px">
+                        <ol style="list-style-type: none">
+                            <li><a href="https://www.digilugu.ee/documents/examinations/roentgenograms">Pildiviidad</a></li>
+                            <li><a href="https://www.digilugu.ee/documents/examinations/reports">Saatekirjade vastused</a></li>
+                        </ol>
+                    </li>
+                    
+                        <li><a href="https://www.digilugu.ee/workability">Töövõime hindamine</a></li>
+                    
+                </ul>
+            </div>
+            <div id="rotatable-hidden-content" class="hidden-content">
+                Terviseandmete alt näed Sa oma terviseandmeid, mis on kättesaadavad riiklikus tervise infosüsteemis. Tervise infosüsteemi kogutakse alates 1.01.2009 kõige olulisemad meditsiinidokumendid. Sul on võimalik vaadata kõiki Sinu tervist kajastavaid dokumente, mille on tervishoiuteenuse osutaja tervise infosüsteemi edastanud. Ka Sinu raviarstil on võimalus näha Sinu meditsiinidokumente tervise infosüsteemis. Sul on võimalus portaali kaudu oma andmete kasutamist piirata.
+            </div>
+            <div class="btn">
+                <a role="button" aria-describedby="read-more-description" aria-label="Loe oma tervise andmete kohta" class="animate purple no-contrast-change" href="javascript: void(0)" title="Loe oma tervise andmete kohta">
+                    Loe oma tervise andmete kohta
+                </a>
+            </div>
+        </div>
+    </li>
+
+    
+        <li class="drButtonPassive" id="DRButton" aria-labelledby="dr-title">
+            <div id="drDivId" class="sec-txt" tabindex="0">
+                <div class="visible-content">
+                    <h2 id="dr-title" data-toggle="tooltip" role="link" title="">
+                        Üleriigiline Digiregistratuur</h2>
+                    <img class="dr-logo" src="file-est/digireg_logo.png">
+                    <br><br><br>
+                    <p id="drErrorMsg" style="color: red; visibility: hidden">
+                        Ühendus ebaõnnestus, proovige palun mõne aja pärast uuesti!
+                    </p>
+                </div>
+                <div class="sec-txt redBoxButton noprint no-contrast-change" tabindex="-1" style="padding: 0">
+                    <div class="visible-content text-height-limited no-contrast-change small-box">
+                        <h2>
+                            <b>
+                                <font class="corona-button-text" color="#FFFFFF" style="font-size: 14px; vertical-align: middle;">
+                                    COVID-19 vaktsineerimine
+                                </font>
+                            </b>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </li>
+    
+
+    
+
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li aria-labelledby="box-title-dashboard.treatmentcost" id="treatmentcost_box" class="box clickable" data-boxhref="/treatmentcost" role="link">
+    <div id="treatmentcost" class="sec-txt " tabindex="0" role="link">
+
+        
+            
+        
+        <div role="heading" class="visible-content
+            text-height-limited
+            no-contrast-change 
+            ">
+
+            
+                <h2 id="box-title-dashboard.treatmentcost">
+                    Eesti Haigekassale esitatud raviarved
+                </h2>
+            
+            
+        <ul>
+                <li>Raviarvete nägemiseks vajuta kastile, lisainfoks info märgile</li>
+            </ul>
+    
+        </div>
+
+        
+        
+            
+            
+                
+        <div class="btn">
+            <a role="button" aria-describedby="read-more-description" aria-label="Loe Haigekassa raviarvete kohta" class="animate purple no-contrast-change" href="javascript:void(0)" title="Loe Haigekassa raviarvete kohta">
+                Loe lisa
+            </a>
+            <div id="read-more-description" style="display: none;">
+                Lisainfo kuvamiseks/sulgemiseks vajutada klahvi Space'i
+            </div>
+        </div>
+        <div class="hidden-content full-screen " style="padding:4% 4% 7.5% 4%;">
+            <span class="box" role="alert">
+
+
+
+
+
+
+
+
+
+
+<div class="wrapper">
+    <div class="heading">
+        <h1>
+            
+                Eesti Haigekassale esitatud raviarved
+                
+            
+        </h1>
+        
+
+
+
+
+<button class="back-button" role="button" tabindex="0" style="float: right; display: flex; margin: 8px;">
+    <img class="clickable" alt="Close" aria-label="Sulge" width="73" height="73" src="file-est/close-gray.png">
+</button>
+
+    </div>
+    <div class="sec-wrapper">
+        
+        
+            
+                <span class="sec-wrapper">Siin on võimalus näha raviarveid, mille on tervishoiuasutused Sinu raviga seotult esitanud Eesti Haigekassale. Raviarved tasutakse sotsiaalmaksu osana kogutava ravikindlustuse vahenditest (13% sotsiaalmaksust). Eesti ravikindlustuse süsteem järgib solidaarsuse printsiipi: haigestumisel ei sõltu Eesti Haigekassa tasutava tervishoiuteenuse maksumus sellest, kui palju on konkreetse inimese eest makstud sotsiaalmaksu. Tööd tegevate inimeste eest makstud sotsiaalmaksust tasub Eesti Haigekassa ka nende kindlustatud inimeste tervishoiuteenuste eest, kes ei tööta. Lisainfot ravikindlustustest, rahalisest ja mitterahalisest hüvitisest leiad <a data-toggle="tooltip" title="" href="https://www.haigekassa.ee/" target="_blank">Eesti Haigekassa kodulehelt</a> või helistades klienditelefonile 669 6630. Riiklikust patsiendiportaalist ei näe raviarveid, mis on osutatud tasulise teenusena.</span>
+            
+            
+        
+    </div>
+</div>
+</span>
+        </div>
+            
+        
+
+    </div>
+</li>
+
+
+    
+
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li aria-labelledby="box-title-dashboard.statementOfIntention" id="declarations_box" class="box clickable" data-boxhref="/intentions" role="link">
+    <div id="declarations" class="sec-txt " tabindex="0" role="link">
+
+        
+            
+        
+        <div role="heading" class="visible-content
+            text-height-limited
+            no-contrast-change 
+            ">
+
+            
+                <h2 id="box-title-dashboard.statementOfIntention">
+                    Tahte-<br>avaldused
+                </h2>
+            
+            
+        <ul>
+            <li>Tahteavalduste nägemiseks ja koostamiseks vajuta kastile, lisainfoks info märgile</li>
+            <li></li>
+        </ul>
+    
+        </div>
+
+        
+        
+            
+            
+                
+        <div class="btn">
+            <a role="button" aria-describedby="read-more-description" aria-label="Loe tahteavaldusi" class="animate purple no-contrast-change" href="javascript:void(0)" title="Loe tahteavaldusi">
+                Loe lisa
+            </a>
+            <div id="read-more-description" style="display: none;">
+                Lisainfo kuvamiseks/sulgemiseks vajutada klahvi Space'i
+            </div>
+        </div>
+        <div class="hidden-content  " style="padding:4% 4% 7.5% 4%;">
+            <span class="box" role="alert">Tahteavalduste kaudu on Sul võimalus väljendada oma soovi seoses elundite loovutamise, vereülekannete tegemise ja surmajärgselt keha annetamisega. Tahteavaldused on arstidele kohustuslikud. Sul on õigus ja võimalus tahteavaldusi igal ajal muuta või tühistada.</span>
+        </div>
+            
+        
+
+    </div>
+</li>
+
+
+    
+
+    <!-- THIRD ROW STARTS -->
+
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li aria-labelledby="box-title-dashboard.managementOfAccesses" id="accesses_box" class="box clickable" data-boxhref="/accesses" role="link">
+    <div id="accesses" class="sec-txt " tabindex="0" role="link">
+
+        
+            
+        
+        <div role="heading" class="visible-content
+            text-height-limited
+            no-contrast-change 
+            ">
+
+            
+                <h2 id="box-title-dashboard.managementOfAccesses">
+                    Terviseandmetele ligipääsude haldamine
+                </h2>
+            
+            
+        <ul>
+            <li>Kaitseministeeriumi valitsemisala arstlikele komisjonidele ligipääsude haldamine. Piiriülese retsepti andmete ligipääsu haldamine. Lisainfo saamiseks vajuta info märgile.<span></span></li>
+        </ul>
+    
+        </div>
+
+        
+        
+            
+            
+                
+        <div class="btn">
+            <a role="button" aria-describedby="read-more-description" aria-label="Loe terviseandmetele ligipääsude haldamise kohta" class="animate purple no-contrast-change" href="javascript:void(0)" title="Loe terviseandmetele ligipääsude haldamise kohta">
+                Loe lisa
+            </a>
+            <div id="read-more-description" style="display: none;">
+                Lisainfo kuvamiseks/sulgemiseks vajutada klahvi Space'i
+            </div>
+        </div>
+        <div class="hidden-content full-screen " style="padding:4% 4% 7.5% 4%;">
+            <span class="box" role="alert">
+
+
+
+
+
+
+
+
+
+
+<div class="wrapper">
+    <div class="heading">
+        <h1>
+            
+                Terviseandmetele ligipääsude haldamine
+                
+            
+        </h1>
+        
+
+
+
+
+<button class="back-button" role="button" tabindex="0" style="float: right; display: flex; margin: 8px;">
+    <img class="clickable" alt="Close" aria-label="Sulge" width="73" height="73" src="file-est/close-gray.png">
+</button>
+
+    </div>
+    <div class="sec-wrapper">
+        
+        
+            
+                <span class="sec-wrapper">Riikliku patsiendiportaali terviseandmete ligipääsu haldamise vaates on isikul võimalik anda nõusolek või võtta nõusolek tagasi oma terviseandmetele ligipääsuks kolmandatele osapooltele.Kolmandate osapooltena käsitletakse neid institutsioone, kellel on seadusest tulenev õigus kasutada tervise infosüsteemis olevaid andmeid kindlaks määratud hulgas ja ülesannete täitmiseks ning kellel on andmete töötlemiseks vajalik täiendav isiku nõusolek.<br><br>Patsiendiportaalis on võimalik hallata nõusolekuid andmetele ligipääsuks Kaitseministeeriumi valitsemisala arstlike komisjonide ja arstliku vaidekomisjoni osas, kellel on seadusest tulenev õigus saada isiku nõusolekul ligipääs tervise infosüsteemis olevatele terviseandmetele.Eriarstidest koosnevate arstlike komisjonide peamine ülesanne on hinnata kaitseväekohustuslaste ja kaitseväekohustust võtta soovivate isikute terviseseisundi vastavust kaitseväelastele ettenähtud tervisenõuetele. Juhul kui isik ei anna eelnevat elektroonilist nõusolekut patsiendiportaalis, on ta kohustatud jälgima varasemat andmete kogumise protsessi ja kõik vajalikud terviseseisundit kirjeldavad dokumendid esitama arstlikule komisjonile paberil.<br><br></span>
+            
+            
+        
+    </div>
+</div>
+</span>
+        </div>
+            
+        
+
+    </div>
+</li>
+
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li aria-labelledby="box-title-dashboard.notifications" id="notifications_box" class="box clickable" data-boxhref="/notifications" role="link">
+    <div id="notifications" class="sec-txt " tabindex="0" role="link">
+
+        
+            
+        
+        <div role="heading" class="visible-content
+            text-height-limited
+            no-contrast-change 
+            ">
+
+            
+                <h2 id="box-title-dashboard.notifications">
+                    Teavitused
+                </h2>
+            
+            
+        <ul>
+                <li>Teavituste vaatamiseks vajuta kastile, elektronpostile tellimiseks ja lisainfoks info märgile</li>
+            </ul>
+    
+        </div>
+
+        
+        
+            
+            
+                
+        <div class="btn">
+            <a role="button" aria-describedby="read-more-description" aria-label="Loe teavitusi" class="animate purple no-contrast-change" href="javascript:void(0)" title="Loe teavitusi">
+                Loe lisa
+            </a>
+            <div id="read-more-description" style="display: none;">
+                Lisainfo kuvamiseks/sulgemiseks vajutada klahvi Space'i
+            </div>
+        </div>
+        <div class="hidden-content full-screen " style="padding:4% 4% 7.5% 4%;">
+            <span class="box" role="alert">
+
+
+
+
+
+
+
+
+
+
+<div class="wrapper">
+    <div class="heading">
+        <h1>
+            
+                Info teavituste kohta
+                
+            
+        </h1>
+        
+
+
+
+
+<button class="back-button" role="button" tabindex="0" style="float: right; display: flex; margin: 8px;">
+    <img class="clickable" alt="Close" aria-label="Sulge" width="73" height="73" src="file-est/close-gray.png">
+</button>
+
+    </div>
+    <div class="sec-wrapper">
+        
+        
+            
+                <span class="sec-wrapper">Esialgu on võimalik riikliku patsiendiportaali dokumentidest teavitusi saada ainult tervisetõendite kohta. <br><br><strong>Tervisetõendite kohta hakkad teavitusi saama:</strong><ul><li>patsiendiportaali (<a data-toggle="tooltip" title="Digilugu" href="https://www.digilugu.ee/" target="_blank">www.digilugu.ee</a>)</li><li>riigiportaali (<a data-toggle="tooltip" title="Eesti.ee" href="https://www.eesti.ee/" target="_blank">www.eesti.ee</a>)</li><li>oma igapäevaselt kasutatavale elektronpostile </li></ul><br><br>Oma igapäevaselt kasutatavale elektronpostile hakkad teavitusi saama eeldusel, et oled suunanud riigiportaali elektronposti oma igapäevaselt kasutatavale elektronposti aadressile. Meiliaadressi saad seadistada <a data-toggle="tooltip" title="" href="https://www.eesti.ee/portaal/portaal.options?a=keel&amp;b=portaal.sisene%3Flevel%3D30%26loc%3D%252Frus%252Fmoimaterialy" target="_blank">siit</a>. Lisainfot leiad <a data-toggle="tooltip" title="" href="https://www.eesti.ee/postkast/et/seaded" target="_blank">siit</a>. Teavitusi hakkad saama tervisetõendi otsuse väljastamise, muutmise, kehtivuse peatse lõppemise (eelteade 30 päeva enne kehtivuse lõppu) ja kehtivuse lõppemise korral.</span>
+            
+            
+        
+    </div>
+</div>
+</span>
+        </div>
+            
+        
+
+    </div>
+</li>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li aria-labelledby="box-title-dashboard.booking" id="booking_box" class="box clickable small-wide bigger" data-boxhref="/booking" role="link">
+    <div id="booking" class="sec-txt nofilter" tabindex="0" role="link">
+
+        
+            <img src="file-est/uks.svg" style="width:50px;height:50px;display:inline-block">
+        
+        <div role="heading" class="visible-content
+            text-height-limited
+            no-contrast-change 
+            small-box">
+
+            
+                <h2 id="box-title-dashboard.booking">
+                    Haiglate lingid
+                </h2>
+            
+            
+        </div>
+
+        
+        
+            
+            
+        
+
+    </div>
+</li>
+
+
+    
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li aria-labelledby="box-title-dashboard.logs" id="logs_box" class="box clickable small-wide bigger" data-boxhref="/logs" role="link">
+    <div id="logs" class="sec-txt nofilter" tabindex="0" role="link">
+
+        
+            <img src="file-est/raamat.svg" style="width:50px;height:50px;display:inline-block">
+        
+        <div role="heading" class="visible-content
+            text-height-limited
+            no-contrast-change 
+            small-box">
+
+            
+                <h2 id="box-title-dashboard.logs">
+                    Logiraamat
+                </h2>
+            
+            
+        </div>
+
+        
+        
+            
+            
+        
+
+    </div>
+</li>
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li aria-labelledby="box-title-dashboard.importantNumbers" id="importantNumbers_box" class="box small-wide" role="link">
+    <div id="importantNumbers" class="sec-txt " tabindex="0" role="link">
+
+        
+            <img src="file-est/telefon.svg" style="width:50px;height:50px;display:inline-block">
+        
+        <div role="heading" class="visible-content
+            text-height-limited
+            no-contrast-change 
+            small-box">
+
+            
+                <h2 id="box-title-dashboard.importantNumbers">
+                    Kiirabi/häirekeskus 112 <br> Perearsti nõuandetelefon 1220 <br> Mürgitusteabe telefon 16662
+                </h2>
+            
+            
+        </div>
+
+        
+        
+            
+            
+        
+
+    </div>
+</li>
+
+
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="dialog" id="close-document-doctor-warning-dialog" style="display: none">
+    <div class="blocking-overlay dialog bg" tabindex="0"></div>
+    <div class="blocking-overlay dialog dialog-content ">
+        
+                
+    
+
+
+
+
+
+<h1 id="" class="no-subtitle negative-emphasis" role="">
+  
+        Hoiatus!
+    
+</h1>
+
+    
+
+
+
+
+
+
+<div id="message " class="message " role="alert">
+  
+        Peale dokumendi sulgemist ei ole arstil võimalik seda dokumenti vaadata. Andmete sulgemisega võtad endale vastutuse andmete sulgemisest tuleneva võimaliku ravikvaliteedi halvenemise eest.
+    
+</div>
+
+    
+
+
+
+
+
+
+
+<div role="button" tabindex="0" id="" class="rect-button ok-button">
+
+    
+        Sulge dokument
+    
+</div>
+
+    
+
+
+
+
+
+
+
+<div role="button" tabindex="0" id="" class="rect-button cancel-button">
+
+    
+        Loobu sulgemisest
+    
+</div>
+
+
+                
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="dialog" id="close-all-doctor-warning-dialog" style="display: none">
+    <div class="blocking-overlay dialog bg" tabindex="0"></div>
+    <div class="blocking-overlay dialog dialog-content ">
+        
+                
+    
+
+
+
+
+
+<h1 id="" class="no-subtitle negative-emphasis" role="">
+  
+        Hoiatus!
+    
+</h1>
+
+    
+
+
+
+
+
+
+<div id="message " class="message " role="alert">
+  
+        Peale terviseloo sulgemist ei ole arstil võimalik Sinu dokumente vaadata. Samuti ei ole arstile kättesaadavad dokumentides sisalduvad aegkriitilised andmed (aegkriitilised diagnoosid, viimastel kuudel väljakirjutatud ravimid jms). Andmete sulgemisega võtad endale vastutuse andmete sulgemisest tuleneva võimaliku ravikvaliteedi halvenemise eest.
+    
+</div>
+
+    
+
+
+
+
+
+
+
+<div role="button" tabindex="0" id="" class="rect-button ok-button">
+
+    
+        Sulge digilugu
+    
+</div>
+
+    
+
+
+
+
+
+
+
+<div role="button" tabindex="0" id="" class="rect-button cancel-button">
+
+    
+        Loobu sulgemisest
+    
+</div>
+
+
+                
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="dialog" id="need-to-close-healthrecord-to-doctor-warning-dialog" style="display: none">
+    <div class="blocking-overlay dialog bg" tabindex="0"></div>
+    <div class="blocking-overlay dialog dialog-content ">
+        
+                
+    
+
+
+
+
+
+<h1 id="" class="no-subtitle negative-emphasis" role="">
+  
+        Hoiatus!
+    
+</h1>
+
+    
+
+
+
+
+
+
+<div id="message " class="message " role="alert">
+  
+        Sinu digilugu on arstile avatud. Kogu terviseloo sulgemisel suletakse kõik eelnevalt avatud üksikud dokumendid.
+    
+</div>
+
+    
+
+
+
+
+
+
+
+<div role="button" tabindex="0" id="" class="rect-button ok-button">
+
+    
+        Sulgen terviseloo arstile
+    
+</div>
+
+    
+
+
+
+
+
+
+
+<div role="button" tabindex="0" id="" class="rect-button cancel-button">
+
+    
+        Tagasi
+    
+</div>
+
+
+                
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="dialog" id="need-to-open-healthrecord-to-doctor-warning-dialog" style="display: none">
+    <div class="blocking-overlay dialog bg" tabindex="0"></div>
+    <div class="blocking-overlay dialog dialog-content ">
+        
+                
+    
+
+
+
+
+
+<h1 id="" class="no-subtitle negative-emphasis" role="">
+  
+        Hoiatus!
+    
+</h1>
+
+    
+
+
+
+
+
+
+<div id="message " class="message " role="alert">
+  
+        Sinu digilugu on arstile suletud. Üksiku dokumendi või aegkriitiliste andmete avamiseks või sulgemiseks tuleb esmalt kogu digilugu avada. Kogu terviseloo avamisel avanevad kõik eelnevalt suletud üksikud dokumendid. Selleks vajuta "Avan terviseloo arstile"
+    
+</div>
+
+    
+
+
+
+
+
+
+
+<div role="button" tabindex="0" id="" class="rect-button ok-button">
+
+    
+        Avan terviseloo arstile
+    
+</div>
+
+    
+
+
+
+
+
+
+
+<div role="button" tabindex="0" id="" class="rect-button cancel-button">
+
+    
+        Tagasi
+    
+</div>
+
+
+                
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="dialog" id="close-error-dialog" style="display: none">
+    <div class="blocking-overlay dialog bg" tabindex="0"></div>
+    <div class="blocking-overlay dialog dialog-content " role="alert">
+        
+                
+    
+
+
+
+
+
+<h1 id="" class="no-subtitle" role="alert">
+  
+        Sulgemine<br>
+        <span class="negative-emphasis">ebaõnnestus</span>
+    
+</h1>
+
+    
+
+
+
+
+
+
+<div id="message " class="message high-contrast-text" role="document">
+  
+</div>
+
+    
+
+
+
+
+
+
+
+<div role="button" tabindex="0" id="" class="rect-button ok-button">
+
+    
+        Selge
+    
+</div>
+
+
+                
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="dialog" id="open-error-dialog" style="display: none">
+    <div class="blocking-overlay dialog bg" tabindex="0"></div>
+    <div class="blocking-overlay dialog dialog-content ">
+        
+                
+    
+
+
+
+
+
+<h1 id="" class="no-subtitle" role="">
+  
+        Avamine<br>
+        <span class="negative-emphasis">ebaõnnestus</span>
+    
+</h1>
+
+    
+
+
+
+
+
+
+<div id="message " class="message " role="alert">
+  
+</div>
+
+    
+
+
+
+
+
+
+
+<div role="button" tabindex="0" id="" class="rect-button ok-button">
+
+    
+        Selge
+    
+</div>
+
+
+                
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</main>
+
+</div>
+<!-- WRAPPER ENDS -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="dialog" id="session-timeout-dialog" style="display: none">
+    <div class="blocking-overlay dialog bg" tabindex="0"></div>
+    <div class="blocking-overlay dialog dialog-content ">
+        
+                
+    
+
+
+
+
+
+<h1 id="" class="" role="">
+  
+        <span class="less-important-text">Sessioon</span>
+        <span class="negative-emphasis session-expires-title">aegub</span>
+        <span class="negative-emphasis session-expired-title">aegus</span>
+    
+</h1>
+
+    
+
+
+
+
+<h2 id="" class="">
+  
+        {0} sekundi pärast
+    
+</h2>
+    
+
+
+
+
+
+
+<div id="message " class="message session-expires-message">
+  
+        Kasutajasessioon on olnud juba mõnda aega mitteaktiivne. Vali 'Logi välja' kasutajasessiooni lõpetamiseks või 'Jätka', et süsteemi edasi kasutada.
+    
+</div>
+
+    
+
+
+
+
+
+
+<div id="message " class="message session-expired-message">
+  
+        Kasutajasessioon aegus. Vali 'Logi välja' kasutajasessiooni lõpetamiseks.
+    
+</div>
+
+    
+
+
+
+
+
+
+
+<div role="button" tabindex="0" id="" class="rect-button cancel-button">
+
+    Logi välja
+</div>
+
+    
+
+
+
+
+
+
+
+<div role="button" tabindex="0" id="" class="rect-button ok-button">
+
+    Jätka
+</div>
+
+
+                
+    </div>
+</div>
+
+<div class="local-blocking-overlay-spinner"></div>
+
+
+<div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div></body></html>

@@ -1,0 +1,292 @@
+/* @group 1024 view styles  = 4 columns
+---------------------------------------------------------*/
+@media all and (min-width: 961px)  and (max-width: 1205px) {
+
+    .wrapper, .header {
+        width: 100%;
+    }
+
+    .vaccine-left {
+        /*width: 100% !important;*/
+        /*height: 60% !important;*/
+    }
+
+    .vaccine-right {
+        /*width: 100% !important;*/
+        /*height: 60% !important;*/
+    }
+
+    #menu-mobile {
+        display: none;
+    }
+
+    #certificateFrame {
+        height: 74em;
+    }
+
+    #epicrisis-table,
+    #infantile-table,
+    #access-table,
+    #health-certificates-table,
+    #intentions-table {
+        width: 76%
+    }
+
+    #epicrises-list-start {
+        margin-top: 6.1em;
+    }
+
+    #login-table {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    #examinations-table > li:nth-child(1),
+    #epicrisis-table > li:nth-child(1),
+    #login-table > li:nth-child(1),
+    .cards-table > li:nth-child(1),
+    #hospital-table > li:nth-child(1) {
+        grid-column: 1;
+    }
+
+    #examinations-table > li:nth-child(2),
+    #epicrisis-table > li:nth-child(2),
+    #login-table > li:nth-child(2),
+    .cards-table > li:nth-child(2),
+    #hospital-table > li:nth-child(2) {
+        grid-column: 2;
+    }
+
+    #login-table > li:nth-child(3) {
+        grid-column: 3;
+    }
+
+    #my-desktop > li:nth-child(1) {
+        -ms-grid-column-span: 3;
+        grid-column: span 2;
+        -ms-grid-row-span: 3;
+        grid-row: span 2;
+    }
+
+    #my-desktop > li:nth-child(2) {
+        grid-column: 3;
+        -ms-grid-column: 5;
+        grid-row: 1;
+        -ms-grid-row: 1;
+    }
+
+    #my-desktop > li:nth-child(3) {
+        grid-column: 3;
+        -ms-grid-column: 5;
+        grid-row: 2;
+        -ms-grid-row: 3;
+    }
+
+    #my-desktop > li:nth-child(4) {
+        grid-column: 1;
+        -ms-grid-column: 1;
+        grid-row: 3;
+        -ms-grid-row: 5;
+    }
+
+    #my-desktop > li:nth-child(5) {
+        grid-column: 2;
+        -ms-grid-column: 3;
+        grid-row: 3;
+        -ms-grid-row: 5;
+    }
+
+    #my-desktop > li:nth-child(6) {
+        grid-column: 3;
+        -ms-grid-column: 5;
+        grid-row: 3;
+        -ms-grid-row: 5;
+    }
+
+    #my-desktop > li:nth-child(7) {
+        grid-column: 1;
+        -ms-grid-column: 1;
+        grid-row: 4;
+        -ms-grid-row: 7;
+    }
+
+    #my-desktop > li:nth-child(8) {
+        grid-column: 2;
+        -ms-grid-column: 3;
+        grid-row: 4;
+        -ms-grid-row: 7;
+    }
+
+    #my-desktop > li:nth-child(9) {
+        grid-column: 3;
+        -ms-grid-column: 5;
+        grid-row: 4;
+        -ms-grid-row: 7;
+    }
+
+    #vaccine-certificates-table > li:nth-child(1) {
+        -ms-grid-column: 1;
+        -ms-grid-row: 1;
+        /*margin-right: 2.79%;*/
+    }
+
+    #vaccine-certificates-table > li:nth-child(2) {
+        -ms-grid-column: 3;
+        -ms-grid-row: 1;
+        /*margin-right: 2.79%;*/
+    }
+
+    #vaccine-certificates-table > li:nth-child(3) {
+        -ms-grid-column: 5;
+        -ms-grid-row: 1;
+    }
+
+    #vaccine-certificates-table > li:nth-child(4) {
+        -ms-grid-column: 1;
+        -ms-grid-row: 3;
+    }
+
+    #vaccine-certificates-table > li:nth-child(5) {
+        -ms-grid-column: 3;
+        -ms-grid-row: 3;
+    }
+
+    #vaccine-certificates-table > li:nth-child(6) {
+        -ms-grid-column: 5;
+        -ms-grid-row: 3;
+    }
+
+    .sidebar {
+        width: 23.43%;
+    }
+
+    /*225px*/
+    .sidebar .sec-row > li, .sidebar .sec-row > li:nth-child(2) {
+        /* margin: 0 0 20px 0; */
+    }
+
+    #opera-message {
+        margin-top: 140px;
+    }
+
+    .sec-content {
+        width: 77%;
+    }
+
+    /*715px*/
+    .sec-content.rectangle {
+        width: 100%;
+    }
+
+    .sec-row > li {
+        margin: 0;
+        /* margin: 0 2.79% 2.79% 0; */
+    }
+
+    .sec-row li.sec-double, .sec-row li.sec-3-2, .sec-row li.sec-last {
+        /* margin: 0 2.79% 2.79% 0; */
+    }
+
+    .sec-row > li:nth-child(3n) {
+        /* margin: 0 0 2.79% 0; */
+    }
+
+    .sec-100-percent .sec-row > li, .sec-100-percent .sec-row li.sec-double, .sec-100-percent .sec-row li.sec-3-2, .sec-100-percent .sec-row li.sec-last {
+        width: 23.43%;
+        margin: 0 2.08% 2.08% 0;
+    }
+
+    .sec-100-percent .sec-row li.sec-3-2 {
+        width: 36.17%;
+        margin-bottom: 4.37%;
+    }
+
+    .sec-100-percent .sec-row > li:nth-child(3) {
+        margin: 0 0 2.08% 0;
+    }
+
+    .sec-100-percent .sec-row > li:nth-child(4) {
+        width: 48.94%
+    }
+
+    .sec-100-percent .sec-row > li:nth-child(5) {
+        margin: 0 2.08% 2.08% 0;
+    }
+
+    .sec-100-percent .sec-row > li:nth-child(6) {
+        margin: 0 0 2.08% 0;
+    }
+
+    .sec-100-percent .sec-row > li:nth-child(10) {
+        margin: 0 0 2.08% 0;
+    }
+
+    .sec-row li.sec-cta {
+        width: 100%;
+        margin: 0;
+    }
+
+    .sec-row li.sec-cta div:first-child {
+        float: right;
+        margin: 0 0 20px 0;
+        width: 102px;
+    }
+
+    .sec-intro {
+        font-size: 14px;
+        min-height: 0;
+        min-width: 700px;
+    }
+
+    .sidebar {
+        width: 23.43%;
+    }
+
+    /*225px*/
+    .sidebar .sec-row > li, .sidebar .sec-row > li:nth-child(2) {
+        /*margin: 0 0 20px 0;*/
+    }
+
+    #my-desktop > li {
+        /* margin: 0 2.79% 2.79% 0; */
+    }
+
+    #my-desktop > li.sec-last {
+        margin-right: 0;
+    }
+
+    #mobile-login .content {
+        width: 960px;
+    }
+
+    #mobile-menu-button {
+        display: none;
+    }
+
+    #logout-mobile {
+        display: none;
+    }
+
+    #logout-desktop {
+        display: inline-block;
+    }
+
+
+    .tableView-wrapper table {
+        width: 715px;
+        table-layout: fixed;
+    }
+
+    .tableView-wrapper .dataTable.responsive-table th {
+        white-space: inherit;
+        background-size: contain;
+    }
+
+    .declaration-wrapper table {
+        width: 1015px;
+    }
+
+    .single-box {
+        margin-right: 325px !important;
+    }
+}

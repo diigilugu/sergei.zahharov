@@ -1,0 +1,45 @@
+/* #list-with-header {background:url(../images/first-row-bg.png) 0 245px repeat-x;} */
+
+/* @group mobile page styles
+---------------------------------------------------------*/
+
+
+
+/* @group over 1024 view styles  = 4 columns
+---------------------------------------------------------*/
+@media all and (min-width: 1206px) {
+
+
+
+}
+
+/* @group 1024 view styles  = 4 columns
+---------------------------------------------------------*/
+@media all and (max-width: 1205px) and (min-width: 961px) {
+	
+	
+	
+}
+
+/* @group ipad styles  = 3 columns
+---------------------------------------------------------*/
+@media all and (max-width: 960px) and (min-width: 761px) {
+ul.inputList li input[type=text], ul.inputList li textarea {
+	width: 440px;
+}
+}
+
+/* @group iphone landscape styles = 2 columns
+---------------------------------------------------------*/
+@media all and (max-width: 760px) and (min-width: 481px) {
+
+
+}
+
+/* @group iphone portrait styles = 1 column
+---------------------------------------------------------*/
+@media all and (max-width: 480px) {
+
+
+
+}

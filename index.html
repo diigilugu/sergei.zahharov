@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)https://www.digilugu.ee/login -->
+<html lang="en" translate="no" style="" class=" js flexbox flexboxlegacy canvas canvastext postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>
+        
+            
+            
+                Patient Portal
+            
+        
+     - Patient Portal</title>
+
+    
+
+
+
+
+
+
+<link href="https://www.digilugu.ee/resources/images/favicon.ico?1.9.114.5c9cc2a" rel="shortcut icon" type="image/vnd.microsoft.icon">
+
+
+<link href="./Patient Portal - Patient Portal_files/css" rel="stylesheet" type="text/css">
+<!--for PP new font -->
+<link href="./Patient Portal - Patient Portal_files/css(1)" rel="stylesheet" type="text/css">
+
+
+<link href="./Patient Portal - Patient Portal_files/global.css" rel="stylesheet" media="screen">
+<link href="./Patient Portal - Patient Portal_files/global-1206-.css" rel="stylesheet" media="screen">
+<link href="./Patient Portal - Patient Portal_files/global-961-1205.css" rel="stylesheet" media="screen">
+<link href="./Patient Portal - Patient Portal_files/global-780-960.css" rel="stylesheet" media="screen">
+<link href="./Patient Portal - Patient Portal_files/global-481-779.css" rel="stylesheet" media="screen">
+<link href="./Patient Portal - Patient Portal_files/global-0-480.css" rel="stylesheet" media="screen">
+
+<link href="./Patient Portal - Patient Portal_files/print.css" rel="stylesheet" media="print">
+<link href="./Patient Portal - Patient Portal_files/global(1).css" rel="stylesheet" media="screen">
+<link href="./Patient Portal - Patient Portal_files/fonts.css" rel="stylesheet" media="screen">
+<link href="./Patient Portal - Patient Portal_files/style.css" rel="stylesheet" media="screen">
+<link href="./Patient Portal - Patient Portal_files/covid-cert-reissue-button-and-popup.css" rel="stylesheet" media="screen">
+<link href="./Patient Portal - Patient Portal_files/jquery-ui-1.12.1.min.css" rel="stylesheet">
+<link href="./Patient Portal - Patient Portal_files/jquery.ui.combobox.css" rel="stylesheet">
+<link href="./Patient Portal - Patient Portal_files/chosen.min.css" rel="stylesheet">
+<link href="./Patient Portal - Patient Portal_files/jquery-eu-cookie-law-popup.css" rel="stylesheet">
+<!--[if lt IE 8]>
+<link href="/resources/css/ie7.css?1.9.114.5c9cc2a" rel="stylesheet" media="screen" />
+<![endif]-->
+<!--[if IE 8]>
+<link href="/resources/css/ie8.css?1.9.114.5c9cc2a" rel="stylesheet" media="screen" />
+<![endif]-->
+
+
+
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/resources/js/libs/selectivizr-min.js?1.9.114.5c9cc2a"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/resources/js/libs/css3-mediaqueries.js?1.9.114.5c9cc2a"></script>
+<![endif]-->
+
+
+<script type="text/javascript" defer="" async="" src="./Patient Portal - Patient Portal_files/piwik.js"></script><script type="text/javascript" src="./Patient Portal - Patient Portal_files/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="./Patient Portal - Patient Portal_files/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="./Patient Portal - Patient Portal_files/chosen-1.8.7.jquery.min.js"></script>
+<script type="text/javascript" src="./Patient Portal - Patient Portal_files/jquery.ajaxsetup.js"></script>
+<script type="text/javascript" src="./Patient Portal - Patient Portal_files/jquery.easing.1.2.js"></script>
+<script type="text/javascript" src="./Patient Portal - Patient Portal_files/jquery.cookie-1.4.1.js"></script>
+<script type="text/javascript" src="./Patient Portal - Patient Portal_files/jquery-eu-cookie-law-popup.js"></script>
+<script type="text/javascript" src="./Patient Portal - Patient Portal_files/jquery.detectmobilebrowser.js"></script>
+
+<script type="text/javascript" src="./Patient Portal - Patient Portal_files/jquery.ui.combobox.js"></script>
+<script type="text/javascript" src="./Patient Portal - Patient Portal_files/jquery.doubleScroll.js"></script>
+<script type="text/javascript" src="./Patient Portal - Patient Portal_files/accessibility.js"></script>
+
+<script type="text/javascript" src="./Patient Portal - Patient Portal_files/modernizr.custom.71153.js"></script>
+<script type="text/javascript" src="./Patient Portal - Patient Portal_files/ICanHaz.min.js"></script>
+<script type="text/javascript" src="./Patient Portal - Patient Portal_files/iscroll.js"></script>
+<script type="text/javascript" src="./Patient Portal - Patient Portal_files/rotate3di.js"></script>
+
+
+<script type="text/javascript" src="./Patient Portal - Patient Portal_files/jquery.checkbox.js"></script>
+<link rel="stylesheet" media="screen" href="./Patient Portal - Patient Portal_files/jquery.checkbox.css">
+
+
+
+<script type="text/javascript" src="./Patient Portal - Patient Portal_files/pp.js"></script>
+<script type="text/javascript" src="./Patient Portal - Patient Portal_files/pp-dr.js"></script>
+
+
+
+
+<script type="text/javascript">
+    PP.CONTEXT_ROOT = '';
+    PP.LOGOUT_URL = PP.CONTEXT_ROOT + "/logout";
+    PP.AFTER_LOGOUT_URL = "https://sso.sm.ee/auth/realms/som/protocol/openid-connect/logout?redirect_uri=https://www.digilugu.ee/logoutmessage";
+    PP.AFTER_FORCED_LOGOUT_URL = PP.AFTER_LOGOUT_URL + '&forcedLogout=true';
+    PP.TARA_AUTH = PP.CONTEXT_ROOT + "/tara/authenticate";
+    PP.RELOGIN_URL = PP.AFTER_FORCED_LOGOUT_URL != undefined ?
+        (PP.AFTER_FORCED_LOGOUT_URL).replace("/logoutmessage", "/tara/authenticate") : PP.TARA_AUTH;
+</script>
+
+
+
+<script type="text/javascript" src="./Patient Portal - Patient Portal_files/header-bar-help.js"></script>
+<script type="text/javascript" src="./Patient Portal - Patient Portal_files/extend-std-api.js"></script>
+<script type="text/javascript" src="./Patient Portal - Patient Portal_files/alert-box.js"></script>
+<script type="text/javascript" src="./Patient Portal - Patient Portal_files/horizontal-scrolling.js"></script>
+<script type="text/javascript" src="./Patient Portal - Patient Portal_files/rotatable-box.js"></script>
+<script type="text/javascript" src="./Patient Portal - Patient Portal_files/read-more-dialog.js"></script>
+<script type="text/javascript" src="./Patient Portal - Patient Portal_files/tooltip-dialog.js"></script>
+<script type="text/javascript" src="./Patient Portal - Patient Portal_files/fading-overlay.js"></script>
+<script type="text/javascript" src="./Patient Portal - Patient Portal_files/mobile-menu.js"></script>
+<script type="text/javascript" src="./Patient Portal - Patient Portal_files/personal-details.js"></script>
+<script type="text/javascript" src="./Patient Portal - Patient Portal_files/address-input.js"></script>
+<script type="text/javascript" src="./Patient Portal - Patient Portal_files/role-dropdown.js"></script>
+<script type="text/javascript" src="./Patient Portal - Patient Portal_files/notification-popup.js"></script>
+<script type="text/javascript" src="./Patient Portal - Patient Portal_files/vaccineCertificate.js"></script>
+
+
+
+
+<!--[if lt IE 10]>
+<script type="text/javascript" src="/resources/js/libs/PIE.js?1.9.114.5c9cc2a"></script>
+<script type="text/javascript" src="/resources/js/common/ie-rounded-corners.js?1.9.114.5c9cc2a"></script>
+<![endif]-->
+
+
+
+
+<script>
+    $(document).ready(function () {
+
+        PP.applyAccessibility('');
+        PP.applyAccessibility('');
+
+        $(PP.BACK_BUTTON_SELECTOR).on("keydown", function (event) {
+            if (event.keyCode === $.ui.keyCode.ENTER) {
+                $(PP.BACK_BUTTON_SELECTOR).trigger("click");
+            }
+        });
+
+        $('#additional-info-modal').on("keydown", function (event) {
+            if (event.keyCode === $.ui.keyCode.TAB) {
+                $('#dialog-message').removeAttr("role");
+            }
+        });
+
+        $("input").keydown(function (event) {
+            if (event.keyCode == $.ui.keyCode.ENTER || event.keyCode == 13) {
+                event.preventDefault();
+            }
+        });
+
+        $(".clickable").on("keydown", function (event) {
+            let target = $(event.target);
+            if (event.keyCode === $.ui.keyCode.ENTER) {
+                if (!target.is("button") && !target.hasClass("tooltip")) {
+                    $(event.target).trigger('click');
+                }
+            }
+        });
+
+        $('[role="button"]').on("keydown", function (event) {
+            let value = $(event.target);
+            if (event.keyCode === $.ui.keyCode.ENTER) {
+                if (!value.hasClass("tooltip") && !value.hasClass("tooltipButton")) {
+                    value.trigger('click');
+                }
+            }
+        });
+
+        $('.btn').on("keydown", function (event) {
+            if (event.keyCode === $.ui.keyCode.SPACE) {
+                $(event.target).trigger('click');
+            }
+        });
+
+        // on modal open lock tab selections within modal screen
+        document.addEventListener('keydown', function (e) {
+            let isTabPressed = e.key === 'Tab' || e.keyCode === 9;
+            let isEnterPressed = e.key === 'Enter' || $.ui.keyCode.ENTER;
+            if (!isTabPressed) {
+                return;
+            }
+            {
+                const modal = PP.filterVisible($(PP.FULL_SCREEN_BACK_FLIP_SELECTOR + ',' + PP.DIALOG_OVERLAY_SELECTOR));
+                if (modal.length !== 1) {
+                    return;
+                }
+
+                //modal window focus logic
+                const focusableElements = "[role='button'], button, [href], input, select, textarea, [tabindex]:not([tabindex='-1'])";
+                const firstFocusableElement = PP.filterVisible(modal[0].querySelectorAll(focusableElements))[0]; // get first element to be focused inside modal
+                const focusableContent = PP.filterVisible(modal[0].querySelectorAll(focusableElements));
+                const lastFocusableElement = focusableContent[focusableContent.length - 1]; // get last element to be focused inside modal
+
+                // add all the elements inside modal which you want to make focusable
+                if (e.shiftKey) { // if shift key pressed for shift + tab combination
+                    if (document.activeElement === firstFocusableElement) {
+                        lastFocusableElement.focus(); // add focus for the last focusable element
+                        e.preventDefault();
+                    }
+                } else { // if tab key is pressed
+                    if (document.activeElement === lastFocusableElement) {
+                        // if focused has reached to last focusable element then focus first focusable element after pressing tab
+                        firstFocusableElement.focus(); // add focus for the first focusable element
+                        e.preventDefault();
+                    }
+                }
+                // firstFocusableElement.focus();
+                // e.preventDefault();
+            }
+        });
+    });
+
+</script>
+<script>
+    $(function () {
+        $(document).tooltip({
+            items: "[data-toggle]",
+            position: {
+                at: 'right top-25%'
+            },
+            content: function () {
+                return "<img height='15' src='/resources/images/external.jpg' alt='external-link'/>";
+            }
+        });
+    });
+</script>
+
+
+
+    
+
+
+
+
+    
+
+
+
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            let isOpera = !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+            if (isOpera) {
+                $('#opera-message').show();
+            }
+
+            if ($(".eupopup").length > 0) {
+                $(document).euCookieLawPopup().init({
+                    'info': 'YOU_CAN_ADD_MORE_SETTINGS_HERE',
+                    'cookiePolicyUrl': 'https://www.tehik.ee/andmekaitsetingimused',
+                    'popupTitle': 'This website is using cookies.',
+                    'popupText': 'We use them to give you the best experience. If you continue using our website, we will assume that you are happy to receive all cookies on this website.',
+                    'readMoreInfo' : 'readmoreDialog.openFullScreenDialogMessage(\'#readMoreInfo\', \'#fullScreenReadMoreInfo\')',
+                    'buttonContinueTitle': 'Continue',
+                    'buttonLearnmoreTitle': 'Privacy policy',
+                    'buttonReadMore' : 'Read more',
+                });
+            }
+        });
+    </script>
+    
+
+<script type="text/javascript" data-name="TokenSigning">(function() {
+    // Promises
+    var _eid_promises = {};
+    // Turn the incoming message from extension
+    // into pending Promise resolving
+    window.addEventListener("message", function(event) {
+        if (event.source !== window) return;
+        if (event.data.src && (event.data.src === "background.js")) {
+            console.log("Page received: ");
+            console.log(event.data);
+            // Get the promise
+            if (event.data.nonce) {
+                var p = _eid_promises[event.data.nonce];
+                // resolve
+                if (event.data.result === "ok") {
+                    if (event.data.signature !== undefined) {
+                        p.resolve({hex: event.data.signature});
+                    } else if (event.data.version !== undefined) {
+                        p.resolve(event.data.extension + "/" + event.data.version);
+                    } else if (event.data.cert !== undefined) {
+                        p.resolve({hex: event.data.cert});
+                    } else {
+                        console.log("No idea how to handle message");
+                        console.log(event.data);
+                    }
+                } else {
+                    // reject
+                    p.reject(new Error(event.data.result));
+                }
+                delete _eid_promises[event.data.nonce];
+            } else {
+                console.log("No nonce in event msg");
+            }
+        }
+    }, false);
+
+    window.TokenSigning = function() {
+        function nonce() {
+            var val = "";
+            var hex = "abcdefghijklmnopqrstuvwxyz0123456789";
+            for (var i = 0; i < 16; i++) val += hex.charAt(Math.floor(Math.random() * hex.length));
+            return val;
+        }
+
+        function messagePromise(msg) {
+            return new Promise(function(resolve, reject) {
+                // amend with necessary metadata
+                msg["nonce"] = nonce();
+                msg["src"] = "page.js";
+                // send message
+                window.postMessage(msg, "*");
+                // and store promise callbacks
+                _eid_promises[msg.nonce] = {
+                    resolve: resolve,
+                    reject: reject
+                };
+            });
+        }
+        this.getCertificate = function(options) {
+            var msg = {type: "CERT", lang: options.lang, filter: options.filter};
+            console.log("getCertificate()");
+            return messagePromise(msg);
+        };
+        this.sign = function(cert, hash, options) {
+            var msg = {type: "SIGN", cert: cert.hex, hash: hash.hex, hashtype: hash.type, lang: options.lang, info: options.info};
+            console.log("sign()");
+            return messagePromise(msg);
+        };
+        this.getVersion = function() {
+            console.log("getVersion()");
+            return messagePromise({
+                type: "VERSION"
+            });
+        };
+    };
+})();</script></head>
+
+<body class="login-page ">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    headerBarHelp.setup();
+    lastNoteBar.setup();
+    accessibility.setup();
+    mobileMenu.setup();
+
+    openAccessibilityWindow = function () {
+        let x = document.getElementById("accessibility-dropdown-content");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+    moveToMain = function () {
+        let mainArea = $('[role="main"]');
+        let region = $('[role="region"]');
+        if (mainArea.length) {
+            mainArea.find(':focusable').first().focus();
+            mainArea[0].scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        } else if (region.length) {
+            region.find(':focusable').first().focus();
+            region[0].scrollIntoView({
+                behavior: "smooth",
+                block: "nearest"
+            });
+        }
+        $('.hidden-header').hide();
+    }
+
+    $(window).bind('keydown.esc', function (evt) {
+        let x = document.getElementById("accessibility-dropdown-content");
+        let menu = $('.header').find('.role-dropdown-container ul');
+        let helpMenu = $('#help-dropdown');
+        if (evt.keyCode === $.ui.keyCode.ESCAPE && x.style.display === "block") {
+            x.style.display = "none";
+        } else if (evt.keyCode === $.ui.keyCode.ESCAPE) {
+            menu.hide();
+            helpMenu.hide();
+        }
+    });
+
+    $(window).bind('click', function (e) {
+        let header = $('.header');
+        let accMenu = header.find('#accessibility-dropdown-content');
+        let helpMenu = header.find('.help-dropdown-container ul');
+        let mobileMenu = header.find('#mobile-menu-content');
+        if (!$(e.target).hasClass('accessibility') && accMenu.is(':visible')) {
+            accMenu.hide();
+        } else if (!$(e.target).hasClass('help-button') && helpMenu.is(':visible')) {
+            helpMenu.hide();
+        } else if (e.target.id !== 'mobile-menu-logo' && mobileMenu.is(':visible')) {
+            mobileMenu.hide();
+        }
+    });
+
+    $(document).ready(function () {
+        let x = document.getElementById("accessibility-dropdown-content");
+        let menu = $('.header').find('.role-dropdown-container ul');
+        let helpMenu = $('#help-dropdown');
+        let FAQ = $('a#faq');
+
+        let width = window.devicePixelRatio || window.screen.availWidth / document.documentElement.clientWidth;
+        $(window).on('resize', function () {
+            if ($(this).width() !== width) {
+                width = $(this).width();
+                if (width < 751) {
+                    $('.role-dropdown-container').css('width', width / 2.4);
+                    $('#representation').css('max-width', width / 3.6);
+                } else if (width > 751) {
+                    $('.role-dropdown-container').css('width', 'auto');
+                    $('#representation').css('max-width', '70ch')
+                }
+            }
+        });
+
+        $('.accessibility-option').on("keydown", function (event) {
+            if (event.keyCode === $.ui.keyCode.ENTER) {
+                document.getElementById(event.target.id).click();
+            }
+        });
+
+        $('#accessibility-ordinary-line-height').on("keydown", function (event) {
+            if (event.keyCode === $.ui.keyCode.TAB) {
+                x.style.display = "none";
+            }
+        });
+
+        $('.submenu > li').on('keydown', function (event) {
+            if (event.keyCode === $.ui.keyCode.ENTER) {
+                $(event.target).trigger('click');
+            }
+        });
+
+        $(document).on("keyup", function (event) {
+            if (event.keyCode === $.ui.keyCode.TAB) {
+                if (event.target.id === 'logoutButton') {
+                    helpMenu.hide();
+                } else if ($('a.messages.no-contrast-change').is(':focus')) {
+                    menu.hide();
+                }
+            }
+        });
+
+        $('button.goToMain').focusout(function () {
+            $('.hidden-header').height(0);
+        });
+        $('button.goToMain').focusin(function () {
+            $('.hidden-header').height('50%');
+        });
+    });
+
+    handleActiveClass = function (element1, element2) {
+        element1.removeClass('is-active');
+        element2.addClass('is-active');
+    }
+
+    chooseAccessibilityOption = function (option, element) {
+        const accOrdinary = $('#accessibility-ordinary');
+        const accContrast = $('#accessibility-contrast');
+        const accLineHeight = $('#accessibility-line-height');
+        const accLineHeightOrdinary = $('#accessibility-ordinary-line-height');
+        $('.accessibility-option').remove('accessibility-high-contrast-button');
+        if (!$(element).hasClass('is-active')) {
+            if (option === PP.CONFIG.ACCESSIBILITY.CONTRAST.HIGH) {
+                handleActiveClass(accOrdinary, accContrast);
+            } else if (option === PP.CONFIG.ACCESSIBILITY.CONTRAST.NORMAL) {
+                handleActiveClass(accContrast, accOrdinary);
+            } else if (option === PP.CONFIG.ACCESSIBILITY.LINE_HEIGHT.ONE_FIVE) {
+                handleActiveClass(accLineHeightOrdinary, accLineHeight);
+            } else {
+                handleActiveClass(accLineHeight, accLineHeightOrdinary);
+            }
+        }
+        PP.setAccessibility(option);
+    }
+</script>
+
+
+    <!-- Piwik -->
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(["trackPageView"]);
+        _paq.push(["enableLinkTracking"]);
+
+        (function () {
+            var u = (("https:" === document.location.protocol) ? "https"
+                : "http")
+                + "://lugeja.e-tervis.ee/piwik/";
+            _paq.push(["setTrackerUrl", u + "piwik.php"]);
+            _paq.push(["setSiteId", "4"]);
+            var d = document, g = d.createElement("script"), s = d
+                .getElementsByTagName("script")[0];
+            g.type = "text/javascript";
+            g.defer = true;
+            g.async = true;
+            g.src = u + "piwik.js";
+            s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <!-- End Piwik Code -->
+
+
+
+
+
+
+
+
+
+
+<div class="header-bg " role="banner" aria-label="Header">
+    <div class="header hidden-header " style="height: 0">
+        <button class="goToMain left-col" onclick="         moveToMain()">
+            <span>Skip to main content</span>
+        </button>
+    </div>
+    <div class="header ">
+        <div class="left-col dropdown-container mobile-menu-dropdown-container" id="mobile-menu-button">
+            <svg id="mobile-menu-logo" tabindex="0" viewBox="0 0 100 60" width="40" height="40">
+                <rect width="100" height="8"></rect>
+                <rect y="30" width="100" height="8"></rect>
+                <rect y="60" width="100" height="8"></rect>
+            </svg>
+            <div id="mobile-menu-content" style="display:none;">
+                <div style="display:block; width:44vh;" class="mobileMenuItem">
+                    <button aria-labelledby="acc-label" class="accMain">Accessibility</button>
+                    <div id="accessibility-mobile-submenu">
+                        <div class="mobileMenuItem">
+                            <button id="contrast-button">
+                                Contrast
+                            </button>
+                            <div id="submenu-contrast" class="submenu">
+                                <li tabindex="0" onclick="chooseAccessibilityOption(PP.CONFIG.ACCESSIBILITY.CONTRAST.HIGH, this)">
+                                    High contrast
+                                </li>
+                                <li tabindex="0" onclick="chooseAccessibilityOption(PP.CONFIG.ACCESSIBILITY.CONTRAST.NORMAL, this)">
+                                    Ordinary view
+                                </li>
+                            </div>
+                        </div>
+                        <div class="mobileMenuItem">
+                            <button id="line-height-button">
+                                Line height
+                            </button>
+                            <div id="submenu-line-height" class="submenu">
+                                <li tabindex="0" onclick="chooseAccessibilityOption(PP.CONFIG.ACCESSIBILITY.LINE_HEIGHT.ONE_FIVE, this)">
+                                    Line height 1.5
+                                </li>
+                                <li tabindex="0" onclick="chooseAccessibilityOption(PP.CONFIG.ACCESSIBILITY.LINE_HEIGHT.NORMAL, this)">
+                                    Ordinary view
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="left-col dropdown-container accessibility-dropdown">
+            <button class="accessibility">Accessibility</button>
+            <div id="accessibility-dropdown-content" style="display:none;">
+                <div style="margin-bottom: 3.0em;">
+                    <h4 style="display:inline-block;float:left;">Contrast:</h4>
+                    <div class="acc-buttons-container">
+                        <div tabindex="0" style="display:inline-block" role="button" id="accessibility-contrast" class="accessibility-option no-contrast-change" onclick="chooseAccessibilityOption(PP.CONFIG.ACCESSIBILITY.CONTRAST.HIGH, this)">
+                            High contrast
+                        </div>
+                        <div tabindex="0" style="display:inline-block; margin-left: -0.4em;" role="button" id="accessibility-ordinary" class="accessibility-option is-active no-contrast-change" onclick="chooseAccessibilityOption(PP.CONFIG.ACCESSIBILITY.CONTRAST.NORMAL, this)">
+                            Ordinary view
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 style="display:inline-block;float:left;">Line height:</h4>
+                    <div class="acc-buttons-container">
+                        <div tabindex="0" style="display:inline-block" role="button" id="accessibility-line-height" class="accessibility-option no-contrast-change" onclick="chooseAccessibilityOption(PP.CONFIG.ACCESSIBILITY.LINE_HEIGHT.ONE_FIVE, this)">
+                            Line height 1.5
+                        </div>
+                        <div tabindex="0" role="button" id="accessibility-ordinary-line-height" class="accessibility-option is-active no-contrast-change" onclick="chooseAccessibilityOption(PP.CONFIG.ACCESSIBILITY.LINE_HEIGHT.NORMAL, this)">
+                            Ordinary view
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="right-col">
+            <ul>
+                <li style="display: none"><a href="javascript: void(0)">
+                    <img src="./Patient Portal - Patient Portal_files/icon-sitemap.png" width="44" height="43" alt="Sitemap">
+                </a></li>
+                
+                
+                    <li>
+                        <div role="button" tabindex="0" class="rect-button login-button">
+                            <a href="est-main/Minu%20e-tervis%20-%20Patsiendiportaal.html">Log in</a>
+                        </div>
+                    </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+    <!--Mantis 4020  -->
+    <div class="right-col">
+        <style type="text/css">
+            #nav {
+                max-width: 980px;
+                margin: 1em auto;
+                padding-right: 20px;
+            }
+
+            #nav ul {
+                margin: 10px auto;
+                padding: 0;
+                font: 1em "Arial Black", sans-serif;
+            }
+
+            #nav ul li {
+                display: flex;
+                float: left;
+                min-width: 140px;
+                text-align: center;
+            }
+
+            #nav ul li a {
+                text-decoration: none;
+                margin-left: 5px;
+                padding: 10px 25px;
+                width: 100%;
+                background: #0f6dad;
+                color: #ffffff;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 120%;
+            }
+        </style>
+        <style type="text/css" media="print">
+            #nav {
+                display: none;
+            }
+        </style>
+        <span>
+			<div id="nav">
+                
+
+
+
+
+
+
+
+<script type="text/javascript">
+    let currentLocation = window.location.href;
+    new AlertBox('healthRecordClosed', currentLocation, 'privacy/get', 'isClosed').setup();
+</script>
+
+<div id="healthRecordClosed" class="alert-box " style="display: none" tabindex="0">
+    <div class="wrap">
+        <div class="l">
+            <div>
+                Digital health record is closed for the doctor
+            </div>
+        </div>
+    </div>
+</div>
+
+
+				<ul style="float: right;" role="complementary" aria-label="Language options">
+
+                    
+                        <li>
+                            <a href="https://www.digilugu.ee/login?locale=et" role="button">Eesti</a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="https://www.digilugu.ee/login?locale=ru" role="button">Русский</a>
+                        </li>
+                    
+
+                    
+
+				</ul>
+
+			</div>
+
+		</span>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- WRAPPER STARTS -->
+<div class="wrapper">
+    <div class="heading">
+        <table id="heading-table">
+            <tbody><tr>
+                <td>
+                    
+                        <h1 class="logo no-contrast-change">
+                            <span>
+                                
+                                    
+                                    
+                                        Patient Portal
+                                    
+                                
+                            </span>
+                        </h1>
+                    
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    
+                    
+                    
+                    
+                </td>
+            </tr>
+        </tbody></table>
+        
+        
+
+
+
+
+
+    </div>
+
+
+<main id="main" aria-label="Main content">
+    <div class="sec-wrapper">
+        
+
+
+
+
+
+
+
+
+
+
+
+        <div class="sec-content" role="region" aria-label="Secondary content">
+            
+
+
+
+
+
+<!-- FIRST ROW STARTS -->
+<div class="sec-intro">
+    <div class="sec-intro-text">
+        <div class="intro-container">
+            
+                
+                
+                    <p class="survey-banner">
+                        <a data-toggle="tooltip" title="" href="https://www.digilugu.ee/surveyInfo" target="_blank">Participate in health data survey!</a>
+                    </p>
+                    <p>The Patient Portal allows you to view your medical data, submit statements of intention, appoint representative(s) for yourself, and act on behalf of the persons who have appointed you as their representative.<br>Please refer all questions, technical issues and proposals for further developments to <strong>the help desk of Health and Welfare Information Systems Centre by phone at +372&nbsp;794&nbsp;3943 (7:00-22:00) or e-mail at <a href="mailto:abi@tehik.ee">abi@tehik.ee</a></strong>.<br></p>
+                
+            
+        </div>
+        
+            <div style="padding: 10px; font-size: initial !important;">
+                <h3>News</h3>
+                <br>
+                <ul style="list-style: inside;">
+                    
+                        
+                            <li>
+                                <span style="font-size: small; font-weight: bold;">
+                                        2022-02-11 16:56
+                                </span>
+                                <p>Keep in mind! A European Union COVID recovery certificate cannot be created based on a rapid antigen test. A recovery certificate can only be created with a confirmed PCR test and it can be done starting from the 11th day after receiving the result. The time the test was done is also important – exactly 11 days must have passed (11x24h).</p>
+                            </li>
+                        
+                        
+                    
+                        
+                        
+                            <li>
+                                <span style="font-size: small; font-weight: bold;">
+                                        2021-11-02 10:03
+                                </span>
+                                <p style="color: red;font-style: italic;">At the national eBooking system, you can book, change and cancel if necessary, the appointment time for the first dose of COVID-19 vaccination, the second dose and also the booster dose according to the time offers of the medical institutions. <br>The timing of vaccination with the booster dose for people with immunodeficiency will be agreed with your doctor. <br>You can book an appointment for the COVID-19 vaccination by calling 1247 or by contacting the reception of another nearby healthcare provider. <br>You can find the nearest vaccination place on the <a href="https://vaktsineeri.ee/en/covid-19/getting-a-vaccination/">vaktsineeri.ee</a> website <a href="https://vaktsineeri.ee/en/covid-19/getting-a-vaccination/">Getting a vaccination</a>.</p>
+                            </li>
+                        
+                    
+                        
+                            <li>
+                                <span style="font-size: small; font-weight: bold;">
+                                        2021-10-14 13:39
+                                </span>
+                                <p>We would like to inform you that we have created the EU digital COVID vaccination certificate for all those who had previously created the Estonian COVID-19 immunization certificate. The certificate is downloadable and printable on the EU Digital COVID Certificates subpage.</p>
+                            </li>
+                        
+                        
+                    
+                        
+                            <li>
+                                <span style="font-size: small; font-weight: bold;">
+                                        2021-08-13 19:04
+                                </span>
+                                <p>Here you will find a guide on how to create EU digital COVID certificates: <a href="https://www.tehik.ee/el-covid-toendite-loomise-juhend">Guide to creating digital EU COVID certificates</a> </p>
+                            </li>
+                        
+                        
+                    
+                </ul>
+            </div>
+        
+    </div>
+</div>
+
+
+
+    <!-- FIRST ROW ENDS -->
+    <ul class="sec-row sec-border clearfix" id="login-table">
+        <!-- SECOND ROW STARTS -->
+        <li class="login-page-box">
+            <div class="sec-txt" tabindex="0" role="link">
+                <img class="ut-logo" alt="UT-Pealogo" src="./Patient Portal - Patient Portal_files/tartu_ylikool-pohilogo-sinine-est.png">
+                <p>Demographic, geographic and epidemiological study of SARS-CoV-2 susceptible citizens</p>
+                
+                <a role="link" data-toggle="tooltip" aria-label="Read about Tartu University study" class="link lightgreen" href="https://koroona.ut.ee/?lang=en" target="_blank">Read more</a>
+            </div>
+        </li>
+        <li class="login-page-box">
+            <div class="sec-txt" tabindex="0" role="link">
+                <h2>Health information system</h2>
+                <p>
+                    The health information system includes medical data the health care service providers have submitted about you.
+                    
+                    <a role="link" data-toggle="tooltip" aria-label="Read more about Health information system" class="link teal" href="https://www.tehik.ee/tervise-infosusteem" target="_blank">Read more</a>
+                </p>
+            </div>
+        </li>
+        <li class="login-page-box">
+            <div class="sec-txt" tabindex="0" role="link">
+                <h2>Patient rights and data protection</h2>
+                <p>
+                    In Estonia, data related to health care are collected in the health information system. Through the patient portal, you can access the data in the health information system, submit additional information and change your personal data. You can find more information about the security and protection of your data here.
+                    
+                    <a role="link" data-toggle="tooltip" aria-label="Read more about data safety on portal" class="link purple" href="https://www.tehik.ee/tehiku-tood" target="_blank">Read more</a>
+                </p>
+            </div>
+        </li>
+
+            
+
+        <!-- SECOND ROW ENDS -->
+
+        <!-- THIRD ROW STARTS -->
+        <li class="sec-bg haigekassa-bg">
+            <div class="sec-txt" tabindex="0" role="link">
+                <h2>Important topics</h2>
+                <p>
+                    Web pages where you can find systemic information related to health and health care management.
+                    
+                    <a role="link" data-toggle="tooltip" aria-label="Read more about healthcare management and health" class="link red" href="https://www.tehik.ee/olulised-teeviidad" target="_blank">Read more</a>
+                </p>
+            </div>
+        </li>
+        <li class="sec-bg sec-last">
+            <div class="sec-txt" tabindex="0" role="link">
+                <h2>National eBooking system</h2>
+                <p>
+                    Booking, changing and cancelling the specialist visit time
+                    
+                    <a role="link" data-toggle="tooltip" aria-label="Read more about national eBooking system" class="link blackblue" href="https://www.tehik.ee/uleriigiline-digiregistratuur" target="_blank">Read more</a>
+                </p>
+            </div>
+        </li>
+        <!--added package leaflets -->
+        <li class="login-page-box">
+            <div class="sec-txt" tabindex="0" role="link">
+                <h2>Package leaflets</h2>
+                <p>
+                    You can find package leaflets of the over-the-counter medicines in the Register of Medicinal Products.
+                    
+                    <a role="link" data-toggle="tooltip" aria-label="Read more about package leaflets" class="link teal" href="https://www.ravimiregister.ee/en/publichomepage.aspx" target="_blank">Read more</a>
+                </p>
+            </div>
+        </li>
+        <!--deleted old logo  -->
+        <li class="login-page-box">
+            <div class="sec-txt" tabindex="0" role="link">
+                <h2>TEHIK</h2>
+                <p>
+                    The Health and Welfare Information Systems Center (TEHIK) is an information and communication technology competence center in the field of health, social and work.
+                    
+                    <a role="link" data-toggle="tooltip" aria-label="Read more about TEHIK" class="link lightgreen" href="http://www.tehik.ee/" target="_blank">Read more</a>
+                </p>
+            </div>
+        </li>
+    </ul>
+    <!-- THIRD ROW ENDS -->
+    
+    
+
+
+
+<div class="eupopup eupopup-bottom"></div>
+
+<div role="dialog" tabindex="0" aria-modal="true" id="fullScreenReadMoreInfo" class="full-screen-back-flip" style="display:none; z-index: 10000000;">
+	<div class="wrapper fs-content" aria-labelledby="readMore" style="display:none;">
+		<div class="heading" role="heading">
+			
+
+
+
+
+<button class="back-button" role="button" tabindex="0" style="float: right; display: flex; margin: 8px;">
+    <img class="clickable" alt="Close" aria-label="Sulge" width="73" height="73" src="./Patient Portal - Patient Portal_files/close-gray.png">
+</button>
+
+			<h1 id="readMore">Additional information of cookies</h1>
+		</div>
+		<div role="document" class="sec-additional">
+			<p></p><p>We place so-called cookies in the browser(s) of your device (computer, smart device, etc.) in order for the patient portal to work properly, analyze its use and provide the best user experience.</p>  <p>The cookie itself is a small text file that contains information that is used to identify the user and improve the user experience of the website.</p><p>Cookies make it possible to ensure that the Patient Portal better meets your needs, for example, that it is better to find the necessary information on the website and that the use of the website is secure.</p><p>Cookies do not read or transmit information from the user's device.</p> <br> <strong>Essential cookies</strong> <br> <p>These cookies allow you to navigate our website, do not collect information about you that could be used for marketingpurposes, and do not remember where you have been online. The website will not function properly without these cookies, so these cookies cannot be disabled.</p> <br> <table class="readMoreTable"> <tbody><tr class="readMoreTitle"><th>The name of the cookie</th><th>Source</th> <th>Expiry date</th><th>Purpose</th></tr> <tr><th>JSESSIONID</th><th>www.digilugu.ee</th> <th>Session</th><th>Is used to monitor the session</th></tr> </tbody></table> <br> <strong>Analytical cookies</strong> <br> <p>These cookies are used to collect information about how you use this website.</p> <br> <table class="readMoreTable"> <tbody><tr class="readMoreTitle"><th>The name of the cookie</th><th>Source</th> <th>Expiry date</th><th>Purpose</th></tr> <tr><th>_pk_id</th><th>www.digilugu.ee</th> <th>13 months</th><th>Registers a unique ID used to generate statistics on how a visitor uses the website</th></tr> <tr><th>_pk_ses</th><th>www.digilugu.ee</th> <th>30 minutes</th><th>Registers a unique ID used to generate statistics on how a visitor uses the website</th></tr> </tbody></table> <br> <strong>User-experience cookies</strong> <br> <p>These cookies are necessary for your accessibility preferences.</p><br> <table class="readMoreTable"> <tbody><tr class="readMoreTitle"><th>The name of the cookie</th><th>Source</th> <th>Expiry date</th><th>Purpose</th></tr> <tr class="readModeRowValue"><th>EU_COOKIE_LAW_CONSENT</th><th>www.digilugu.ee</th> <th>30 days</th><th>Confirmation of the use of cookies</th></tr> <tr><th>Accessibility</th><th>www.digilugu.ee</th> <th>1 year</th><th>Accessibility contrast</th></tr> <tr><th>Accessibility-line-height</th><th>www.digilugu.ee</th> <th>1 year</th><th>Accessibility line spacing</th></tr> <tr><th>pp_locale_cookie</th><th>www.digilugu.ee</th> <th>30 days</th><th>Remembers the user's language selection</th></tr> </tbody></table> <br> <strong>Manage and delete cookies in your browser</strong> <br> <p>Cookies used on the Patient Portal can be enabled or disabled in the browser. Disabling a cookie or cookie category does not automatically delete the cookie from your browser. Instructions for managing cookies: <a data-toggle="tooltip" title="" target="_blank" href="https://support.google.com/chrome/answer/95647?hl=en">Chrome</a>,<a data-toggle="tooltip" title="" target="_blank" href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09">Edge</a> </p><p></p>
+		</div>
+	</div>
+</div>
+
+
+        </div>
+    </div>
+</main>
+
+</div>
+<!-- WRAPPER ENDS -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="dialog" id="session-timeout-dialog" style="display: none">
+    <div class="blocking-overlay dialog bg" tabindex="0"></div>
+    <div class="blocking-overlay dialog dialog-content ">
+        
+                
+    
+
+
+
+
+
+<h1 id="" class="" role="">
+  
+        <span class="less-important-text">Session</span>
+        <span class="negative-emphasis session-expires-title">expires</span>
+        <span class="negative-emphasis session-expired-title">expired</span>
+    
+</h1>
+
+    
+
+
+
+
+<h2 id="" class="">
+  
+        in {0} seconds
+    
+</h2>
+    
+
+
+
+
+
+
+<div id="message " class="message session-expires-message">
+  
+        User session has been inactive for a while. Choose 'Log out' to end your user session or 'Continue' to keep using the system.
+    
+</div>
+
+    
+
+
+
+
+
+
+<div id="message " class="message session-expired-message">
+  
+        User session expired. Choose 'Continue' to end your user session.
+    
+</div>
+
+    
+
+
+
+
+
+
+
+<div role="button" tabindex="0" id="" class="rect-button cancel-button">
+
+    Log out
+</div>
+
+    
+
+
+
+
+
+
+
+<div role="button" tabindex="0" id="" class="rect-button ok-button">
+
+    Continue
+</div>
+
+
+                
+    </div>
+</div>
+
+<div class="local-blocking-overlay-spinner"></div>
+
+
+<div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div></body></html>

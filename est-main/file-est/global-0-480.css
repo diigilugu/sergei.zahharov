@@ -1,0 +1,622 @@
+@media all and (max-width: 480px) {
+
+    .wrapper, .header {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 2.00rem;
+    }
+
+    #certificateFrame {
+        height: 54em;
+    }
+
+    #epicrises-list-start {
+        margin-top: 0;
+    }
+
+    #my-desktop,
+    #examinations-table,
+    #login-table,
+    #hospital-table,
+    #epicrisis-table,
+    #personal-data-table,
+    .covid-results-table,
+    .cards-table,
+    ul.sec-row.clearfix {
+        display: grid;
+        display: -ms-grid;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        column-gap: 0.8%;
+        row-gap: 1em;
+    }
+
+    #health-certificates-table,
+    #epicrisis-table,
+    #infantile-table,
+    #intentions-table {
+        width: 54%;
+    }
+
+    #access-table > li:nth-child(1),
+    #log-filter > li:nth-child(1),
+    #my-desktop > li:nth-child(1),
+    #vaccine-certificates-table > li:nth-child(1) {
+        -ms-grid-column: 1;
+        -ms-grid-row: 1;
+    }
+
+    #access-table > li:nth-child(2),
+    #log-filter > li:nth-child(2),
+    #my-desktop > li:nth-child(2),
+    #vaccine-certificates-table > li:nth-child(2) {
+        -ms-grid-column: 1;
+        -ms-grid-row: 3;
+    }
+
+    #access-table > li:nth-child(3),
+    #log-filter > li:nth-child(3),
+    #my-desktop > li:nth-child(3),
+    #vaccine-certificates-table > li:nth-child(3) {
+        -ms-grid-column: 1;
+        -ms-grid-row: 5;
+    }
+
+    #my-desktop > li:nth-child(4),
+    #vaccine-certificates-table > li:nth-child(4) {
+        -ms-grid-column: 1;
+        -ms-grid-row: 7;
+    }
+
+    #my-desktop > li:nth-child(5),
+    #vaccine-certificates-table > li:nth-child(5) {
+        -ms-grid-column: 1;
+        -ms-grid-row: 9;
+    }
+
+    #my-desktop > li:nth-child(6),
+    #vaccine-certificates-table > li:nth-child(6) {
+        -ms-grid-column: 1;
+        -ms-grid-row: 11;
+    }
+
+    #my-desktop > li:nth-child(7) {
+        -ms-grid-column: 1;
+        -ms-grid-row: 13;
+    }
+
+    #my-desktop > li:nth-child(8) {
+        -ms-grid-column: 1;
+        -ms-grid-row: 15;
+    }
+
+    #my-desktop > li:nth-child(9) {
+        -ms-grid-column: 1;
+        -ms-grid-row: 17;
+    }
+
+    .representation {
+        display: block !important;
+        padding-left: 35px !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 15vh;
+    }
+
+    .header .dropdown-container.role-dropdown-container .r .represents,
+    .header .dropdown-container.role-dropdown-container .r .representer,
+    .sec-row li.sec-img,
+    #my-desktop > li.sec-double .illustration,
+    #logout-desktop,
+    #help-element {
+        display: none;
+    }
+
+    .representation > div {
+        width: 100%;
+    }
+
+    #nav ul {
+        width: 18em;
+    }
+
+    #log-filter {
+        display: block;
+        width: 240px;
+    }
+
+    div.rect-button.save-button span.text,
+    div.rect-button.print-button span.text,
+    div.rect-button.pdf-button span.text,
+    div.rect-button.up-button span.text {
+        bottom: 10px;
+        font-size: 16px;
+        line-height: normal;
+        overflow-wrap: break-word;
+    }
+
+    div.rect-button.print-button, div.rect-button.pdf-button, div.rect-button.up-button {
+        width: 55px !important;
+        height: 55px !important;
+        background: #404042 !important;
+    }
+
+    .priButton_right {
+        font-size: 0.76em !important;
+    }
+
+    .sec-row li#healthRecordBigBox ul {
+        columns: 1;
+        -webkit-columns: 1;
+        -moz-columns: 1;
+    }
+
+    #immunisationBox > #main-container {
+        right: 0px;
+    }
+
+    .heading {
+        margin-top: 90px;
+        padding-bottom: 20px;
+    }
+
+    .heading h1.logo {
+        background: url('https://www.digilugu.ee/resources/images/icon-h1.png') 95% 86% no-repeat;
+        padding: 0 50px 0 0;
+        width: 230px;
+    }
+
+    .heading-login {
+        flex-wrap: wrap;
+        min-width: 455px;
+        max-width: 471px;
+    }
+
+    .ria.banner {
+        float: left;
+        padding-top: 10px;
+    }
+
+    #opera-message {
+        margin-top: 220px;
+    }
+
+    .header .right-col {
+        float: right;
+        min-width: 44px;
+    }
+
+    .header .right-col ul {
+        float: left;
+    }
+
+    .header .right-col ul li {
+        float: left;
+        padding: 0 10px 0 0;
+    }
+
+    .header .right-col ul li:last-child {
+        padding: 0;
+    }
+
+    .header .right-col li.search {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .header .search input {
+        width: 220px;
+    }
+
+    .header .dropdown-container.role-dropdown-container {
+        width: 400px;
+    }
+
+    .header .dropdown-container.role-dropdown-container .l {
+        background-image: url(../images/tegelased.png);
+        background-position: 10px;
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-color: #ccc !important;
+        width: 100% !important;
+    }
+
+    .header .dropdown-container.role-dropdown-container .r {
+        position: absolute;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        padding-inline-start: 35px !important;
+    }
+
+    .tabs.declaration.floating {
+        position: relative;
+    }
+
+    .floating.tabs {
+        position: relative;
+    }
+
+    .sidebar {
+        width: auto;
+        margin: 0;
+    }
+
+    .sidebar .sec-row > li, .sidebar .sec-row > li:nth-child(2) {
+        margin: 0 0 20px 0;
+    }
+
+    .sec-content,
+    .sec-content.rectangle,
+    .sec-row li.sec-double {
+        width: 100%;
+    }
+
+    .sec-row {
+        margin: 0;
+    }
+
+    .sec-border {
+        background: none;
+        padding: 0;
+    }
+
+    .sec-row > li {
+        max-width: none;
+        width: 100%;
+    }
+
+    .sec-row li.sec-cta {
+        width: 100%;
+        margin: 0;
+    }
+
+    .sec-row li.sec-cta div:first-child {
+        float: right;
+        margin: 0 5px 0 0;
+        width: 102px;
+    }
+
+    .sec-intro {
+        font-size: 14px;
+        min-height: 0;
+        min-width: 410px;
+        width: fit-content;
+        max-width: 471px;
+        display: block;
+    }
+
+    .sec-row li .login-1 h2,
+    .sec-row li .login-2 h2,
+    .sec-row li .login-3 h2 {
+        font-size: 45px;
+    }
+
+    .sec-row li .login-1 {
+        background-size: 50%;
+    }
+
+    .sec-row li .login-2 {
+        background-size: 25%;
+    }
+
+    .sec-100-percent {
+        background: url(../images/first-row-bg.png) 0 480px repeat-x;
+    }
+
+    .sec-100-percent .sec-row > li,
+    .sec-100-percent .sec-row li.sec-double,
+    .sec-100-percent .sec-row li.sec-3-2 {
+        margin: 0 0 7.14% 0;
+        width: 100%;
+    }
+
+    .sec-100-percent .sec-row li.sec-3-2 {
+        margin-bottom: 10%;
+    }
+
+    .sec-100-percent .sec-row li.sec-double {
+        width: 100%;
+        min-height: 0;
+    }
+
+    .sec-100-percent .sec-row li.sec-double .sec-txt {
+        min-height: 0;
+    }
+
+    .sec-100-percent .sec-row li.sec-last {
+        margin-right: 0;
+    }
+
+    .sec-100-percent .sec-row li:nth-child(5) {
+        margin: 0 4.54% 4.54% 0;
+    }
+
+    .sec-intro {
+        font-size: 14px;
+        min-height: 0;
+        min-width: auto;
+        display: block;
+    }
+
+    .sec-intro-text {
+        width: inherit
+    }
+
+    #dataTable {
+        margin-top: 50px;
+    }
+
+    .dataTable caption {
+        visibility: visible;
+        font-size: 2em;
+        padding: 5px;
+    }
+
+    .tableView-wrapper .dataTable.responsive-table {
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    .dataTable.responsive-table td::before {
+        display: block;
+        padding: 10px 0 0 10px;
+        position: absolute;
+        font-weight: bold;
+        white-space: pre-wrap;
+        width: 110px;
+        font-size: 0.92em;
+    }
+
+    .tableView-wrapper .dataTable.responsive-table th,
+    .tableView-wrapper .dataTable.responsive-table tr:first-of-type,
+    .tableView-wrapper .dataTable.dataTable.responsive-table tr#treatmentCostSum td::before {
+        display: none;
+    }
+
+    .tableView-wrapper table.dataTable.responsive-table td {
+        /*Behave like a row */
+        display: table-row;
+        background-image: none;
+        background-color: transparent;
+        height: 40px;
+    }
+
+    .tableView-wrapper .dataTable.dataTable.responsive-table tr > td:last-of-type {
+        border-bottom: 1px solid gray;
+        position: relative;
+        display: inherit;
+    }
+
+    .tableView-wrapper .dataTable.responsive-table tr .padding {
+        max-width: 100%;
+        padding: 10px 10px 10px 125px;
+    }
+
+    .tableView-wrapper .dataTable.responsive-table td b,
+    .tableView-wrapper .dataTable.responsive-table span.small,
+    .tableView-wrapper .dataTable.responsive-table td span.date span.row3,
+    .tableView-wrapper .dataTable.responsive-table td span.date span,
+    .tableView-wrapper table tr#treatmentCostSum .padding b {
+        display: block;
+        padding: 0;
+        font-size: 0.92em;
+        word-break: break-word;
+    }
+
+    .tableView-wrapper table tr#treatmentCostSum .padding {
+        padding: 10px;
+    }
+
+    .tableView-wrapper .dataTable.responsive-table tr:nth-child(even) {
+        background-color: white;
+    }
+
+    .tableView-wrapper .dataTable.responsive-table tr:nth-child(odd) {
+        background-color: #f9f9f9;
+    }
+
+    .tableView-wrapper table tr#treatmentCostSum {
+        white-space: normal;
+    }
+
+    #my-desktop > li {
+        max-height: 900px;
+    }
+
+    .sec-row li#healthRecordBigBox div.sec-txt {
+        height: 858px;
+    }
+
+    .login-page .sec-border {
+        background-image: none;
+    }
+
+    .login-page .sec-row > li {
+        margin: 0 1% 1% 0;
+        width: 99%;
+    }
+
+    .login-page .sec-row > li:nth-child(2n) {
+        margin: 0 0 1% 0;
+    }
+
+    .login-page .sec-row > li.sec-double {
+        width: 86.5%;
+    }
+
+    .blocking-overlay.dialog .message {
+        width: 70% !important;
+        font-size: 70%;
+        padding-bottom: 8%;
+    }
+
+    #close-document-doctor-warning-dialog .rect-button, #close-all-doctor-warning-dialog .rect-button {
+        width: 27% !important;
+    }
+
+    img.clickable {
+        width: 30px;
+        height: 30px;
+    }
+
+    .horizontal-data-wrapper {
+        width: fit-content;
+        clear: left;
+    }
+
+    table.horizontal-data > tbody > tr > td {
+        display: table-row;
+    }
+
+    .mainVaccineDiv {
+        width: 99% !important;
+        text-align: center;
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .wide-email-input-certificate {
+        width: 96% !important;
+    }
+
+    .heading .breadcrumbs {
+        float: left;
+    }
+
+    .alert-box {
+        margin-left: 0;
+    }
+
+    .alert-box .l {
+        padding: 0 0 0 16px;
+    }
+
+    .alert-box .l div {
+        font-size: 1em;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .heading .breadcrumbs li a,
+    .heading .breadcrumbs li > span {
+        width: 70px;
+    }
+
+    div.rect-button.save-button {
+        width: 70px;
+        height: 70px;
+        background-color: #0072b9;
+        background-image: none;
+    }
+
+    .logout .sec-content {
+        width: 306px;
+    }
+
+    #logout-mobile {
+        display: inline-block;
+    }
+
+    .accessibility-dropdown,
+    .dropdown-lastnote {
+        display: none !important;
+    }
+
+    #mobile-menu-button {
+        display: block;
+        width: min-content;
+        padding-right: 4%;
+    }
+
+    .relation {
+        padding-left: 0.2em !important;
+    }
+
+    .roles-button {
+        font-size: 0;
+        padding: 0 !important;
+        width: 100%;
+    }
+
+    #dental-view-table,
+    #health-declarations-table {
+        -ms-grid-rows: 1fr 2em 1fr;
+    }
+
+    #dental-view-table > li,
+    #login-table > li,
+    #documents-table > li,
+    #health-declarations-table > li {
+        -ms-grid-column: 1;
+    }
+
+    #login-table > li:nth-child(1),
+    #dental-view-table > li:nth-child(1),
+    #documents-table > li:nth-child(1),
+    #health-declarations-table > li:nth-child(1) {
+        -ms-grid-row: 1;
+    }
+
+    #login-table > li:nth-child(2),
+    #dental-view-table > li:nth-child(2),
+    #documents-table > li:nth-child(2),
+    #health-declarations-table > li:nth-child(2) {
+        -ms-grid-row: 3;
+    }
+
+    #login-table > li:nth-child(3),
+    #documents-table > li:nth-child(3) {
+        -ms-grid-row: 5;
+    }
+
+    #login-table > li:nth-child(4),
+    #documents-table > li:nth-child(4) {
+        -ms-grid-row: 7;
+    }
+
+    #login-table > li:nth-child(5),
+    #documents-table > li:nth-child(5) {
+        -ms-grid-row: 9;
+    }
+
+    #login-table > li:nth-child(6),
+    #documents-table > li:nth-child(6) {
+        -ms-grid-row: 11;
+    }
+
+    #login-table > li:nth-child(7),
+    #documents-table > li:nth-child(7) {
+        -ms-grid-row: 13;
+    }
+
+    #login-table > li:nth-child(8),
+    #documents-table > li:nth-child(8) {
+        -ms-grid-row: 15;
+    }
+
+    #documents-table > li:nth-child(9) {
+        -ms-grid-row: 17;
+    }
+
+    #documents-table > li:nth-child(10) {
+        -ms-grid-row: 19;
+    }
+
+    #documents-table > li:nth-child(11) {
+        -ms-grid-row: 21;
+    }
+
+    #documents-table > li:nth-child(12) {
+        -ms-grid-row: 23;
+    }
+
+    .intro-container {
+        display: block;
+    }
+}

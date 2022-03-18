@@ -1,0 +1,20 @@
+.ui-combobox {
+  /*display: inline-block;*/
+  /*margin-top: -8px;*/
+  z-index: 50;
+}
+
+.ui-combobox-active input {
+  z-index: 10000;
+}
+
+.ui-combobox-toggle {
+  height: 25px;
+  margin-left: -1px;
+  /*top: 9px;*/
+}
+
+.ui-autocomplete.ui-menu {
+  overflow-y: scroll;
+  height: 300px;
+}

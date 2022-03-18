@@ -1,0 +1,1076 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ------------------ GENERAL RULES ------------------ */
+
+decBlock, .shortcuts, p, ul.bulletPoints, label, .counter, table {
+    font-size: 14px !important;
+    font-family: Helvetica, Arial, sans-serif !important;
+}
+
+ul.squareBlock li div p {
+    font-size: 12px !important;
+}
+
+.bold {
+    font-weight: bold !important;
+}
+
+.sec-wrapper-container {
+    background: #fff;
+    border: 1px solid #c5c5c5;
+}
+
+.content-wrapper h2,
+.content-wrapper h3,
+.content-wrapper h4 {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.content-wrapper h2 {
+    float: left;
+    font-size: 24px
+}
+
+.content-wrapper h3,
+.content-wrapper h4 {
+    color: #701688;
+    padding: 10px 0;
+}
+
+.content-wrapper h3 {
+    font-size: 18px !important;
+}
+
+.content-wrapper h4 {
+    font-size: 14px !important;
+}
+
+p {
+    padding: 10px 0;
+    min-height: 16px;
+    clear: left;
+}
+
+.sec-txt p {
+    padding: 0;
+    margin: 0 0 auto;
+}
+
+.box.small p {
+    padding: 13px !important
+}
+
+p span.line18 {
+    margin-right: 10px;
+}
+
+p span.switch {
+    margin: -4px 0 0 5px;
+}
+
+small {
+    font-size: 11px !important;
+    line-height: 14px;
+    color: #9c9b9b;
+}
+
+a,
+p a,
+.linkButton {
+    color: #000;
+    text-decoration: underline;
+}
+
+button.linkButton {
+    color: #701688;
+}
+
+a:hover,
+p a:hover,
+.linkButton:hover {
+    text-decoration: none;
+}
+
+.dropdown-container a,
+.btn a {
+    text-decoration: none
+}
+
+i {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+p i {
+    font-size: 16px !important;
+}
+
+p + ul {
+    padding-bottom: 3px !important;
+}
+
+ul.bulletPoints,
+.decBlock ul {
+    padding-left: 30px !important;
+}
+
+ul.bulletPoints li,
+.decBlock ul li,
+.shortcuts ul li {
+    text-indent: 0;
+    line-height: 120%;
+}
+
+p + ul li {
+    padding: 5px 0 5px 2px;
+}
+
+ul.bulletPoints li {
+    list-style-image: url('../images/bulletPoint.png');
+    list-style-position: 25px 25px;
+}
+
+.breadcrumbs ul {
+    padding-left: 0 !important;
+}
+
+.breadcrumbs ul li {
+    list-style: none !important;
+    padding-left: 0;
+    text-indent: 0;
+    margin-bottom: 13px !important;
+}
+
+ul.inputList {
+    float: left;
+    padding: 0 !important;
+    margin-bottom: 5px;
+}
+
+ul.inputList.simple li {
+    margin: 0 0 5px 0;
+}
+
+ul.inputList,
+ul.inputList li {
+    position: relative;
+}
+
+ul.inputList li {
+    margin: 5px 0;
+    padding-left: 0;
+    padding-bottom: 8px;
+    /*text-indent: -22px;*/
+    list-style: none;
+}
+
+ul.inputList li p {
+    font-weight: bold;
+    color: #060606;
+}
+
+ul.inputList li p.line18 {
+    font-weight: normal;
+}
+
+ul.inputList li div {
+    width: auto;
+}
+
+#iConfirmCheck input[type=checkbox] + label {
+    width: 750px;
+    padding-left: 20px;
+}
+
+ul.inputList li label,
+.left-side-radio-buttons input[type=radio] + label {
+    width: 218px;
+    padding-left: 20px;
+}
+
+ul.inputList li.large-list label {
+    width: auto;
+    padding-left: 20px;
+}
+
+ul.inputList li label,
+ul.inputList li input[type=text],
+#iConfirmCheck input[type=checkbox] + label,
+.left-side-radio-buttons input[type=radio] + label {
+    float: left;
+}
+
+ul.inputList li input[type=text] {
+    line-height: 20px !important;
+}
+
+ul.inputList li input[type=text],
+ul.inputList li textarea {
+    width: 680px;
+    margin: -5px 0 0 0;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+ul.inputList.simple li input[type=text],
+ul.inputList.simple li textarea {
+    margin: 0;
+}
+
+ul.inputList li,
+ul.inputList li textarea {
+    float: left;
+}
+
+ul.inputList li ul {
+    margin-top: -4px;
+}
+
+ul.inputList li ul li {
+    list-style: none;
+    width: 850px; /* use different widths on responsive design */
+}
+
+ul.inputList li ul:last-child li {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+ul.inputList li ul li label {
+    width: 188px;
+}
+
+ul.squareBlock {
+    float: left;
+    width: 980px;
+    padding: 0 !important
+}
+
+ul.squareBlock li {
+    float: left;
+    width: 185px;
+    height: 185px;
+    background: #fff;
+    margin: 0 20px 20px 0;
+    padding: 19px;
+    border: 1px solid #c5c5c5;
+    position: relative;
+    list-style: none;
+}
+
+ul.squareBlock li h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    color: #4a4e52;
+    font-size: 26px;
+    letter-spacing: 0;
+    line-height: 26px;
+    padding-bottom: 15px;
+}
+
+ul.squareBlock li h2 a:hover {
+    text-decoration: none;
+}
+
+ul.squareBlock li h2,
+ul.squareBlock li p {
+    text-indent: 0;
+}
+
+ul.squareBlock li p {
+    font-size: 12px;
+    padding: 4px 0 !important;
+}
+
+ul.squareBlock li p a {
+    color: #7f3f98;
+    text-decoration: underline;
+}
+
+ul.squareBlock li p a:hover {
+    text-decoration: none;
+}
+
+ul.squareBlock li .arrowPurple {
+    background: url('../images/arrowPurple.png') 0 0 no-repeat;
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+}
+
+ul.left li,
+ul.right li {
+    float: left;
+    list-style: none;
+}
+
+ul.left li {
+    margin: 0 0 0 10px;
+}
+
+ul.right li {
+    margin: 0 0 0 10px;
+}
+
+ul.left .priButton,
+ul.right .priButton {
+    margin: 0 !important;
+}
+
+
+/* ------------------ LAYOUT ELEMENTS ---------------- */
+
+.header .dropdown-container.role-dropdown-container,
+.r.ellipsis {
+    width: auto;
+}
+
+.messages {
+    background: url(https://www.digilugu.ee/resources/images/envelope.png) 10px 13px #0072bc no-repeat;
+    height: 43px;
+    width: 43px;
+    display: block;
+}
+
+.header .dropdown-lastnote ul {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    overflow: hidden;
+    box-shadow: 0px 0px 40px rgba(87, 88, 93, 0.7);
+    top: 43px;
+}
+
+.header .dropdown-lastnote ul li {
+    background-color: #E9E9E9;
+    border-bottom: solid 1px #a9a7a7;
+    overflow: hidden;
+    width: 500px;
+    padding: 10px;
+}
+
+
+.clear {
+    clear: both;
+}
+
+.line {
+    border-bottom: #fff 1px solid;
+    border-top: #c6c6c6 1px solid;
+}
+
+.line,
+.line-wide {
+    clear: both;
+    width: 100%;
+    margin: 25px 0 25px 0;
+    float: left;
+}
+
+.line-wide {
+    position: absolute;
+    left: 0;
+    margin: 0 !important;
+    border-bottom: #e2e2e2 1px solid;
+    border-top: #999 1px solid;
+}
+
+.line + p,
+.line + div p:first-child {
+    padding-top: 0 !important;
+}
+
+.content-wrapper div,
+.decBlock,
+.decBlock > div {
+    width: 100%;
+    /*float: left;*/
+    display: inline-block;
+}
+
+table.data {
+    width: 100%;
+}
+
+p + table.data {
+    margin-top: 10px;
+}
+
+table.data thead {
+    font-weight: bold;
+    color: #58595b;
+    border-right: 1px solid #ebebeb;
+    border-left: 1px solid #ebebeb;
+}
+
+table.data tbody {
+    border: 1px solid #dedede !important;
+    border-top: none !important;
+}
+
+table.data th {
+    background: #ebebeb !important;
+}
+
+table.data td,
+table.data th {
+    padding: 11px 10px 12px 10px !important;
+}
+
+table.data td {
+    border-right: 1px solid #dedede !important;
+    border-bottom: 1px solid #dedede !important;
+}
+
+.full-width {
+    width: 100%;
+}
+
+/* ------------------ FORM ELEMENTS ------------------ */
+
+label {
+    position: relative;
+    z-index: 5;
+}
+
+label[for] {
+    cursor: pointer;
+}
+
+input[type=text],
+textarea {
+    min-height: 20px;
+    background: #fff;
+    -khtml-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #acacac !important;
+    line-height: 1.2 !important;
+    padding: 5px;
+    margin-top: 0.3em;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+    -moz-box-shadow: 1px 1px 10px -5px #111 inset;
+    -webkit-box-shadow: 1px 1px 10px -5px #000 inset;
+    box-shadow: 1px 1px 7px -3px #000 inset;
+    border-top: 1px solid #aaa !important;
+    border-left: 1px solid #aaa !important;
+    border-right: 1px solid #ddd !important;
+    border-bottom: 1px solid #ddd !important;
+}
+
+textarea {
+    min-height: 15px;
+    resize: none;
+    padding: 8px 6px 4px 6px !important;
+}
+
+ul.inputList textarea.expand {
+    padding: 8px 60px 4px 6px !important;
+    width: 550px;
+}
+
+ul.inputList + [type=text],
+ul.inputList + textarea {
+    float: left;
+    width: 680px;
+    margin-top: 8px;
+}
+
+input {
+    vertical-align: middle;
+    margin: 2px 5px 2px 2px;
+    padding: 0;
+}
+
+/* START normal checkbox and radio styles */
+input[type=checkbox]:not(.prescriptionFilter),
+input[type=radio] {
+    position: absolute;
+    left: 0;
+    z-index: 1000;
+    opacity: 0;
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    /* IE 5-7 */
+    filter: alpha(opacity=0);
+    /* Netscape */
+    -moz-opacity: 0;
+    /* Safari 1.x */
+    -khtml-opacity: 0;
+    cursor: pointer;
+}
+
+.tableWholePage {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.tableWholePage input[type=checkbox],
+.tableWholePage input[type=radio] {
+    position: relative;
+    left: 0;
+    opacity: 100;
+}
+
+input[type=checkbox]:not(.prescriptionFilter) + label,
+input[type=radio] + label {
+    color: #060606;
+    display: block;
+}
+
+input[type=checkbox] + label {
+    /* tervisetõend */
+    font-weight: normal;
+}
+
+input[type=radio] + label {
+    padding-top: 2px;
+}
+
+li input[type=checkbox] + label,
+li input[type=radio] + label /*,
+.left-side-radio-buttons input[type=radio] + label*/
+{
+    /*background: url('../images/checkBox.png') 0 0 no-repeat;*/
+    padding-left: 22px;
+    padding-right: 20px;
+    text-indent: 0;
+    vertical-align: middle;
+    line-height: 1.3;
+}
+
+li input[type=checkbox] + label:before,
+li input[type=radio] + label:before /*,
+.left-side-radio-buttons input[type=radio] + label:before*/
+{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 20px;
+}
+
+li input[type=radio] + label:before /*,
+.left-side-radio-buttons input[type=radio] + label:before*/
+{
+    height: 18px;
+    background: url('../images/radioButton.png') 0 0 no-repeat;
+}
+
+li input[type=checkbox] + label:before {
+    height: 17px;
+    background: url('../images/checkBox.png') 0 0 no-repeat;
+}
+
+.checked {
+    background: blue !important
+}
+
+input[type=checkbox]:checked + label:before,
+input[type=checkbox]:active:checked + label:before {
+    background-position: 0 -17px;
+}
+
+input[type=checkbox]:focus + label:before,
+input[type=checkbox]:active:focus + label:before,
+input[type=checkbox]:hover + label:before {
+    background-position: 0 -34px;
+}
+
+input[type=checkbox]:checked:focus + label:before,
+input[type=checkbox].checked:active:focus + label:before,
+input[type=checkbox]:checked:hover + label:before {
+    background-position: 0 -51px;
+}
+
+input[type=checkbox][disabled] + label:before,
+input[type=checkbox][readonly] + label:before {
+    background-position: 0 -68px !important;
+}
+
+input[type=checkbox][disabled]:checked + label:before,
+input[type=checkbox][readonly]:checked + label:before {
+    background-position: 0 -85px !important;
+}
+
+/* END normal checkbox and radio styles */
+/* START switch styles */
+span.switch {
+    position: relative;
+    float: left;
+}
+
+span.switch input[type=checkbox] {
+    margin: 0;
+    width: 95px;
+    height: 23px;
+}
+
+span.switch input[type=checkbox]:hover {
+    cursor: pointer !important;
+}
+
+span.switch input[type=checkbox] + label:after {
+    display: block;
+    float: left;
+    background: url('../images/switchHandle.png') 0 0 no-repeat #ed1c24;
+    height: 13px;
+    -moz-box-shadow: 1px 1px 6px -1px #333 inset;
+    -webkit-box-shadow: 1px 1px 6px -1px #333 inset;
+    box-shadow: 1px 1px 6px -1px #333 inset;
+    -khtml-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    color: #fff;
+    font-weight: bold;
+    padding: 4px 15px 6px 30px;
+}
+
+span.switch input[type=checkbox]:checked + label:after {
+    background-position: right 0;
+    background-color: #50b848;
+    padding-right: 30px;
+    padding-left: 15px;
+}
+
+span.switch input[type=checkbox]:checked:focus + label:after,
+span.switch input[type=checkbox]:checked:hover + label:after {
+    background-color: green;
+}
+
+span.switch input[type=checkbox]:focus + label:after,
+span.switch input[type=checkbox]:hover + label:after {
+    background-color: #c4161c;
+}
+
+/* START names for .switch */
+.suletudAvatud input + label:after {
+    width: 50px;
+}
+
+.suletudAvatud input + label:after {
+    content: "Suletud";
+}
+
+.suletudAvatud input:checked + label:after {
+    content: "Avatud";
+}
+
+/* END names for .switch */
+/* END switch styles */
+/* START normal radiobutton styles */
+li input[type=radio] + label,
+.left-side-radio-buttons input[type=radio] + label {
+    /*background: url('../images/radioButton.png') 0 0 no-repeat;*/
+    padding-bottom: 5px;
+}
+
+input[type=radio]:checked + label:before,
+input[type=radio]:active:checked + label:before {
+    background-position: 0 -18px;
+}
+
+input[type=radio]:focus + label:before,
+input[type=radio]:active:focus + label:before,
+input[type=radio]:hover + label:before {
+    background-position: 0 -36px;
+}
+
+input[type=radio]:checked:focus + label:before,
+input[type=radio]:active.checked:focus + label:before,
+input[type=radio]:checked:hover + label:before {
+    background-position: 0 -54px;
+}
+
+input[type=radio][disabled] + label:before,
+input[type=radio][readonly] + label:before {
+    background-position: 0 -72px !important;
+}
+
+input[type=radio][disabled]:checked + label:before,
+input[type=radio][readonly]:checked + label:before {
+    background-position: 0 -90px !important;
+}
+
+/* END normal radiobutton styles */
+
+/* START button styles */
+.priButton_right {
+    padding: 10px;
+    height: 37px;
+    background: #701688;
+    border: none !important;
+    outline: none;
+    float: right;
+    font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif !important;
+    color: #fff;
+    line-height: 17px;
+    padding: 7px 20px;
+    clear: both;
+}
+
+.priButton_right:hover,
+.priButton_right:active,
+.priButton_right:focus {
+    background: #510d63;
+    outline: none
+}
+
+.priButton {
+    padding: 10px !important;
+    height: 37px;
+    background: #701688;
+    border: none !important;
+    outline: none;
+    font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif !important;
+    color: #fff !important;
+    line-height: 17px;
+    padding: 7px 20px;
+    margin: 10px 7px 0 0 !important;
+}
+
+.priButton:hover,
+.priButton:active,
+.priButton:focus {
+    background: #510d63;
+    outline: none
+}
+
+.priButton.red {
+    background-color: #ed1c24;
+}
+
+p .priButton.red {
+    margin: -4px 0 0 20px !important;
+}
+
+p .priButton.red:hover {
+    background: #c4161c
+}
+
+.priButton.caps {
+    text-transform: uppercase;
+}
+
+.linkButton {
+    background: none;
+    padding: 5px 0;
+    margin: 10px 0;
+    outline: none;
+    border: none;
+    font-size: 12px;
+}
+
+.langButton {
+    color: #701688;
+    cursor: pointer;
+}
+
+.linkNoline {
+    text-decoration: none
+}
+
+/* END button styles */
+
+/* ------------------ OTHER -------------------------- */
+
+.question {
+    position: relative;
+    float: left;
+    height: 15px;
+    width: 15px;
+    background: url('../images/iconQuestion.png') 0 0 no-repeat;
+    display: block;
+    margin-left: 5px;
+}
+
+.timeData {
+    padding-top: 11px;
+    line-height: 16px;
+    float: right !important;
+    text-align: right;
+    font-size: 12px;
+    width: 220px !important;
+    height: 100px;
+}
+
+.shortcuts {
+    background: url('../images/shortcBg.png') #701688;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    z-index: 2000;
+    box-shadow: 0 0 20px #000;
+    -moz-box-shadow: 0 0 20px #000;
+    -webkit-box-shadow: 0 0 20px #000;
+}
+
+.shortcuts div {
+    width: 960px !important;
+    margin: 0 auto !important;
+    float: none;
+    background: url('../images/shortcLogo.png') no-repeat;
+    height: 40px;
+}
+
+.shortcuts ul {
+    padding: 0 !important;
+    float: left;
+    margin-left: 107px;
+    border-left: 1px solid #5b146f;
+    border-right: 1px solid #995ba9;
+}
+
+.shortcuts ul li {
+    float: left;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.shortcuts ul li a {
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 19px 11px 19px !important;
+    display: block;
+    margin: 0;
+    border-left: 1px solid #995ba9;
+    border-right: 1px solid #5b146f;
+}
+
+.shortcuts ul li a:hover {
+    text-decoration: none;
+    background: #995ba9;
+}
+
+.counter {
+    position: relative;
+    display: inline-block;
+}
+
+.counter div {
+    position: absolute;
+    right: 0;
+    bottom: 1px;
+    z-index: 1;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+    width: 50px !important;
+    min-height: 10px !important;
+}
+
+.green-button {
+    float: left;
+    display: block;
+    padding: 10px;
+    font-size: 12px;
+    color: #fff;
+    background: #33a544;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.green-button.closed {
+    background: #ed1c24 !important;
+}
+
+.green-button.loading {
+    background-color: #FFFFFF !important;
+    background-image: url("../images/ajax-loader.gif") !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    border: 1px solid #C5C7C7;
+    cursor: default !important;
+    padding: 0;
+}
+
+
+/* ------------------ INLINE ELEMENTS ---------------- */
+
+.w220 {
+    width: 220px !important
+}
+
+.w740 {
+    width: 740px !important
+}
+
+.w960 {
+    width: 960px !important
+}
+
+.w50p {
+    width: 50% !important
+}
+
+.air-20 {
+    clear: both;
+    width: 100%;
+    height: 20px
+}
+
+.pad-40-bor {
+    padding: 39px !important
+}
+
+.sec-dec-wrapper {
+    height: 100%
+}
+
+.font16 {
+    font-size: 16px !important;
+}
+
+.line18 {
+    line-height: 1.8;
+    font-weight: normal;
+}
+
+.fontGreen {
+    color: #50b848;
+}
+
+.fontRed {
+    color: #d10c10;
+}
+
+.fontYellow {
+    color: #faa61a;
+}
+
+.disabled,
+.disabled p,
+.disabled h2,
+.disabled h3,
+.disabled h4,
+.disabled ul li,
+.disabled label,
+.disabled td,
+[readonly]:not(.certificateButton),
+[disabled] {
+    color: #bdbdbd !important;
+}
+
+span.disabled button,
+span.disabled table.data th {
+    color: #a76cb7;
+}
+
+.noWrap {
+    white-space: nowrap
+}
+
+.head-btn {
+    height: 40px;
+    width: 100%;
+}
+
+#head-btns {
+    font-size: 12px;
+}
+
+a.divLink {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    /* Makes sure the link doesn't get underlined */
+    z-index: 10;
+    /* raises anchor tag above everything else in div */
+    background-color: white;
+    /*workaround to make clickable in IE */
+    opacity: 0;
+    /*workaround to make clickable in IE */
+    filter: alpha(opacity=0);
+    /*workaround to make clickable in IE */
+}
+
+.geenivaramu-bg {
+    background-image: url('../images/geenivaramu.png') !important;
+    background-size: contain !important;
+}
+
+.ut-logo {
+    width: 100%;
+    max-height: 100%;
+    background-size: contain !important;
+}
+
+
+@media all and (max-width: 960px) and (min-width: 319px) {
+    ul.inputList textarea.expand {
+        padding: 8px 60px 4px 6px !important;
+        width: 80% !important;
+    }
+
+    ul.inputList li p {
+        font-weight: bold;
+        color: #060606;
+        width: 80% !important;
+    }
+
+    ul.inputList li div {
+        margin-top: 0.5em !important;
+    }
+
+    .priButton_right {
+        float: none !important;
+    }
+
+    input[type=checkbox]:not(.prescriptionFilter) + label, input[type=radio] + label {
+        max-width: 80% !important;
+    }
+
+    a, p a, .linkButton {
+        word-break: break-word !important;
+    }
+}
+
+@media all and (max-width: 540px) and (min-width: 319px) {
+    .priButton.caps {
+        font-size: 0.55em !important;
+    }
+}
+
+.certificate-button {
+    margin-bottom: 1em;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.readMoreTable {
+	text-align: left;
+	vertical-align: top;
+	padding: 2px 4px 2px 4px;
+    border: 1px solid #CCCCCC;
+    width: 100%;
+}
+
+.readMoreTable th {
+    border: 1px solid #CCCCCC;
+    padding-left: 5px;
+}
+
+.readMoreTitle {
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: #F5F5F5;
+	font-size: 12px;
+}

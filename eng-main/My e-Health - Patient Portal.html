@@ -1,0 +1,2959 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://www.digilugu.ee/?locale=en -->
+<html lang="en" translate="no" style="" class=" js flexbox flexboxlegacy canvas canvastext postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>My e-Health - Patient Portal</title>
+
+    
+
+
+
+
+
+
+<link href="https://www.digilugu.ee/resources/images/favicon.ico?1.9.114.5c9cc2a" rel="shortcut icon" type="image/vnd.microsoft.icon">
+
+
+<link href="./My e-Health - Patient Portal_files/css" rel="stylesheet" type="text/css">
+<!--for PP new font -->
+<link href="./My e-Health - Patient Portal_files/css(1)" rel="stylesheet" type="text/css">
+
+
+<link href="./My e-Health - Patient Portal_files/global.css" rel="stylesheet" media="screen">
+<link href="./My e-Health - Patient Portal_files/global-1206-.css" rel="stylesheet" media="screen">
+<link href="./My e-Health - Patient Portal_files/global-961-1205.css" rel="stylesheet" media="screen">
+<link href="./My e-Health - Patient Portal_files/global-780-960.css" rel="stylesheet" media="screen">
+<link href="./My e-Health - Patient Portal_files/global-481-779.css" rel="stylesheet" media="screen">
+<link href="./My e-Health - Patient Portal_files/global-0-480.css" rel="stylesheet" media="screen">
+
+<link href="./My e-Health - Patient Portal_files/print.css" rel="stylesheet" media="print">
+<link href="./My e-Health - Patient Portal_files/global(1).css" rel="stylesheet" media="screen">
+<link href="./My e-Health - Patient Portal_files/fonts.css" rel="stylesheet" media="screen">
+<link href="./My e-Health - Patient Portal_files/style.css" rel="stylesheet" media="screen">
+<link href="./My e-Health - Patient Portal_files/covid-cert-reissue-button-and-popup.css" rel="stylesheet" media="screen">
+<link href="./My e-Health - Patient Portal_files/jquery-ui-1.12.1.min.css" rel="stylesheet">
+<link href="./My e-Health - Patient Portal_files/jquery.ui.combobox.css" rel="stylesheet">
+<link href="./My e-Health - Patient Portal_files/chosen.min.css" rel="stylesheet">
+<link href="./My e-Health - Patient Portal_files/jquery-eu-cookie-law-popup.css" rel="stylesheet">
+<!--[if lt IE 8]>
+<link href="/resources/css/ie7.css?1.9.114.5c9cc2a" rel="stylesheet" media="screen" />
+<![endif]-->
+<!--[if IE 8]>
+<link href="/resources/css/ie8.css?1.9.114.5c9cc2a" rel="stylesheet" media="screen" />
+<![endif]-->
+
+
+
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/resources/js/libs/selectivizr-min.js?1.9.114.5c9cc2a"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/resources/js/libs/css3-mediaqueries.js?1.9.114.5c9cc2a"></script>
+<![endif]-->
+
+
+<script type="text/javascript" defer="" async="" src="./My e-Health - Patient Portal_files/piwik.js"></script><script type="text/javascript" src="./My e-Health - Patient Portal_files/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/jquery-ui-1.12.1.min.js"></script>
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/chosen-1.8.7.jquery.min.js"></script>
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/jquery.ajaxsetup.js"></script>
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/jquery.easing.1.2.js"></script>
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/jquery.cookie-1.4.1.js"></script>
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/jquery-eu-cookie-law-popup.js"></script>
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/jquery.detectmobilebrowser.js"></script>
+
+    
+        <script type="text/javascript" src="./My e-Health - Patient Portal_files/jquery.ui.datepicker-en-GB.js"></script>
+    
+    
+    
+
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/jquery.ui.combobox.js"></script>
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/jquery.doubleScroll.js"></script>
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/accessibility.js"></script>
+
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/modernizr.custom.71153.js"></script>
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/ICanHaz.min.js"></script>
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/iscroll.js"></script>
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/rotate3di.js"></script>
+
+
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/jquery.checkbox.js"></script>
+<link rel="stylesheet" media="screen" href="./My e-Health - Patient Portal_files/jquery.checkbox.css">
+
+
+
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/pp.js"></script>
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/pp-dr.js"></script>
+
+
+
+
+<script type="text/javascript">
+    PP.CONTEXT_ROOT = '';
+    PP.LOGOUT_URL = PP.CONTEXT_ROOT + "/logout";
+    PP.AFTER_LOGOUT_URL = "https://sso.sm.ee/auth/realms/som/protocol/openid-connect/logout?redirect_uri=https://www.digilugu.ee/logoutmessage";
+    PP.AFTER_FORCED_LOGOUT_URL = PP.AFTER_LOGOUT_URL + '&forcedLogout=true';
+    PP.TARA_AUTH = PP.CONTEXT_ROOT + "/tara/authenticate";
+    PP.RELOGIN_URL = PP.AFTER_FORCED_LOGOUT_URL != undefined ?
+        (PP.AFTER_FORCED_LOGOUT_URL).replace("/logoutmessage", "/tara/authenticate") : PP.TARA_AUTH;
+</script>
+
+
+
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/header-bar-help.js"></script>
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/extend-std-api.js"></script>
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/alert-box.js"></script>
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/horizontal-scrolling.js"></script>
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/rotatable-box.js"></script>
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/read-more-dialog.js"></script>
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/tooltip-dialog.js"></script>
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/fading-overlay.js"></script>
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/mobile-menu.js"></script>
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/personal-details.js"></script>
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/address-input.js"></script>
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/role-dropdown.js"></script>
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/notification-popup.js"></script>
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/vaccineCertificate.js"></script>
+
+
+    <script type="text/javascript" src="./My e-Health - Patient Portal_files/privacy-access-restriction.js"></script>
+    <script type="text/javascript" src="./My e-Health - Patient Portal_files/id-card-event-listener.js"></script>
+    <script type="text/javascript" src="./My e-Health - Patient Portal_files/session-timeout-dialog.js"></script>
+
+
+
+<!--[if lt IE 10]>
+<script type="text/javascript" src="/resources/js/libs/PIE.js?1.9.114.5c9cc2a"></script>
+<script type="text/javascript" src="/resources/js/common/ie-rounded-corners.js?1.9.114.5c9cc2a"></script>
+<![endif]-->
+
+
+
+
+<script>
+    $(document).ready(function () {
+
+        PP.applyAccessibility('');
+        PP.applyAccessibility('');
+
+        $(PP.BACK_BUTTON_SELECTOR).on("keydown", function (event) {
+            if (event.keyCode === $.ui.keyCode.ENTER) {
+                $(PP.BACK_BUTTON_SELECTOR).trigger("click");
+            }
+        });
+
+        $('#additional-info-modal').on("keydown", function (event) {
+            if (event.keyCode === $.ui.keyCode.TAB) {
+                $('#dialog-message').removeAttr("role");
+            }
+        });
+
+        $("input").keydown(function (event) {
+            if (event.keyCode == $.ui.keyCode.ENTER || event.keyCode == 13) {
+                event.preventDefault();
+            }
+        });
+
+        $(".clickable").on("keydown", function (event) {
+            let target = $(event.target);
+            if (event.keyCode === $.ui.keyCode.ENTER) {
+                if (!target.is("button") && !target.hasClass("tooltip")) {
+                    $(event.target).trigger('click');
+                }
+            }
+        });
+
+        $('[role="button"]').on("keydown", function (event) {
+            let value = $(event.target);
+            if (event.keyCode === $.ui.keyCode.ENTER) {
+                if (!value.hasClass("tooltip") && !value.hasClass("tooltipButton")) {
+                    value.trigger('click');
+                }
+            }
+        });
+
+        $('.btn').on("keydown", function (event) {
+            if (event.keyCode === $.ui.keyCode.SPACE) {
+                $(event.target).trigger('click');
+            }
+        });
+
+        // on modal open lock tab selections within modal screen
+        document.addEventListener('keydown', function (e) {
+            let isTabPressed = e.key === 'Tab' || e.keyCode === 9;
+            let isEnterPressed = e.key === 'Enter' || $.ui.keyCode.ENTER;
+            if (!isTabPressed) {
+                return;
+            }
+            {
+                const modal = PP.filterVisible($(PP.FULL_SCREEN_BACK_FLIP_SELECTOR + ',' + PP.DIALOG_OVERLAY_SELECTOR));
+                if (modal.length !== 1) {
+                    return;
+                }
+
+                //modal window focus logic
+                const focusableElements = "[role='button'], button, [href], input, select, textarea, [tabindex]:not([tabindex='-1'])";
+                const firstFocusableElement = PP.filterVisible(modal[0].querySelectorAll(focusableElements))[0]; // get first element to be focused inside modal
+                const focusableContent = PP.filterVisible(modal[0].querySelectorAll(focusableElements));
+                const lastFocusableElement = focusableContent[focusableContent.length - 1]; // get last element to be focused inside modal
+
+                // add all the elements inside modal which you want to make focusable
+                if (e.shiftKey) { // if shift key pressed for shift + tab combination
+                    if (document.activeElement === firstFocusableElement) {
+                        lastFocusableElement.focus(); // add focus for the last focusable element
+                        e.preventDefault();
+                    }
+                } else { // if tab key is pressed
+                    if (document.activeElement === lastFocusableElement) {
+                        // if focused has reached to last focusable element then focus first focusable element after pressing tab
+                        firstFocusableElement.focus(); // add focus for the first focusable element
+                        e.preventDefault();
+                    }
+                }
+                // firstFocusableElement.focus();
+                // e.preventDefault();
+            }
+        });
+    });
+
+</script>
+<script>
+    $(function () {
+        $(document).tooltip({
+            items: "[data-toggle]",
+            position: {
+                at: 'right top-25%'
+            },
+            content: function () {
+                return "<img height='15' src='/resources/images/external.jpg' alt='external-link'/>";
+            }
+        });
+    });
+</script>
+
+
+    
+
+
+
+
+
+    
+
+
+
+
+    <script type="text/javascript">
+
+        PP.CSRF_TOKEN = '3942dda4-7a7b-446d-8175-ab744ab715ea';
+
+        $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
+            if (originalOptions.type.toLowerCase() === "post") {
+                options.data += '&csrfToken=' + PP.CSRF_TOKEN;
+            }
+        });
+
+    </script>
+
+
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            if (PpToDr.getUrlVars()["redirectTo"] === 'DR_PORTAL') {
+                document.getElementsByTagName('body')[0].innerHTML = '';
+                document.getElementsByTagName('body')[0].innerHTML =
+                    PpToDr.redirectLoadingBody('Connecting to eBooking, please wait ...', 'Connection failed, please try again later!');
+                document.getElementById("drErrorMsg").style.visibility = "hidden";
+                PpToDr.connect();
+            }
+
+            // $('#DRButton').each(function () {
+            //     document.getElementById("drErrorMsg").style.visibility = "hidden";
+            //     drErrorMsg.classList.remove("drError");
+            // });
+
+            $('#DRButton').click(function () {
+
+                document.getElementById("drErrorMsg").style.visibility = "hidden";
+                let drDiv = document.getElementById("drDivId");
+                let drButton = document.getElementById("DRButton");
+
+                drButton.classList.remove("drButtonPassive");
+                drButton.classList.add("drButtonActive");
+                drDiv.classList.add("DRBoxSpinner");
+
+                PpToDr.connectFromBooking(drDiv, drButton, drErrorMsg);
+            });
+        });
+    </script>
+    
+
+<script type="text/javascript" data-name="TokenSigning">(function() {
+    // Promises
+    var _eid_promises = {};
+    // Turn the incoming message from extension
+    // into pending Promise resolving
+    window.addEventListener("message", function(event) {
+        if (event.source !== window) return;
+        if (event.data.src && (event.data.src === "background.js")) {
+            console.log("Page received: ");
+            console.log(event.data);
+            // Get the promise
+            if (event.data.nonce) {
+                var p = _eid_promises[event.data.nonce];
+                // resolve
+                if (event.data.result === "ok") {
+                    if (event.data.signature !== undefined) {
+                        p.resolve({hex: event.data.signature});
+                    } else if (event.data.version !== undefined) {
+                        p.resolve(event.data.extension + "/" + event.data.version);
+                    } else if (event.data.cert !== undefined) {
+                        p.resolve({hex: event.data.cert});
+                    } else {
+                        console.log("No idea how to handle message");
+                        console.log(event.data);
+                    }
+                } else {
+                    // reject
+                    p.reject(new Error(event.data.result));
+                }
+                delete _eid_promises[event.data.nonce];
+            } else {
+                console.log("No nonce in event msg");
+            }
+        }
+    }, false);
+
+    window.TokenSigning = function() {
+        function nonce() {
+            var val = "";
+            var hex = "abcdefghijklmnopqrstuvwxyz0123456789";
+            for (var i = 0; i < 16; i++) val += hex.charAt(Math.floor(Math.random() * hex.length));
+            return val;
+        }
+
+        function messagePromise(msg) {
+            return new Promise(function(resolve, reject) {
+                // amend with necessary metadata
+                msg["nonce"] = nonce();
+                msg["src"] = "page.js";
+                // send message
+                window.postMessage(msg, "*");
+                // and store promise callbacks
+                _eid_promises[msg.nonce] = {
+                    resolve: resolve,
+                    reject: reject
+                };
+            });
+        }
+        this.getCertificate = function(options) {
+            var msg = {type: "CERT", lang: options.lang, filter: options.filter};
+            console.log("getCertificate()");
+            return messagePromise(msg);
+        };
+        this.sign = function(cert, hash, options) {
+            var msg = {type: "SIGN", cert: cert.hex, hash: hash.hex, hashtype: hash.type, lang: options.lang, info: options.info};
+            console.log("sign()");
+            return messagePromise(msg);
+        };
+        this.getVersion = function() {
+            console.log("getVersion()");
+            return messagePromise({
+                type: "VERSION"
+            });
+        };
+    };
+})();</script></head>
+
+<body class="loggedin-page ">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    headerBarHelp.setup();
+    lastNoteBar.setup();
+    accessibility.setup();
+    mobileMenu.setup();
+
+    openAccessibilityWindow = function () {
+        let x = document.getElementById("accessibility-dropdown-content");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+    moveToMain = function () {
+        let mainArea = $('[role="main"]');
+        let region = $('[role="region"]');
+        if (mainArea.length) {
+            mainArea.find(':focusable').first().focus();
+            mainArea[0].scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        } else if (region.length) {
+            region.find(':focusable').first().focus();
+            region[0].scrollIntoView({
+                behavior: "smooth",
+                block: "nearest"
+            });
+        }
+        $('.hidden-header').hide();
+    }
+
+    $(window).bind('keydown.esc', function (evt) {
+        let x = document.getElementById("accessibility-dropdown-content");
+        let menu = $('.header').find('.role-dropdown-container ul');
+        let helpMenu = $('#help-dropdown');
+        if (evt.keyCode === $.ui.keyCode.ESCAPE && x.style.display === "block") {
+            x.style.display = "none";
+        } else if (evt.keyCode === $.ui.keyCode.ESCAPE) {
+            menu.hide();
+            helpMenu.hide();
+        }
+    });
+
+    $(window).bind('click', function (e) {
+        let header = $('.header');
+        let accMenu = header.find('#accessibility-dropdown-content');
+        let helpMenu = header.find('.help-dropdown-container ul');
+        let mobileMenu = header.find('#mobile-menu-content');
+        if (!$(e.target).hasClass('accessibility') && accMenu.is(':visible')) {
+            accMenu.hide();
+        } else if (!$(e.target).hasClass('help-button') && helpMenu.is(':visible')) {
+            helpMenu.hide();
+        } else if (e.target.id !== 'mobile-menu-logo' && mobileMenu.is(':visible')) {
+            mobileMenu.hide();
+        }
+    });
+
+    $(document).ready(function () {
+        let x = document.getElementById("accessibility-dropdown-content");
+        let menu = $('.header').find('.role-dropdown-container ul');
+        let helpMenu = $('#help-dropdown');
+        let FAQ = $('a#faq');
+
+        let width = window.devicePixelRatio || window.screen.availWidth / document.documentElement.clientWidth;
+        $(window).on('resize', function () {
+            if ($(this).width() !== width) {
+                width = $(this).width();
+                if (width < 751) {
+                    $('.role-dropdown-container').css('width', width / 2.4);
+                    $('#representation').css('max-width', width / 3.6);
+                } else if (width > 751) {
+                    $('.role-dropdown-container').css('width', 'auto');
+                    $('#representation').css('max-width', '70ch')
+                }
+            }
+        });
+
+        $('.accessibility-option').on("keydown", function (event) {
+            if (event.keyCode === $.ui.keyCode.ENTER) {
+                document.getElementById(event.target.id).click();
+            }
+        });
+
+        $('#accessibility-ordinary-line-height').on("keydown", function (event) {
+            if (event.keyCode === $.ui.keyCode.TAB) {
+                x.style.display = "none";
+            }
+        });
+
+        $('.submenu > li').on('keydown', function (event) {
+            if (event.keyCode === $.ui.keyCode.ENTER) {
+                $(event.target).trigger('click');
+            }
+        });
+
+        $(document).on("keyup", function (event) {
+            if (event.keyCode === $.ui.keyCode.TAB) {
+                if (event.target.id === 'logoutButton') {
+                    helpMenu.hide();
+                } else if ($('a.messages.no-contrast-change').is(':focus')) {
+                    menu.hide();
+                }
+            }
+        });
+
+        $('button.goToMain').focusout(function () {
+            $('.hidden-header').height(0);
+        });
+        $('button.goToMain').focusin(function () {
+            $('.hidden-header').height('50%');
+        });
+    });
+
+    handleActiveClass = function (element1, element2) {
+        element1.removeClass('is-active');
+        element2.addClass('is-active');
+    }
+
+    chooseAccessibilityOption = function (option, element) {
+        const accOrdinary = $('#accessibility-ordinary');
+        const accContrast = $('#accessibility-contrast');
+        const accLineHeight = $('#accessibility-line-height');
+        const accLineHeightOrdinary = $('#accessibility-ordinary-line-height');
+        $('.accessibility-option').remove('accessibility-high-contrast-button');
+        if (!$(element).hasClass('is-active')) {
+            if (option === PP.CONFIG.ACCESSIBILITY.CONTRAST.HIGH) {
+                handleActiveClass(accOrdinary, accContrast);
+            } else if (option === PP.CONFIG.ACCESSIBILITY.CONTRAST.NORMAL) {
+                handleActiveClass(accContrast, accOrdinary);
+            } else if (option === PP.CONFIG.ACCESSIBILITY.LINE_HEIGHT.ONE_FIVE) {
+                handleActiveClass(accLineHeightOrdinary, accLineHeight);
+            } else {
+                handleActiveClass(accLineHeight, accLineHeightOrdinary);
+            }
+        }
+        PP.setAccessibility(option);
+    }
+</script>
+
+
+    <!-- Piwik -->
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(["trackPageView"]);
+        _paq.push(["enableLinkTracking"]);
+
+        (function () {
+            var u = (("https:" === document.location.protocol) ? "https"
+                : "http")
+                + "://lugeja.e-tervis.ee/piwik/";
+            _paq.push(["setTrackerUrl", u + "piwik.php"]);
+            _paq.push(["setSiteId", "4"]);
+            var d = document, g = d.createElement("script"), s = d
+                .getElementsByTagName("script")[0];
+            g.type = "text/javascript";
+            g.defer = true;
+            g.async = true;
+            g.src = u + "piwik.js";
+            s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <!-- End Piwik Code -->
+
+
+
+
+
+
+
+
+
+
+<div class="header-bg " role="banner" aria-label="Header">
+    <div class="header hidden-header " style="height: 0">
+        <button class="goToMain left-col" onclick="         moveToMain()">
+            <span>Skip to main content</span>
+        </button>
+    </div>
+    <div class="header ">
+        <div class="left-col dropdown-container mobile-menu-dropdown-container" id="mobile-menu-button">
+            <svg id="mobile-menu-logo" tabindex="0" viewBox="0 0 100 60" width="40" height="40">
+                <rect width="100" height="8"></rect>
+                <rect y="30" width="100" height="8"></rect>
+                <rect y="60" width="100" height="8"></rect>
+            </svg>
+            <div id="mobile-menu-content" style="display:none;">
+                <div style="display:block; width:44vh;" class="mobileMenuItem">
+                    <button aria-labelledby="acc-label" class="accMain">Accessibility</button>
+                    <div id="accessibility-mobile-submenu">
+                        <div class="mobileMenuItem">
+                            <button id="contrast-button">
+                                Contrast
+                            </button>
+                            <div id="submenu-contrast" class="submenu">
+                                <li tabindex="0" onclick="chooseAccessibilityOption(PP.CONFIG.ACCESSIBILITY.CONTRAST.HIGH, this)">
+                                    High contrast
+                                </li>
+                                <li tabindex="0" onclick="chooseAccessibilityOption(PP.CONFIG.ACCESSIBILITY.CONTRAST.NORMAL, this)">
+                                    Ordinary view
+                                </li>
+                            </div>
+                        </div>
+                        <div class="mobileMenuItem">
+                            <button id="line-height-button">
+                                Line height
+                            </button>
+                            <div id="submenu-line-height" class="submenu">
+                                <li tabindex="0" onclick="chooseAccessibilityOption(PP.CONFIG.ACCESSIBILITY.LINE_HEIGHT.ONE_FIVE, this)">
+                                    Line height 1.5
+                                </li>
+                                <li tabindex="0" onclick="chooseAccessibilityOption(PP.CONFIG.ACCESSIBILITY.LINE_HEIGHT.NORMAL, this)">
+                                    Ordinary view
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                    <div class="mobileMenuItem">
+                        <button>
+                            <a style="text-decoration: none;" href="https://www.digilugu.ee/notifications" title="Notifications">
+                                Notifications
+                            </a>
+                        </button>
+                    </div>
+                    <div class="mobileMenuItem">
+                        <div class="buttonTitle">
+                            Help
+                        </div>
+                        <li class="helpLongText" tabindex="0">
+                            Please refer all questions or technical issues to <strong>the helpdesk of Health and Welfare Information Systems Centre by phone at +372&nbsp;794&nbsp;3943 (7:00-22:00) or e-mail at <a href="mailto:abi@tehik.ee">abi@tehik.ee</a></strong>.<br><br> We also invite you to send your proposals for further developments to this e-mail address, so that we can make this portal more convenient and useful for you and your friends. <br><br>See also <a data-toggle="tooltip" title="" id="faq" href="https://www.tehik.ee/info-patsiendile" target="_blank"><u>frequently asked questions</u></a>.
+                        </li>
+                            
+                            
+                            
+                            
+                    </div>
+                
+            </div>
+        </div>
+        <div class="left-col dropdown-container accessibility-dropdown">
+            <button class="accessibility">Accessibility</button>
+            <div id="accessibility-dropdown-content" style="display:none;">
+                <div style="margin-bottom: 3.0em;">
+                    <h4 style="display:inline-block;float:left;">Contrast:</h4>
+                    <div class="acc-buttons-container">
+                        <div tabindex="0" style="display:inline-block" role="button" id="accessibility-contrast" class="accessibility-option no-contrast-change" onclick="chooseAccessibilityOption(PP.CONFIG.ACCESSIBILITY.CONTRAST.HIGH, this)">
+                            High contrast
+                        </div>
+                        <div tabindex="0" style="display:inline-block; margin-left: -0.4em;" role="button" id="accessibility-ordinary" class="accessibility-option is-active no-contrast-change" onclick="chooseAccessibilityOption(PP.CONFIG.ACCESSIBILITY.CONTRAST.NORMAL, this)">
+                            Ordinary view
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 style="display:inline-block;float:left;">Line height:</h4>
+                    <div class="acc-buttons-container">
+                        <div tabindex="0" style="display:inline-block" role="button" id="accessibility-line-height" class="accessibility-option no-contrast-change" onclick="chooseAccessibilityOption(PP.CONFIG.ACCESSIBILITY.LINE_HEIGHT.ONE_FIVE, this)">
+                            Line height 1.5
+                        </div>
+                        <div tabindex="0" role="button" id="accessibility-ordinary-line-height" class="accessibility-option is-active no-contrast-change" onclick="chooseAccessibilityOption(PP.CONFIG.ACCESSIBILITY.LINE_HEIGHT.NORMAL, this)">
+                            Ordinary view
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            <div class="left-col dropdown-container role-dropdown-container" style="width: auto;">
+                
+                    <div class="l">
+                        <a role="button" tabindex="0" class="roles-button toggle-button">
+                            Switch roles
+                        </a>
+                        
+                        
+                        
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    function showSomWorkerDialog() {
+        $("#som-worker-form").get(0).reset();
+        $("#som-dialog #somError").html("&nbsp");
+        $("#som-dialog").show();
+    }
+
+    function hideSomWorkerDialog() {
+        $("#som-dialog").hide();
+    }
+
+    function showHbWorkerDialog() {
+
+        $("#hb-worker-form").get(0).reset();
+        $("#hb-dialog #hbError").html("&nbsp");
+        $("#hb-dialog").show();
+
+    }
+
+    function hideHbWorkerDialog() {
+        $("#hb-dialog").hide();
+    }
+</script>
+
+
+
+
+<script type="text/javascript">
+    roleDropdown.setup({
+        myId: '39009222216',
+        myFullName: 'Dmitri  Antipov',
+        onBehalfOfId: '39009222216',
+        onBehalfOfFullName: 'Dmitri  Antipov',
+        isSomWorker: "false" === "true",
+        isHbWorker: "false" === "true",
+        isRepresentativeWorkerActive: "false" === "true"
+    }, {
+        SELF: 'Myself',
+        TRUSTEE1: 'A representative to view data',
+        TRUSTEE2: 'A representative with full rights',
+        TRUSTEE3: 'A representative to buy prescribed items',
+        TRUSTEE1_TRUSTEE3: 'A representative to view data and buy prescribed items',
+        TRUSTEE4: 'A representative to buy prescribed items',
+        MOTHER1: 'Mother',
+        MOTHER2: 'Mother',
+        MOTHER3: 'Mother',
+        MOTHER4: 'Mother',
+        MOTHER5: 'Mother',
+        FATHER1: 'Father',
+        FATHER2: 'Father',
+        FATHER3: 'Father',
+        FATHER4: 'Father',
+        FATHER5: 'Father',
+        BROTHER5: 'Brother',
+        STEPBROTHER5: 'Step brother',
+        SISTER5: 'Sister',
+        STEPSISTER5: 'Step sister',
+        SPS: 'Wife',
+        GUARDIAN: 'Guardian',
+        GUARDIAN1: 'Guardian',
+        GUARDIAN2: 'Guardian',
+        GUARDIAN3: 'Guardian',
+        GUARDIAN4: 'Guardian',
+        TRUST1: 'Right to view',
+        TRUST2: 'Right to everything',
+        TRUST3: 'Right to prescriptions',
+        TRUST1_TRUST3: 'Right to view and prescriptions',
+        TRUST4: 'Right to prescriptions',
+        CHILD1: 'Child',
+        CHILD2: 'Child',
+        CHILD3: 'Child',
+        CHILD4: 'Child',
+        CHILD5: 'Child',
+        GRD: 'Ward',
+        GRD1: 'Ward',
+        GRD2: 'Ward',
+        GRD3: 'Ward',
+        GRD4: 'Ward',
+        DEATH_REPRESENTATIVE: 'Ward',
+        DEATH_REPRESENTATIVE_NULLIFIED: 'Ward',
+        DEATH_REPRESENTED: 'Ward',
+        DEATH_REPRESENTED_DISCARDED: 'Ward'
+    });
+</script>
+
+                        
+                        
+                        <ul class="roleDropdownConteinerClass">
+                            <li><li tabindex="0" class="selected" onclick="window.location.href=&#39;/onBehalfOf/choose?chosenPersonId=39009222216&#39;;">
+        <div>
+            <span class="name">Dmitri  Antipov</span>, 39009222216
+            <span class="relation">Myself</span>
+        </div>
+    </li><span class="has-spinner loading high-contrast-link-style">&nbsp;</span></li>
+                        </ul>
+                    </div>
+                
+
+                <div class="r ellipsis representation" id="representation" style="max-width: 70ch;">
+                    
+                        
+                        
+                            <div>
+                                <span class="represents">
+                                    
+                                    
+                                        
+                                    
+                                    Logged in and representing:
+                                </span>
+                                
+                                    <br>
+                                
+                                <span class="name">Dmitri  Antipov</span>
+                            </div>
+                            <br>
+                            <div>
+                                <span class="representer">
+                                    
+                                </span>
+                            </div>
+                        
+                    
+                </div>
+            </div>
+        
+        <div class="right-col">
+            <ul>
+                <li style="display: none"><a href="javascript: void(0)">
+                    <img src="./My e-Health - Patient Portal_files/icon-sitemap.png" width="44" height="43" alt="Sitemap">
+                </a></li>
+                
+                    <li>
+                        <div class="dropdown-lastnote">
+                            <a role="button" class="messages no-contrast-change" href="https://www.digilugu.ee/notifications" title="Notifications"></a>
+                            <ul style="display: none;">
+                                <li>
+                                    
+                                    
+                                        <span>No notifications</span>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="clickable" id="help-element" role="button" onclick="readmoreDialog.openFullScreenDialogMessage(&#39;#help-element&#39;, &#39;#fullScreenDialogHelp&#39;)" tabindex="0">
+                        <div class="dropdown-container help-dropdown-container">
+                            <div class="l help-button">
+                                Help
+                            </div>
+                        </div>
+                        <div role="dialog" tabindex="0" aria-modal="true" id="fullScreenDialogHelp" class="full-screen-back-flip" style="display:none;">
+                            <div class="wrapper fs-content" aria-labelledby="usageModel" style="display:none;">
+                                <div class="heading" role="heading">
+                                    
+
+
+
+
+<button class="back-button" role="button" tabindex="0" style="float: right; display: flex; margin: 8px;">
+    <img class="clickable" alt="Close" aria-label="Sulge" width="73" height="73" src="./My%20e-Health%20-%20Patient%20Portal_files/close-gray.png">
+</button>
+
+                                    <h1 id="usageModel">Help</h1>
+                                </div>
+                                <div role="document" class="sec-additional">
+                                    Please refer all questions or technical issues to <strong>the helpdesk of Health and Welfare Information Systems Centre by phone at +372&nbsp;794&nbsp;3943 (7:00-22:00) or e-mail at <a href="mailto:abi@tehik.ee">abi@tehik.ee</a></strong>.<br><br> We also invite you to send your proposals for further developments to this e-mail address, so that we can make this portal more convenient and useful for you and your friends. <br><br>See also <a data-toggle="tooltip" title="" id="faq" href="https://www.tehik.ee/info-patsiendile" target="_blank"><u>frequently asked questions</u></a>.
+                                            
+                                            
+                                            
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                
+                
+                
+                    <li id="logout-desktop">
+                        <div id="logoutButton" role="button" tabindex="0" class="rect-button logout-button" onclick="PP.logout(); return false;">
+                            Log out
+                        </div>
+                    </li>
+                    <li id="logout-mobile">
+                        <div role="button" tabindex="0" onclick="PP.logout(); return false;">
+                            <img width="43" src="./My e-Health - Patient Portal_files/logut.svg">
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+    <!--Mantis 4020  -->
+    <div class="right-col">
+        <style type="text/css">
+            #nav {
+                max-width: 980px;
+                margin: 1em auto;
+                padding-right: 20px;
+            }
+
+            #nav ul {
+                margin: 10px auto;
+                padding: 0;
+                font: 1em "Arial Black", sans-serif;
+            }
+
+            #nav ul li {
+                display: flex;
+                float: left;
+                min-width: 140px;
+                text-align: center;
+            }
+
+            #nav ul li a {
+                text-decoration: none;
+                margin-left: 5px;
+                padding: 10px 25px;
+                width: 100%;
+                background: #0f6dad;
+                color: #ffffff;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 120%;
+            }
+        </style>
+        <style type="text/css" media="print">
+            #nav {
+                display: none;
+            }
+        </style>
+        <span>
+			<div id="nav">
+                
+
+
+
+
+
+
+
+<script type="text/javascript">
+    let currentLocation = window.location.href;
+    new AlertBox('healthRecordClosed', currentLocation, 'privacy/get', 'isClosed').setup();
+</script>
+
+<div id="healthRecordClosed" class="alert-box " style="display: none" tabindex="0">
+    <div class="wrap">
+        <div class="l">
+            <div>
+                Digital health record is closed for the doctor
+            </div>
+        </div>
+    </div>
+</div>
+
+
+				<ul style="float: right;" role="complementary" aria-label="Language options">
+
+                    
+                        <li>
+                            <a href="../est-main/Minu%20e-tervis%20-%20Patsiendiportaal.html" role="button">Eesti</a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="../rus-main/Мое%20э-здоровье%20-%20Портал%20пациента.html" role="button">Русский</a>
+                        </li>
+                    
+
+                    
+
+				</ul>
+
+			</div>
+
+		</span>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- WRAPPER STARTS -->
+<div class="wrapper">
+    <div class="heading">
+        <table id="heading-table">
+            <tbody><tr>
+                <td>
+                    
+                    
+                        <h1 class="logo no-contrast-change">
+                            <span>My e-Health</span>
+                        </h1>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    
+                    
+                    
+                    
+                </td>
+            </tr>
+        </tbody></table>
+        
+        
+
+
+
+
+
+    </div>
+
+
+<main id="main" aria-label="Main content">
+    <div class="sec-wrapper">
+        
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    var calendarStart = 'Date from';
+    var calendarEnd = 'Date until';
+</script>
+
+    
+    
+    
+    
+    
+    
+    
+    <div class="sidebar" role="region" aria-labelledby="My data">
+        <ul class="sec-row">
+
+            
+
+
+<script type="text/javascript" src="./My e-Health - Patient Portal_files/my-data-box.js"></script>
+<script type="text/javascript">
+
+    myData.setup({}, {
+        insuranceUnknown: 'Insurance information is not available at the moment',
+        insured: 'Insured',
+        unInsured: 'Uninsured',
+        phone: 'Phone:'
+    });
+</script>
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li aria-labelledby="box-title-My data" id="myData_box" class="box clickable" data-boxhref="/person" role="link">
+    <div id="myData" class="sec-txt sec-first has-spinner" tabindex="0" role="link">
+
+        
+            
+        
+        <div role="heading" class="visible-content
+            text-height-limited
+            no-contrast-change 
+            ">
+
+            
+                <h2 id="box-title-My data">
+                    My data
+                </h2>
+            
+            
+        <p>
+        
+          <span>Dmitri  Antipov</span>
+          <br>
+        
+            <span>39009222216</span>
+            <br>
+        </p>
+    
+        <span class="status active">Insured</span>
+    <br><span id="family-doctor">
+        <span class="label">Family doctor</span>:
+        <br>
+        <span class="name">Irina Tšern</span>
+        <span class="phone"> </span>
+    </span></div>
+
+        
+        
+            
+            
+                
+        
+            
+                <div class="btn btn-update" style="">
+                    <a class="choose" role="link" href="https://www.digilugu.ee/person/details" title="Click on the box to update data">
+                        Update
+                    </a>
+                </div>
+            
+        
+        <div class="btn">
+            <a role="button" aria-describedby="read-more-description" aria-label="Read your personal data" class="animate orange no-contrast-change" href="javascript:void(0)" title="Read your personal data">
+                Read more
+            </a>
+            <div id="read-more-description" style="display: none;">
+                Press Space to see/hide additional information
+            </div>
+        </div>
+        <div class="hidden-content  " style="padding:4% 4% 7.5% 4%;">
+            <span class="box" role="alert">After clicking on the box you can update your general data, view health insurance information and the persons you are representing or who are representing you. Data regarding your family doctor is updated during the year 2017.</span>
+        </div>
+            
+        
+
+    </div>
+</li>
+
+
+
+            
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li aria-labelledby="box-title-dashboard.toExaminationsCovid" id="toExaminationsCovid_box" class="box clickable small-wide bigger strong noprint" data-boxhref="/documents/examinations/covid" role="link">
+    <div id="toExaminationsCovid" class="sec-txt redBoxButton noprint no-contrast-change" tabindex="0" role="link">
+
+        
+            
+        
+        <div role="heading" class="visible-content
+            text-height-limited
+            no-contrast-change 
+            small-box">
+
+            
+                <h2 id="box-title-dashboard.toExaminationsCovid">
+                    Coronavirus analysis<br> lab results
+                </h2>
+            
+            
+    
+        </div>
+
+        
+        
+            
+            
+        
+
+    </div>
+</li>
+
+
+
+
+            
+                
+
+
+
+
+
+    
+
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li aria-labelledby="box-title-dashboard.certificates.title" id="vaccineCertificates_box" class="box clickable small-wide bigger strong no-brightness noprint" data-boxhref="/documents/vaccineCertificates" role="link">
+    <div id="vaccineCertificates" class="sec-txt noprint no-contrast-change has-spinner big-heading greenBoxButton" tabindex="0" role="link">
+
+        
+            
+        
+        <div role="heading" class="visible-content
+            text-height-limited
+            no-contrast-change 
+            small-box">
+
+            
+                <h2 id="box-title-dashboard.certificates.title">
+                    EU digital COVID certificates
+                </h2>
+            
+            
+        </div>
+
+        
+        
+            
+            
+        
+
+    </div>
+</li>
+
+    
+
+
+            
+
+            
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li aria-labelledby="box-title-personalData.addRepresentative.title" id="trusteeAdd_box" class="box clickable small-wide bigger strong no-brightness noprint" data-boxhref="/person/trustee/add" role="link">
+    <div id="trusteeAdd" class="sec-txt noprint no-contrast-change has-spinner big-heading blueBoxButton" tabindex="0" role="link">
+
+        
+            
+        
+        <div role="heading" class="visible-content
+            text-height-limited
+            no-contrast-change 
+            small-box">
+
+            
+                <h2 id="box-title-personalData.addRepresentative.title">
+                    Authorising a new representative
+                </h2>
+            
+            
+                
+        </div>
+
+        
+        
+            
+            
+        
+
+    </div>
+</li>
+
+            
+
+            
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function showRecentDocuments() {
+
+            let url = PP.CONTEXT_ROOT + "/recentDocuments";
+            $.get(url, function (data) {
+                let allDocs = data["allDocuments"];
+                if (allDocs.length > 0) {
+                    let recentDocTable = $('#recentDocTable');
+                    recentDocTable.empty();
+                    allDocs.forEach(function (doc) {
+                            let documentPath = PP.CONTEXT_ROOT + "/documents";
+                            let creationDateShort = $.datepicker.formatDate("dd.mm.yy", new Date(doc.creationDate));
+                            let validUntil = $.datepicker.formatDate("dd.mm.yy", new Date(doc.validUntil));
+                            if (doc.typeCode.indexOf('63') !== -1) {
+                                documentPath = documentPath + '/appointments/' + doc.id.root + "_" + doc.id.extension;
+                            } else {
+                                switch (doc.typeCode) {
+                                    case "1":
+                                        documentPath = documentPath + '/epicrises/stationary/' + doc.id.root + "_" + doc.id.extension;
+                                        break;
+                                    case "2":
+                                        documentPath = documentPath + '/epicrises/ambulance/' + doc.id.root + "_" + doc.id.extension;
+                                        break;
+                                    case "3":
+                                        documentPath = documentPath + '/epicrises/daycare/' + doc.id.root + "_" + doc.id.extension;
+                                        break;
+                                    case "64":
+                                        documentPath = documentPath + '/examinations/reports/' + doc.id.root + "_" + doc.id.extension;
+                                        break;
+                                    case "34":
+                                        documentPath = documentPath + '/dental/dentalcarecards/' + doc.id.root + "_" + doc.id.extension;
+                                        break;
+                                    case "56":
+                                        documentPath = documentPath + '/ambulanceCardList/' + doc.id.root + "_" + doc.id.extension;
+                                        break;
+                                    case "84":
+                                        documentPath = documentPath + '/infantile/immunizations/' + doc.id.root + "_" + doc.id.extension;
+                                        break;
+                                    case "1100":
+                                        documentPath = documentPath + '/prescriptions/' + doc.secretId;
+                                        break;
+                                    default:
+                                        documentPath = documentPath + "/" + doc.id.root + "_" + doc.id.extension;
+                                        break;
+                                }
+                                if (!doc.id.extension && doc.typeCode !== "1100") {
+                                    documentPath = documentPath.substring(0, documentPath.indexOf("_"));
+                                }
+                            }
+                            recentDocTable
+                                .append('<li onclick="window.location.href=' + "'" + documentPath + "'" + ';">' +
+                                    '<div id="document_' + doc.id.root + '_' + doc.id.extension +
+                                    '" role="link" style="height:auto; text-align:left;" class="box clickable sec-first sec-txt" data-boxhref="' +
+                                    documentPath + '" tabindex="0"><div class="sec-txt-appointment">');
+                            let sec_txt_appointment = recentDocTable.find('.sec-txt-appointment');
+                            if (doc.typeCode.indexOf('63') !== -1) {
+                                if (doc.typeName) {
+                                    sec_txt_appointment
+                                        .last()
+                                        .append('<div><span>' +
+                                            doc.typeName.charAt(0).toUpperCase() + doc.typeName.slice(1) + '</span></div>');
+                                } else {
+                                    sec_txt_appointment
+                                        .last()
+                                        .append('<div><span>' + doc.typeNameFromExtension + '</span></div>');
+                                }
+                                if (doc.procedureType) {
+                                    sec_txt_appointment
+                                        .last()
+                                        .append('<div class="procedureType"><span>Referred to:</span>' +
+                                            '<span>' + doc.procedureType + '</span></div>');
+                                }
+                                sec_txt_appointment
+                                    .last()
+                                    .append('<p style="margin-top:10px;"><span>' +
+                                        'Valid from</span> <b>' + creationDateShort + '</b> ' +
+                                        '<span>to</span> <b>' + validUntil + '</b> ' +
+                                        '</p>');
+                            } else {
+                                sec_txt_appointment
+                                    .last()
+                                    .append('<h3>' + creationDateShort + '<span class="dashboardDocumentName">' + doc.typeName + '</span></h3>');
+                            }
+                            sec_txt_appointment.last().append('<p style="margin-top:2px;">');
+                            let author = doc.author ? doc.author : {firstName: '', lastName: ''};
+                            let referrer = doc.referrer ? doc.referrer : {speciality: ''};
+                            let healthCareOrg = doc.healthcareOrganization ? doc.healthcareOrganization : {name: ''};
+                            if (doc.typeCode.indexOf('63') !== -1) {
+                                sec_txt_appointment
+                                    .last()
+                                    .append('<span><b>Referrer:</b></span>' +
+                                        author.firstName + " " + author.lastName + " " + referrer.speciality);
+                            } else {
+                                sec_txt_appointment
+                                    .last()
+                                    .append('<div class="trunacte as-high-contrast-text"><i>Referrer:</i> <br>' +
+                                        '<b>' + author.firstName + " " + author.lastName + '</b><br>' +
+                                        healthCareOrg.name + '</div>');
+                            }
+                            recentDocTable.append('</div></div></li>');
+                        }
+                    );
+
+                    rotatableBox.closeSpinner('#recentDocuments');
+                    readmoreDialog.openFullScreenDialogMessage('#recentDocuments', '#full-screen-recent-documents');
+
+                } else {
+                    alert('No recent (newer than 14 days) documents found!');
+                    rotatableBox.closeSpinner('#recentDocuments');
+                }
+            });
+        }
+    </script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li aria-labelledby="box-title-dashboard.recentDocuments" id="recentDocuments_box" class="box clickable small-wide biggest no-brightness noprint" role="button" onclick="showRecentDocuments()">
+    <div id="recentDocuments" class="sec-txt noprint has-spinner big-heading" tabindex="0" role="button">
+
+        
+            
+        
+        <div role="heading" class="visible-content
+            text-height-limited
+            no-contrast-change 
+            small-box">
+
+            
+                <h2 id="box-title-dashboard.recentDocuments">
+                    Recent documents
+                </h2>
+            
+            
+    
+        </div>
+
+        
+        
+            
+            
+        
+
+    </div>
+</li>
+
+
+    <div role="dialog" tabindex="0" aria-modal="true" id="full-screen-recent-documents" class="full-screen-back-flip" style="display:none;">
+        <div class="wrapper fs-content" aria-labelledby="recent_documents_modal_id" style="display:none;">
+            <div class="heading" role="heading">
+                
+
+
+
+
+<button class="back-button" role="button" tabindex="0" style="float: right; display: flex; margin: 8px;">
+    <img class="clickable" alt="Close" aria-label="Sulge" width="73" height="73" src="./My e-Health - Patient Portal_files/close-gray.png">
+</button>
+
+                <h1 id="recent_documents_modal_id">Recent documents</h1>
+            </div>
+            <div id="docsArea">
+                <ul class="sec-row clearfix ieDynamicTable tableByCategory" id="recentDocTable">
+                    <div>
+                </div></ul>
+            </div>
+        </div>
+    </div>
+
+
+
+            
+                <li class="clickable additional-information" aria-labelledby="box-title-hoia" id="downloadHoia" onclick="readmoreDialog.openFullScreenDialogMessage(&#39;#downloadHoia&#39;, &#39;#full-screen-dialog-message&#39;)">
+                    <div class="sec-txt" role="button" tabindex="0">
+                        <img src="./My e-Health - Patient Portal_files/HOIA_ENG.jpg" alt="Download HOIA">
+                    </div>
+                </li>
+            
+            <div id="additional-information-description" style="display: none;">Modal about additional information opens</div>
+            <div role="dialog" tabindex="0" aria-modal="true" id="full-screen-dialog-message" class="full-screen-back-flip" style="display:none;">
+                <div class="wrapper fs-content" aria-labelledby="hoia_modal_id" style="display:none;">
+                    <div class="heading" role="heading">
+                        
+
+
+
+
+<button class="back-button" role="button" tabindex="0" style="float: right; display: flex; margin: 8px;">
+    <img class="clickable" alt="Close" aria-label="Sulge" width="73" height="73" src="./My e-Health - Patient Portal_files/close-gray.png">
+</button>
+
+                        <h1 id="hoia_modal_id">Download HOIA mobile app</h1>
+                    </div>
+                    <div role="document" class="sec-additional">
+                        With the HOIA mobile application, you can quickly find out about possible close contact with a COVID-19 infected person. If you have reported yourself ill in the application, you will be able to anonymously notify people who have been in contact with you and prevent the virus from spreading.The application cannot access the data on your phone or know your location. Neither the country nor anyone else can see what's happening in your mobile app.<br><br>When you start confirming your infection, the application will redirect you to the Patient Portal. The Patient Portal does not return your health information to the application, but only confirms the fact of infection to the server in a non-personalized form. After that, any close contacts will receive notifications on their phone through the HOIA application.<br>Read more: <b><a target="_blank" href="https://www.hoia.me/">www.hoia.me</a></b>
+                    </div>
+                </div>
+            </div>
+            
+        </ul>
+    </div>
+
+
+
+        <div class="sec-content" role="region" aria-label="Secondary content">
+            
+<ul class="sec-row clearfix" id="my-desktop">
+    <!-- FIRST ROW STARTS -->
+    <li id="healthRecordBigBox" aria-labelledby="health-data-title" class="box sec-first sec-double blue-bg no-brightness clickable" data-boxhref="documents" role="region">
+        <div class="sec-txt nofilter" tabindex="0" role="alert">
+            <div class="visible-content">
+                <h2 id="health-data-title">Health data</h2>
+                <ul>
+                    
+                        <li><a href="https://www.digilugu.ee/documents/timecritical">Time critical data</a></li>
+                    
+                    <li><a href="https://www.digilugu.ee/documents/dental">Dental care documents</a></li>
+                    <li style="padding-top:0px">
+                        <ol style="list-style-type: none">
+                            <li><a href="https://www.digilugu.ee/documents/dental/dentalcarecards">Dental care charts</a></li>
+                            <li><a href="https://www.digilugu.ee/documents/dental/dentalcarestatus">Dental status chart</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="https://www.digilugu.ee/documents/immunisation">Passport of Immunization</a></li>
+                    <li><a href="https://www.digilugu.ee/documents/ambulanceCardList">Ambulance­charts</a>
+                    </li>
+                    <li><a href="https://www.digilugu.ee/documents/prescriptions">Prescriptions</a></li>
+                    <li><a href="https://www.digilugu.ee/documents/appointments">Referrals</a></li>
+                    <li style="padding-top:0px">
+                        <ol style="list-style-type:none">
+                            <li><a href="https://www.digilugu.ee/documents/appointments/invalid">Invalid referrals</a></li>
+                            <li><a href="https://www.digilugu.ee/documents/appointments/valid">Valid referrals</a></li>
+                            <li><a href="https://www.digilugu.ee/documents/appointments/used">Referrals­ related to an­appointment</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="https://www.digilugu.ee/documents/healthDeclarations">Health declarations</a>
+                    </li>
+                    <li><a href="https://www.digilugu.ee/documents/healthCertificates">Health certificates</a></li>
+                    <li><a href="https://www.digilugu.ee/documents/vaccineCertificates">EU digital COVID certificates</a></li>
+                    <li id="epicrises-list-start"><a href="https://www.digilugu.ee/documents/epicrises">Case summaries</a></li>
+                    <li style="padding-top:0">
+                        <ol style="list-style-type: none">
+                            <li><a href="https://www.digilugu.ee/documents/epicrises/ambulance">Out-­patient case summaries</a>
+                            </li>
+                            <li><a href="https://www.digilugu.ee/documents/epicrises/daycare">Day-­care case summaries</a>
+                            </li>
+                            <li><a href="https://www.digilugu.ee/documents/epicrises/stationary">In-­patient case summaries</a>
+                            </li>
+                            <li><a href="https://www.digilugu.ee/documents/epicrises/birth">Birth case summaries</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="https://www.digilugu.ee/documents/infantile">Notifications</a></li>
+                    <li style="padding-top:0px">
+                        <ol style="list-style-type: none">
+                            <li><a href="https://www.digilugu.ee/documents/infantile/development">Development assessment notifications</a></li>
+                            <li><a href="https://www.digilugu.ee/documents/infantile/immunizations">Immunisation notifications</a></li>
+                            <li><a href="https://www.digilugu.ee/documents/infantile/growth">Growth notifications</a>
+                            </li>
+                            <li><a href="https://www.digilugu.ee/documents/infantile/examinations">Examination notifications</a></li>
+                            <li><a href="https://www.digilugu.ee/documents/infantile/consultations">Counselling notifications</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="https://www.digilugu.ee/documents/examinations">Examination results</a>
+                    </li>
+                    <li style="padding-top:0px">
+                        <ol style="list-style-type: none">
+                            <li><a href="https://www.digilugu.ee/documents/examinations/roentgenograms">Image references</a></li>
+                            <li><a href="https://www.digilugu.ee/documents/examinations/reports">Referral responses</a></li>
+                        </ol>
+                    </li>
+                    
+                        <li><a href="https://www.digilugu.ee/workability">Working ability assessment</a></li>
+                    
+                </ul>
+            </div>
+            <div id="rotatable-hidden-content" class="hidden-content">
+                The portal displays your health data that is accessible in the national health information system. The most important medical documents have been collected in the health information system from 1 January 2009. You can view all documents related to your health that the health care service providers have forwarded to the health information system. Your attending physician can also view your medical documents in the health information system. You can use the portal to limit the usage of your data,
+            </div>
+            <div class="btn">
+                <a role="button" aria-describedby="read-more-description" aria-label="Read about your health data" class="animate purple no-contrast-change" href="javascript: void(0)" title="Read about your health data">
+                    Read about your health data
+                </a>
+            </div>
+        </div>
+    </li>
+
+    
+        <li class="drButtonPassive" id="DRButton" aria-labelledby="dr-title">
+            <div id="drDivId" class="sec-txt" tabindex="0">
+                <div class="visible-content">
+                    <h2 id="dr-title" data-toggle="tooltip" role="link" title="">
+                        National eBooking system</h2>
+                    <img class="dr-logo" src="./My e-Health - Patient Portal_files/digireg_logo.png">
+                    <br><br><br>
+                    <p id="drErrorMsg" style="color: red; visibility: hidden">
+                        Connection failed, please try again later!
+                    </p>
+                </div>
+                <div class="sec-txt redBoxButton noprint no-contrast-change" tabindex="-1" style="padding: 0">
+                    <div class="visible-content text-height-limited no-contrast-change small-box">
+                        <h2>
+                            <b>
+                                <font class="corona-button-text" color="#FFFFFF" style="font-size: 14px; vertical-align: middle;">
+                                    Covid-19 vaccination
+                                </font>
+                            </b>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </li>
+    
+
+    
+
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li aria-labelledby="box-title-dashboard.treatmentcost" id="treatmentcost_box" class="box clickable" data-boxhref="/treatmentcost" role="link">
+    <div id="treatmentcost" class="sec-txt " tabindex="0" role="link">
+
+        
+            
+        
+        <div role="heading" class="visible-content
+            text-height-limited
+            no-contrast-change 
+            ">
+
+            
+                <h2 id="box-title-dashboard.treatmentcost">
+                    Invoices submitted to the Estonian Health Insurance Fund
+                </h2>
+            
+            
+        <ul>
+                <li>Click on the box to view medical invoices, click on the information sign for more information</li>
+            </ul>
+    
+        </div>
+
+        
+        
+            
+            
+                
+        <div class="btn">
+            <a role="button" aria-describedby="read-more-description" aria-label="Read about the EHIF&#39;s medical bills" class="animate purple no-contrast-change" href="javascript:void(0)" title="Read about the EHIF&#39;s medical bills">
+                Read more
+            </a>
+            <div id="read-more-description" style="display: none;">
+                Press Space to see/hide additional information
+            </div>
+        </div>
+        <div class="hidden-content full-screen " style="padding:4% 4% 7.5% 4%;">
+            <span class="box" role="alert">
+
+
+
+
+
+
+
+
+
+
+<div class="wrapper">
+    <div class="heading">
+        <h1>
+            
+                Medical invoices submitted to the Estonian Health Insurance Fund
+                
+            
+        </h1>
+        
+
+
+
+
+<button class="back-button" role="button" tabindex="0" style="float: right; display: flex; margin: 8px;">
+    <img class="clickable" alt="Close" aria-label="Sulge" width="73" height="73" src="./My e-Health - Patient Portal_files/close-gray.png">
+</button>
+
+    </div>
+    <div class="sec-wrapper">
+        
+        
+            
+                <span class="sec-wrapper">Here you can view the medical invoices submitted by health care institutions to the Estonian Health Insurance Fund in relation to your treatment. All the invoices presented here are paid by the Estonian Health Insurance Fund from the resources of the health insurance collected as part of social tax (13% of the social tax) that the employers withhold from the monthly salary of employees. The Estonian health insurance system follows the principle of solidarity: in the case of illness, the cost of the health care service paid by the Health Insurance Fund does not depend on the amount of social tax paid for each person. The Health Insurance Fund shall use the social tax paid for employed persons to pay for the health insurance services of those persons who are not employed at the moment. If necessary, the health insurance component resources are used to pay for your and other insured persons’ various health-related monetary expenses (medicinal products, medicinal aids, compensation for temporary incapacity for work etc.) in addition to medical invoices. Additional information about health insurance, medical invoices and your insurance status can be found on the homepage of the Estonian Health Insurance Fund at <a data-toggle="tooltip" title="" href="https://www.haigekassa.ee/en" target="_blank">www.haigekassa.ee</a>.</span>
+            
+            
+        
+    </div>
+</div>
+</span>
+        </div>
+            
+        
+
+    </div>
+</li>
+
+
+    
+
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li aria-labelledby="box-title-dashboard.statementOfIntention" id="declarations_box" class="box clickable" data-boxhref="/intentions" role="link">
+    <div id="declarations" class="sec-txt " tabindex="0" role="link">
+
+        
+            
+        
+        <div role="heading" class="visible-content
+            text-height-limited
+            no-contrast-change 
+            ">
+
+            
+                <h2 id="box-title-dashboard.statementOfIntention">
+                    Statements of <br>intention
+                </h2>
+            
+            
+        <ul>
+            <li>Click on the box to view and prepare statements of intention, click on the information sign for more information</li>
+            <li></li>
+        </ul>
+    
+        </div>
+
+        
+        
+            
+            
+                
+        <div class="btn">
+            <a role="button" aria-describedby="read-more-description" aria-label="Read about statements of intent" class="animate purple no-contrast-change" href="javascript:void(0)" title="Read about statements of intent">
+                Read more
+            </a>
+            <div id="read-more-description" style="display: none;">
+                Press Space to see/hide additional information
+            </div>
+        </div>
+        <div class="hidden-content  " style="padding:4% 4% 7.5% 4%;">
+            <span class="box" role="alert">The statements of intention allow you to state your wish in relation to donating your organs, performing blood transfusions and donating your body after your death. Statements of intention are obligatory for doctors. You reserve the right and opportunity to update or cancel your statements of intention at any time.</span>
+        </div>
+            
+        
+
+    </div>
+</li>
+
+
+    
+
+    <!-- THIRD ROW STARTS -->
+
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li aria-labelledby="box-title-dashboard.managementOfAccesses" id="accesses_box" class="box clickable" data-boxhref="/accesses" role="link">
+    <div id="accesses" class="sec-txt " tabindex="0" role="link">
+
+        
+            
+        
+        <div role="heading" class="visible-content
+            text-height-limited
+            no-contrast-change 
+            ">
+
+            
+                <h2 id="box-title-dashboard.managementOfAccesses">
+                    Managing accesses to health data
+                </h2>
+            
+            
+        <ul>
+            <li>Managing access rights of the medical committees under the Estonian Ministry of Defence area of government. Managing cross-border access to recipe data. Click on the information sign for more information.<span></span></li>
+        </ul>
+    
+        </div>
+
+        
+        
+            
+            
+                
+        <div class="btn">
+            <a role="button" aria-describedby="read-more-description" aria-label="Read about managing access to health data" class="animate purple no-contrast-change" href="javascript:void(0)" title="Read about managing access to health data">
+                Read more
+            </a>
+            <div id="read-more-description" style="display: none;">
+                Press Space to see/hide additional information
+            </div>
+        </div>
+        <div class="hidden-content full-screen " style="padding:4% 4% 7.5% 4%;">
+            <span class="box" role="alert">
+
+
+
+
+
+
+
+
+
+
+<div class="wrapper">
+    <div class="heading">
+        <h1>
+            
+                Managing accesses to health data
+                
+            
+        </h1>
+        
+
+
+
+
+<button class="back-button" role="button" tabindex="0" style="float: right; display: flex; margin: 8px;">
+    <img class="clickable" alt="Close" aria-label="Sulge" width="73" height="73" src="./My e-Health - Patient Portal_files/close-gray.png">
+</button>
+
+    </div>
+    <div class="sec-wrapper">
+        
+        
+            
+                <span class="sec-wrapper">Individuals are able to grant or withdraw their consent allowing third parties to access their health data by selecting an appropriate option from the page of access to health data of the state´s Patient Portal. Third parties are institutions that have the legal right to use data, only within specified extent and purpose, contained in the health information system. In order to process data, third parties need an additional consent of the person.<br><br>In Patient Portal, one can manage consentsgranting medical commissions and medical peer review commission of the Ministry of Defence access to data. These medical commissions have the legal right to access health data in the health information system if the person has given their consent. The main task of medical commissions consisting of medical specialists is to assess the conformity of the health condition of persons liable to or wishing to undertake national defence obligation to requirements established for servicemen. If the person does not grant prior electronic consent in the Patient Portal, they must adhere to the former data collection process, and provide all required documents describing the health condition to the medical commission on paper.</span>
+            
+            
+        
+    </div>
+</div>
+</span>
+        </div>
+            
+        
+
+    </div>
+</li>
+
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li aria-labelledby="box-title-dashboard.notifications" id="notifications_box" class="box clickable" data-boxhref="/notifications" role="link">
+    <div id="notifications" class="sec-txt " tabindex="0" role="link">
+
+        
+            
+        
+        <div role="heading" class="visible-content
+            text-height-limited
+            no-contrast-change 
+            ">
+
+            
+                <h2 id="box-title-dashboard.notifications">
+                    Notifications
+                </h2>
+            
+            
+        <ul>
+                <li>Click on the box to view notifications, click on the information sign to receive notifications on your e-mail or to view additional information</li>
+            </ul>
+    
+        </div>
+
+        
+        
+            
+            
+                
+        <div class="btn">
+            <a role="button" aria-describedby="read-more-description" aria-label="Read notifications" class="animate purple no-contrast-change" href="javascript:void(0)" title="Read notifications">
+                Read more
+            </a>
+            <div id="read-more-description" style="display: none;">
+                Press Space to see/hide additional information
+            </div>
+        </div>
+        <div class="hidden-content full-screen " style="padding:4% 4% 7.5% 4%;">
+            <span class="box" role="alert">
+
+
+
+
+
+
+
+
+
+
+<div class="wrapper">
+    <div class="heading">
+        <h1>
+            
+                Information about notifications
+                
+            
+        </h1>
+        
+
+
+
+
+<button class="back-button" role="button" tabindex="0" style="float: right; display: flex; margin: 8px;">
+    <img class="clickable" alt="Close" aria-label="Sulge" width="73" height="73" src="./My e-Health - Patient Portal_files/close-gray.png">
+</button>
+
+    </div>
+    <div class="sec-wrapper">
+        
+        
+            
+                <span class="sec-wrapper">At the moment, you can receive notifications regarding screening invitations and health certificates from the documents at the national patient portal. <br><br><strong>You will recieve notifications about your health certificates to:</strong> <br> <ul> <li>the patient portal (<a data-toggle="tooltip" title="" href="https://www.digilugu.ee/" target="_blank">www.digilugu.ee</a>)</li> <li>the state portal (<a data-toggle="tooltip" title="" href="https://www.eesti.ee/eng" target="_blank">www.eesti.ee</a>)</li> <li>the e-mail address you use daily </li></ul><br> You will receive notifications to the e-mail address you use daily if you have redirected your state portal e-mails to the e-mail address you use daily. You can set up your e-mail address at <a data-toggle="tooltip" title="" href="https://www.eesti.ee/portaal/portaal.options?a=keelen&amp;b=portaal.sisene%3Flevel%3D30%26loc%3D%252Frus%252Fmoimaterialy" target="_blank">here</a>. Additional information can be found at <a data-toggle="tooltip" title="" href="https://www.eesti.ee/postkast/en/seaded" target="_blank">here</a>. You will receive notifications upon the decision to issue a health certificate, when updates to a health certificate are made, if a health certificate is about to expire (advance notice 30 days prior to expiry) and when it expires. </span>
+            
+            
+        
+    </div>
+</div>
+</span>
+        </div>
+            
+        
+
+    </div>
+</li>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li aria-labelledby="box-title-dashboard.booking" id="booking_box" class="box clickable small-wide bigger" data-boxhref="/booking" role="link">
+    <div id="booking" class="sec-txt nofilter" tabindex="0" role="link">
+
+        
+            <img src="./My e-Health - Patient Portal_files/uks.svg" style="width:50px;height:50px;display:inline-block">
+        
+        <div role="heading" class="visible-content
+            text-height-limited
+            no-contrast-change 
+            small-box">
+
+            
+                <h2 id="box-title-dashboard.booking">
+                    Hospital links
+                </h2>
+            
+            
+        </div>
+
+        
+        
+            
+            
+        
+
+    </div>
+</li>
+
+
+    
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li aria-labelledby="box-title-dashboard.logs" id="logs_box" class="box clickable small-wide bigger" data-boxhref="/logs" role="link">
+    <div id="logs" class="sec-txt nofilter" tabindex="0" role="link">
+
+        
+            <img src="./My e-Health - Patient Portal_files/raamat.svg" style="width:50px;height:50px;display:inline-block">
+        
+        <div role="heading" class="visible-content
+            text-height-limited
+            no-contrast-change 
+            small-box">
+
+            
+                <h2 id="box-title-dashboard.logs">
+                    Logbook
+                </h2>
+            
+            
+        </div>
+
+        
+        
+            
+            
+        
+
+    </div>
+</li>
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li aria-labelledby="box-title-dashboard.importantNumbers" id="importantNumbers_box" class="box small-wide" role="link">
+    <div id="importantNumbers" class="sec-txt " tabindex="0" role="link">
+
+        
+            <img src="./My e-Health - Patient Portal_files/telefon.svg" style="width:50px;height:50px;display:inline-block">
+        
+        <div role="heading" class="visible-content
+            text-height-limited
+            no-contrast-change 
+            small-box">
+
+            
+                <h2 id="box-title-dashboard.importantNumbers">
+                    Ambulance/emergency 112 <br> Family doctor’s hotline 1220 <br> Poisoning information phone number 16662
+                </h2>
+            
+            
+        </div>
+
+        
+        
+            
+            
+        
+
+    </div>
+</li>
+
+
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="dialog" id="close-document-doctor-warning-dialog" style="display: none">
+    <div class="blocking-overlay dialog bg" tabindex="0"></div>
+    <div class="blocking-overlay dialog dialog-content ">
+        
+                
+    
+
+
+
+
+
+<h1 id="" class="no-subtitle negative-emphasis" role="">
+  
+        Warning!
+    
+</h1>
+
+    
+
+
+
+
+
+
+<div id="message " class="message " role="alert">
+  
+        After you lock the document, your doctor will not be able to view this document. By locking the data, you assume responsibility for the possible deterioration of the treatment quality.
+    
+</div>
+
+    
+
+
+
+
+
+
+
+<div role="button" tabindex="0" id="" class="rect-button ok-button">
+
+    
+        Lock document
+    
+</div>
+
+    
+
+
+
+
+
+
+
+<div role="button" tabindex="0" id="" class="rect-button cancel-button">
+
+    
+        Cancel locking
+    
+</div>
+
+
+                
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="dialog" id="close-all-doctor-warning-dialog" style="display: none">
+    <div class="blocking-overlay dialog bg" tabindex="0"></div>
+    <div class="blocking-overlay dialog dialog-content ">
+        
+                
+    
+
+
+
+
+
+<h1 id="" class="no-subtitle negative-emphasis" role="">
+  
+        Warning!
+    
+</h1>
+
+    
+
+
+
+
+
+
+<div id="message " class="message " role="alert">
+  
+        After you lock your medical records, your doctor will not be able to view your documents. The doctor will also not have access to time critical data included in the documents (time critical diagnoses, medicinal products prescribed in the last months, etc.) By locking the data, you assume responsibility for the possible deterioration of the treatment quality.
+    
+</div>
+
+    
+
+
+
+
+
+
+
+<div role="button" tabindex="0" id="" class="rect-button ok-button">
+
+    
+        Lock digital records
+    
+</div>
+
+    
+
+
+
+
+
+
+
+<div role="button" tabindex="0" id="" class="rect-button cancel-button">
+
+    
+        Cancel locking
+    
+</div>
+
+
+                
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="dialog" id="need-to-close-healthrecord-to-doctor-warning-dialog" style="display: none">
+    <div class="blocking-overlay dialog bg" tabindex="0"></div>
+    <div class="blocking-overlay dialog dialog-content ">
+        
+                
+    
+
+
+
+
+
+<h1 id="" class="no-subtitle negative-emphasis" role="">
+  
+        Warning!
+    
+</h1>
+
+    
+
+
+
+
+
+
+<div id="message " class="message " role="alert">
+  
+        Your digital story is open to the doctor. Closing the entire medical record will close all apparently open individual documents.
+    
+</div>
+
+    
+
+
+
+
+
+
+
+<div role="button" tabindex="0" id="" class="rect-button ok-button">
+
+    
+        Lock health record for doctors
+    
+</div>
+
+    
+
+
+
+
+
+
+
+<div role="button" tabindex="0" id="" class="rect-button cancel-button">
+
+    
+        Back
+    
+</div>
+
+
+                
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="dialog" id="need-to-open-healthrecord-to-doctor-warning-dialog" style="display: none">
+    <div class="blocking-overlay dialog bg" tabindex="0"></div>
+    <div class="blocking-overlay dialog dialog-content ">
+        
+                
+    
+
+
+
+
+
+<h1 id="" class="no-subtitle negative-emphasis" role="">
+  
+        Warning!
+    
+</h1>
+
+    
+
+
+
+
+
+
+<div id="message " class="message " role="alert">
+  
+        Your digital health record is locked for the doctor. You must first unlock the entire digital health record to unlock single documents or time critical data. If you unlock your entire digital health record, all previously locked individual documents will be unlocked. In order to do this, click on “Unlock health record for doctors”
+    
+</div>
+
+    
+
+
+
+
+
+
+
+<div role="button" tabindex="0" id="" class="rect-button ok-button">
+
+    
+        Unlock health record for doctors
+    
+</div>
+
+    
+
+
+
+
+
+
+
+<div role="button" tabindex="0" id="" class="rect-button cancel-button">
+
+    
+        Back
+    
+</div>
+
+
+                
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="dialog" id="close-error-dialog" style="display: none">
+    <div class="blocking-overlay dialog bg" tabindex="0"></div>
+    <div class="blocking-overlay dialog dialog-content " role="alert">
+        
+                
+    
+
+
+
+
+
+<h1 id="" class="no-subtitle" role="alert">
+  
+        Lock<br>
+        <span class="negative-emphasis">unsuccessful</span>
+    
+</h1>
+
+    
+
+
+
+
+
+
+<div id="message " class="message high-contrast-text" role="document">
+  
+</div>
+
+    
+
+
+
+
+
+
+
+<div role="button" tabindex="0" id="" class="rect-button ok-button">
+
+    
+        Ok
+    
+</div>
+
+
+                
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="dialog" id="open-error-dialog" style="display: none">
+    <div class="blocking-overlay dialog bg" tabindex="0"></div>
+    <div class="blocking-overlay dialog dialog-content ">
+        
+                
+    
+
+
+
+
+
+<h1 id="" class="no-subtitle" role="">
+  
+        Unlock<br>
+        <span class="negative-emphasis">unsuccessful</span>
+    
+</h1>
+
+    
+
+
+
+
+
+
+<div id="message " class="message " role="alert">
+  
+</div>
+
+    
+
+
+
+
+
+
+
+<div role="button" tabindex="0" id="" class="rect-button ok-button">
+
+    
+        Ok
+    
+</div>
+
+
+                
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</main>
+
+</div>
+<!-- WRAPPER ENDS -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="dialog" id="session-timeout-dialog" style="display: none">
+    <div class="blocking-overlay dialog bg" tabindex="0"></div>
+    <div class="blocking-overlay dialog dialog-content ">
+        
+                
+    
+
+
+
+
+
+<h1 id="" class="" role="">
+  
+        <span class="less-important-text">Session</span>
+        <span class="negative-emphasis session-expires-title">expires</span>
+        <span class="negative-emphasis session-expired-title">expired</span>
+    
+</h1>
+
+    
+
+
+
+
+<h2 id="" class="">
+  
+        in {0} seconds
+    
+</h2>
+    
+
+
+
+
+
+
+<div id="message " class="message session-expires-message">
+  
+        User session has been inactive for a while. Choose 'Log out' to end your user session or 'Continue' to keep using the system.
+    
+</div>
+
+    
+
+
+
+
+
+
+<div id="message " class="message session-expired-message">
+  
+        User session expired. Choose 'Continue' to end your user session.
+    
+</div>
+
+    
+
+
+
+
+
+
+
+<div role="button" tabindex="0" id="" class="rect-button cancel-button">
+
+    Log out
+</div>
+
+    
+
+
+
+
+
+
+
+<div role="button" tabindex="0" id="" class="rect-button ok-button">
+
+    Continue
+</div>
+
+
+                
+    </div>
+</div>
+
+<div class="local-blocking-overlay-spinner"></div>
+
+
+<div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div></body></html>
