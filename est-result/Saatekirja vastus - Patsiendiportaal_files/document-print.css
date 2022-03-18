@@ -1,0 +1,239 @@
+.breadcrumbs,
+.header-bg,
+#userInfo,
+.tabs,
+.rect-button {
+  display: none !important;
+}
+
+.wrapper,
+.header,
+#documentBox,
+.sec-100-percent {
+  max-width: 100%;
+}
+
+.heading h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 16px;
+  padding-top: 8px;
+}
+
+#mainTable tr.etsa_patientInfo>.tableBlock>table>tbody>tr:first-child>.blockLabel,
+#mainTable tr.etsa_section>.tableBlock>table:first-child>tbody>tr:first-child>.blockLabel,
+#mainTable tr.etsa_section>.tableBlock>table>tbody>tr:first-child table.dataTable tr:first-child .blockLabel {
+  font-size: 12px;
+  padding: 10px 0;
+}
+
+#mainTable tr.etsa_section>td {
+  padding-bottom: 10px;
+}
+
+#mainTable table.tableBlock,
+#mainTable .tableBlock>table {
+  border-spacing: 0 0;
+  margin: 2px 2px 2px 0 !important;
+}
+
+.rowTitle th {
+  padding-right: 6px;
+  padding-top: 0;
+}
+
+.text_table td.blockLabel,
+.dataTable td.blockLabel {
+  font-size: 10px;
+}
+.dataTable td.blockLabelBig {
+  font-size: 10px;
+}
+
+.text_table th,
+.dataTable th {
+  border: 1px solid #c5c7c6;
+  padding: 0 3px;
+}
+
+.text_table td,
+.dataTable td {
+  border: 1px solid #c5c7c6;
+  padding: 0px;
+}
+
+.text_table td.blockLabel,
+.dataTable td.blockLabel {
+  padding-bottom: 12px;
+}
+
+table span.blockLabel,
+table div.blockLabel {
+  font-size: 10px;
+  line-height: 100%;
+}
+
+#documentBox {
+  width: 100%;
+  font-size: 10px;
+  padding: 0px;
+}
+
+.etsa_assignedAuthor .blockLabel {
+  font-size: 10px;
+}
+.etsa_assignedAuthor {
+  margin-top: 10px;
+}
+
+.etsa_insurance .blockLabel {
+  font-size: 10px;
+}
+.etsa_insurance {
+  margin-top: 10px;
+}
+
+.etsa_section .contacts td {
+  padding-top: 10px;
+}
+
+.etsa_documentProperties>td {
+  padding-top: 10px;
+}
+
+.etsa_section .text_text .text_p {
+  margin-bottom: 12px;
+}
+
+.text_li {
+  margin: 12px 0;
+}
+
+.text_caption {
+  margin-bottom: 6px;
+}
+
+.textTable tr:first-child .blockLabel {
+  padding-top: 15px;
+}
+
+.hide_in_print {
+  display:none;
+}
+#lang {
+  	display:none;
+}
+#questionsSize{
+	display:none;
+}
+
+.sec-wrapper {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.bold {
+	font-weight: bold !important;
+}
+
+/* Style for printing 'Health declaration input' form */
+#head-btns, #save_end {
+	display:none;
+}
+
+#declarationBox ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+#declarationBox .counter {
+	display: inline;
+}
+
+#declarationBox .counter textarea {
+	width: 40%;
+}
+
+.decBlock label {
+	width: 50%;
+	display: inline-block;
+}
+
+.left-side-radio-buttons{
+	width: 20%;
+}
+
+li.padding-bottom-style10 {
+	padding-bottom: 10px;
+}
+
+li p ~ .right-side {
+	float: right;
+	width: 46.5%;
+	display: inline;
+}
+
+p.left-side-p ~ .right-side {
+	width: 100%;
+}
+
+p.left-side-p ~ .right-side textarea {
+	width: 620px !important;
+}
+
+.left-side-radio-buttons {
+	float: left;
+}
+
+li.padding-bottom-style20 {
+	padding-bottom: 20px;
+}
+
+.left-side-radio-buttons .counter textarea {
+	margin-top: 10px;
+}
+
+#dentalBox table tbody tr, #dentalBox table tbody tr td {
+							page-break-before: auto !important;
+							page-break-inside: auto !important;
+							page-break-after: auto !important;
+}
+
+.lighter_text {
+	font-weight: 300;
+}
+
+/* MT329 */
+.show-in-print{ display:block !important; }
+.show-cell-in-print{ display:table-cell !important; }
+.hide-in-print{ display:none; }
+
+.hierarchical-analysis .openable-tr {
+    font-size: 0.7em;
+    padding: 6px;
+}
+
+.hierarchical-analysis .level-1 {
+    margin-left: 0;
+}
+.hierarchical-analysis .level-2 {
+    margin-left: 20px;
+}
+.hierarchical-analysis .level-3 {
+    margin-left: 40px;
+}
+
+div.print-content {
+    display: block !important;
+    margin-top: 0.5em; !important;
+    border: 1pt solid #a8b4ae !important;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+div.left-side-radio-buttons ~ .right-side {
+    margin-top:1%;
+    width: 100%;
+    display: block;
+}

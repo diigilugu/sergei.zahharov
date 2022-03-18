@@ -1,0 +1,388 @@
+#mainTable tr.etsa_patientInfo>.tableBlock>table>tbody>tr:first-child>.blockLabel,
+#mainTable tr.etsa_section>.tableBlock>table:first-child>tbody>tr:first-child>.blockLabel,
+#mainTable .tableBlock>table:first-child>tbody>tr:first-child table:first-child>tbody>tr:first-child>.blockLabel,
+#mainTable tr.etsa_section>.tableBlock>table>tbody>tr:first-child table.dataTable tr:first-child .blockLabel {
+  border-top: thin solid #ccc;
+  font-weight: bold;
+  font-size: 26pt;
+  padding-bottom: 15px;
+  padding-top: 35px;
+}
+
+#mainTable tr.etsa_section.etsa_patientInfo > .tableBlock > table > tbody > tr > td.blockLabelsmall {
+	font-weight: bold;
+	font-size: 20pt;
+}
+
+#mainTable tr.etsa_section.etsa_patientInfo > .tableBlock > table > tbody > tr > td.caseType {
+	border-top:thin solid #ccc;
+}
+
+#mainTable tr.etsa_section>.tableBlock>table:first-child>tbody>tr>.blockLabel {
+  font-weight: bold;
+  font-size: 26pt;
+  padding-bottom: 15px;
+  padding-top: 35px;
+}
+
+#mainTable tr.etsa_section>td {
+  padding-bottom: 35px;
+}
+
+#mainTable tr.etsa_providerOrganization>td, #mainTable.etsa_documentTypeCode2 tr.etsa_patientInfo>td,
+#mainTable.etsa_documentTypeCode2 tr.etsa_encompassingEncounter>td, #mainTable tr.etsa_epicrisisDiagnoses>td,
+#mainTable tr.etsa_drugs>td, #mainTable tr.etsa_allergy>td,
+#mainTable tr.etsa_objectiveFind>td, #mainTable tr.etsa_analysis>td,
+#mainTable tr.etsa_immunization>td {
+	 padding-bottom: 0px;
+}
+
+#mainTable table.tableBlock,
+#mainTable .tableBlock>table {
+  border-spacing: 0 10px;
+  margin: 5px 5px 5px 0 !important;
+}
+
+.rowTitle {
+  background-color: inherit !important;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.rowTitle th {
+  padding-right: 12px;
+  padding-top: 12px;
+}
+
+.tableWholePage th,
+.text_table th,
+.dataTable th {
+  border: 1px solid #c5c7c6;
+  background-color: #ebebed;
+  vertical-align: middle;
+  padding: 12px 6px;
+}
+
+.tableWholePage td,
+.text_table td,
+.dataTable td {
+  border: 1px solid #c5c7c6;
+  padding: 6px;
+  vertical-align: middle;
+}
+
+.etsa_documentTypeCode64 .etsa_analysis.etsa_section .dataTable .rowValue .dataTableCell table tbody tr td{
+  border: 0px;
+}
+
+.tableWholePage td.blockLabel,
+.text_table td.blockLabel,
+.dataTable td.blockLabel {
+  border: none;
+  font-size: 16px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-left: 0px;
+}
+.dataTable td.blockLabelBig {
+    border-top: thin solid #ccc !important;
+    border: none;
+    font-weight: bold;
+    font-size: 26pt;
+    padding-bottom: 15px;
+    padding-top: 35px;
+}
+table span.blockLabel,
+table div.blockLabel {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 300%;
+}
+
+table span.blockLabelsmall,
+table div.blockLabelsmall {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 300%;
+}
+
+td.blockLabel {
+  font-weight: bold;
+}
+
+.spanBlockLabel {
+  border: none;
+}
+
+#documentBox {
+  width: 80%;
+  background-color: white;
+  border: 1px solid #c5c7c6;
+  clear: both;
+  padding: 22px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+#declarationBox {
+  background-color: white;
+  border: 1px solid #c5c7c6;
+  clear: both;
+  width: inherit;
+  padding: 22px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  height: 100%;
+}
+
+#declarationBox h1, #declarationBox h2, #declarationBox h3 {
+	color: #060606;
+}
+
+@media all and (max-width: 960px) and (min-width: 319px) {
+    #declarationBox h1, #declarationBox h2, #declarationBox h3 {
+        max-width: 89% !important;
+        word-break: break-all;
+    }
+}
+
+#dentalBox {
+  clear: both;
+  width: 90%;
+  padding: 22px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  height: 100%;
+}
+#immunisationBox {
+  clear: both;
+  width: 90%;
+  padding: 22px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  height: 90%;
+}
+.etsa_organizationName span,
+.etsa_documentProperties span.blockLabel {
+  line-height: 100% !important;
+}
+
+.etsa_providerInfo {
+  width: 50%;
+  float: left;
+}
+
+.etsa_docInfo {
+  text-align: right;
+  width: 50%;
+  float: right;
+}
+
+.etsa_representedOrganization span {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+#mainTable table {
+  width: 100%;
+}
+
+.etsa_docInfo {
+  color: grey;
+}
+
+.etsa_docInfo div.etsa_docId {
+  font-weight: bold;
+}
+
+.etsa_insurance .blockLabel {
+  font-size: 16px;
+}
+
+.etsa_insurance {
+  margin-top: 15px;
+}
+
+.etsa_assignedAuthor .blockLabel {
+  font-size: 16px;
+}
+
+.etsa_assignedAuthor {
+  margin-top: 15px;
+}
+
+table.noBorders td,
+table.noBorders table td {
+  border: none;
+}
+
+.borderless {
+  border: 0px !important;
+}
+
+.spaceOnRight {
+  margin-right: 10px !important;
+}
+
+.etsa_section .contacts td {
+  padding-top: 15px;
+}
+
+.etsa_documentProperties>td {
+  border-top: thin solid #ccc;
+  padding-top: 15px;
+}
+
+.etsa_observation > td.tableBlock > table > tbody > tr.blockLabel > td {
+  padding-top: 20px;
+}
+
+.etsa_section .text_text .text_p {
+  margin-bottom: 20px;
+}
+
+.text_li {
+  margin: 20px 0;
+}
+
+.text_li:first-child {
+  margin-top: 0;
+}
+
+.text_li:last-child {
+  margin-bottom: 0;
+}
+
+.text_caption {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.textTable tr:first-child .blockLabel {
+  padding-top: 25px;
+}
+
+.textTable .text_text .text_p {
+  margin-bottom: 0px;
+}
+
+tr.noBorderInNextTable table tr td {
+    border: none;
+}
+.noTopPadding {
+    padding-top: 0 !important;
+}
+.noBottomPadding {
+    padding-bottom: 0 !important;
+}
+
+.dataTableCell table tr td{
+        border: none;
+}
+
+tr.etsa_immunization td table tr td.rowtitle{
+        width: 12% !important;
+}
+
+
+
+/* MT329 */
+hr {
+	margin: 0;
+}
+
+.red-color {
+	color: #FF4B4B;
+}
+
+.blue-text {
+	color: #0094BB;
+}
+
+.gray-color {
+	color: #CDCDCD;
+}
+
+#mainTable div.headerBlock {
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+#mainTable div.headerBlock > h1 {
+	padding-top: 0px;
+	font-weight: bold;
+	font-size: 46px;
+	color: #0094BB;
+}
+#mainTable div.headerBlock > h2 {
+	font-weight: bold;
+	color: inherit;
+}
+#mainTable div.headerBlock > h2.code {
+	padding-top: 0px;
+	font-size: 36px;
+	color: #CDCDCD;
+}
+#mainTable div.headerBlock > a {
+	color: #0094BB;
+}
+
+#mainTable tr.etsa_section > .tableBlock > div > h2 {
+	color: inherit;
+	font-weight: bold;
+	font-size: 26pt;
+	padding-bottom: 15px;
+	padding-top: 35px;
+}
+#mainTable tr.etsa_section > .tableBlock > div > div > h2 {
+	color: inherit;
+	font-weight: bold;
+}
+#mainTable tr.etsa_section > .tableBlock > div > h3,
+#mainTable tr.etsa_section > .tableBlock > div > div > h2.sub-header {
+	color: inherit;
+	font-weight: bold;
+	font-size: 16px;
+	padding-top: 19px;
+	padding-bottom: 19px;
+	padding-left: 0px;
+}
+
+table.formattedTextTable td {
+	padding-bottom: 3px;
+	font-size: 12px;
+}
+table.formattedTextTable tr.bigger-text > td {
+	font-size: 16px;
+}
+
+/* just in case... */
+.shrinked-size { clear: both; float: none; margin-bottom: 20px; }
+.shrinked-size h2 { font-size: 12px; padding: 5px 0; }
+.shrinked-size h2.textMediumSize { font-size: 16px; padding: 5px 0; }
+.shrinked-size h2.textBiggerSize { font-size: 24px; padding: 5px 0; }
+
+.hide-in-browser{ display: none; }
+.show-in-print{ display: none; }
+.show-cell-in-print{ display: none; }
+
+.ehk-table-container{ padding: 0 !important; }
+.radiology-ehk-table{ border: none; margin: 0; }
+.radiology-ehk-table tr td{ border-left: none; border-right: none; }
+.radiology-ehk-table tr:first-child td{ border-top: none; }
+.radiology-ehk-table tr:last-child td{ border-bottom: none; }
+
+/* objektiivne leid */
+.table-cell-cover {
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 30%, rgba(255,255,255,1) 85%, rgba(255,255,255,1) 99%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(30%,rgba(255,255,255,0)), color-stop(85%,rgba(255,255,255,1)), color-stop(99%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 30%,rgba(255,255,255,1) 85%,rgba(255,255,255,1) 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 30%,rgba(255,255,255,1) 85%,rgba(255,255,255,1) 99%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 30%,rgba(255,255,255,1) 85%,rgba(255,255,255,1) 99%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 30%,rgba(255,255,255,1) 85%,rgba(255,255,255,1) 99%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	height: 32px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
